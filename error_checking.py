@@ -102,7 +102,6 @@ def bricks_total_value_check(test_directory, data):
 
 
 
-
 #_____Основная часть кода_____
 
 root_folder = "logs"
@@ -110,9 +109,9 @@ res_folders = ('ft_reference','ft_run')
 tests_directories_list = get_tests_directories_list(root_folder)
 
 
-# Если нао проверить какой-то отдельный тест
+# Если надо проверить какой-то отдельный тест
 # =============================================================================
-# tests_directories_list = [[tests_directories_list[1][2]]]
+# tests_directories_list = [[tests_directories_list[1][9]]]
 # =============================================================================
 
 
@@ -143,10 +142,10 @@ for i in range(len(tests_directories_list)):
                     f.write(f"{fail_text}\n")   
         if False in buf:
 #            ok_flag = False
-            print(f"FAIL:{tests_directories_list[i][j][5:]}")
-            with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
-                for line in r:
-                    print(line) 
+#            print(f"FAIL: {tests_directories_list[i][j][5:]}")
+#            with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
+#                for line in r:
+#                    print(line)
             continue
             
 #_____Вторая проверка_____
@@ -181,10 +180,10 @@ for i in range(len(tests_directories_list)):
                 buf.append(False)
         if False in buf:
 #            ok_flag = False
-            print(f"FAIL:{tests_directories_list[i][j][5:]}")
-            with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
-                for line in r:
-                    print(line)            
+#            print(f"FAIL: {tests_directories_list[i][j][5:]}")
+#            with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
+#                for line in r:
+#                    print(line)
             continue
             
 #_____Третья проверка_____
@@ -251,16 +250,18 @@ for i in range(len(tests_directories_list)):
                     f.write(f"{ft_run_key[7:]}: different 'Total' of bricks (ft_run={ft_run_value}, ft_reference={ft_reference_value}, rel.diff={rel_diff}, criterion={criterion})\n")
 #                    ok_flag = False
                     
-#_____Вывод результата в консоль_____
-                    
-        with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
-            first = r.read(1)
-            if not first:
-                print(f"OK:{tests_directories_list[i][j][5:]}")
-                continue
-        
-        print(f"FAIL:{tests_directories_list[i][j][5:]}")
-        with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
-            for line in r:
-                print(line)
+#_____Вывод результата в консоль (необходимо запустить файл output.py)_____
+          
+# =============================================================================
+#         with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
+#             first = r.read(1)
+#             if not first:
+#                 print(f"OK: {tests_directories_list[i][j][5:]}")
+#                 continue
+#         
+#         print(f"FAIL: {tests_directories_list[i][j][5:]}")
+#         with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
+#             for line in r:
+#                 print(line)
+# =============================================================================
             
