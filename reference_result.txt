@@ -1,0 +1,95 @@
+OK: 13-ROTATED_FLOWS/00010-GCS-u_R_0_IW/
+OK: 13-ROTATED_FLOWS/00011-GCS-u_R_0_IW_base_mesh_x4/
+OK: 13-ROTATED_FLOWS/00012-GCS-u_R_0_IW_ref_boundary_lev_2/
+OK: 13-ROTATED_FLOWS/00013-GCS-u_R_0_IW_Ring/
+FAIL: 13-ROTATED_FLOWS/00015-GCS-u_R_0_MF/
+1/1.stdout(401): slv : error: Isothermal cavitation forced time step in cavitated regions = -1
+OK: 13-ROTATED_FLOWS/00016-GCS-u_R_0_MF_ref_boundary_lev_2/
+FAIL: 13-ROTATED_FLOWS/00040-GCS-Rotated_inflow_in_tube_5x5/
+directory missing: ft_run
+directory missing: ft_reference
+OK: 13-ROTATED_FLOWS/00041-GCS-Rotated_inflow_in_tube_2x2_ref_boundary/
+OK: 13-ROTATED_FLOWS/00042-RRF-Rotated_inflow_in_tube_5x5/
+FAIL: 13-ROTATED_FLOWS/00043-RRF-Rotated_inflow_in_tube_2x2_ref_boundary/
+directory missing: ft_run
+OK: 13-ROTATED_FLOWS/00044-RRF-u_x_const_in_tube/
+OK: 13-ROTATED_FLOWS/00050-RRF-u_G_0_IW/
+OK: 13-ROTATED_FLOWS/00051-RRF-u_G_0_IW_ref_boundary/
+OK: 13-ROTATED_FLOWS/00052-RRF-u_G_0_P/
+OK: 13-ROTATED_FLOWS/00053-RRF-u_G_0_P_ref_boundary_lev_2/
+OK: 13-ROTATED_FLOWS/00054-RRF-u_G_0_MF/
+OK: 13-ROTATED_FLOWS/00055-RRF-u_G_0_MF_ref_boundary_lev_2/
+OK: 13-ROTATED_FLOWS/00056-RRF-u_G_0_P_Sphere/
+FAIL: 13-ROTATED_FLOWS/00060-RRF-u_R_0_IW/
+directory missing: ft_reference
+FAIL: 13-ROTATED_FLOWS/00061-RRF-u_R_0_IW_ref_boundary_lev_2/
+1/1.stdout: different 'Memory Working Set Peak' (ft_run=821.0, ft_reference=77.29, rel.diff=9.62, criterion=0.5)
+OK: 13-ROTATED_FLOWS/00062-RRF-u_R_0_MF/
+OK: 13-ROTATED_FLOWS/00063-RRF-u_R_0_MF_ref_boundary_lev_2/
+OK: 13-ROTATED_FLOWS/00064-RRF-u_R_0_P_rotated_infinity (no dependency on iterations)/
+FAIL: 13-ROTATED_FLOWS/00065-RRF-u_R_0_P_rotated_infinity_ref_boundary_lev_2/
+1/1.stdout: different 'Total' of bricks (ft_run=1772, ft_reference=1472, rel.diff=0.20, criterion=0.1)
+OK: 13-ROTATED_FLOWS/00070-RRF-MP-FF-lousy/
+OK: 13-ROTATED_FLOWS/00080-Halfs_of_Circle_IW/
+OK: 13-ROTATED_FLOWS/00090-GCS-radial_flow_ring/
+OK: 13-ROTATED_FLOWS/00091-RRF-radial_flow_ring/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00001-_-3_-1__ins-ins_MODIFIED/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00003-_ss_ss__ins-Tfixed/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00004-_-3_ss__Tfixed-Tfixed/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00007-NSCV_MG__0_ins_Tfixed_Tfixed/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00008-R_therm_infinite_ss/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00009-_-1_tf__bc_Tfixed/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00010-_-3_-1__bc_ss/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00011-insulated_cv_aniso/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00012-two_subdoms_aniso/
+FAIL: 14-HEAT_TRANSFER_IN_SOLID/00014-HWF_on_ins_ss/
+In ft_run there are missing files present in ft_reference: '3/3.stdout', '5/5.stdout'
+In ft_run there are extra files not present in ft_reference: '2/2.stdout', '4/4.stdout'
+FAIL: 14-HEAT_TRANSFER_IN_SOLID/00016-fluid-reservation_inc_ins/
+1/1.stdout(760): Calculation_Mf ERROR: nsd =   0: maximum value of div(momentum) (ncv=     26) =2.7939903279872e-08  
+FAIL: 14-HEAT_TRANSFER_IN_SOLID/00017-fluid-reservation_inc_Ts/
+1/1.stdout: missing 'Solver finished at'
+OK: 14-HEAT_TRANSFER_IN_SOLID/00018-fluid-multi_reservations_inc_ins_Ts_cond/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00019-Tfixed_in_fluid/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00020-_-3_-1__CR_domain/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00021-fluid_neumann_ts_inc/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00022-Lambda_v_projections/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00101-Ball_ref1_Q_2nd_order_bc_-1/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00102-Ball_ref1_Q_2nd_order_Tfixed/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00561-thin_profile_T_across_BC_-1_ss_wall_source/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00562-thin_profile_T_across_BC_-4_-1_ss/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00563-thin_profile_T_along_BC_0_-3/
+FAIL: 14-HEAT_TRANSFER_IN_SOLID/00564-thin_profile_T_across_BC_-2_-3_-1_comp/
+1/1.stdout: missing 'Solver finished at'
+OK: 14-HEAT_TRANSFER_IN_SOLID/00565-thin_profile_T_across_BC_-2_-3_-1_inc/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00700-PCB_sandwich_across_arbitrary_Dirichlet/
+FAIL: 14-HEAT_TRANSFER_IN_SOLID/00701-PCB_sandwich_along_arbitrary_Dirichlet/
+In ft_run there are extra files not present in ft_reference: '1/1.stdout'
+OK: 14-HEAT_TRANSFER_IN_SOLID/00703-PCB_chip_on_plate/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00803-Net_asm_ss_-4__3_nodes (TWO)/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00804-Net_asm_2_objects/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00808-Net_asm_Neumann_solid_C_eq_0_MODIFIED/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00810-Net_asm_therm_coupling/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00812-Net_asm_thin_T_across_BC_eq_-1_-3_ss_MODIFIED/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00850-Net_asm_CHT_inc/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00870-Net_asm_CHT_inc_term_coupling/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00901-TEC_Melcor_CP2-127_06_in_solid/
+OK: 14-HEAT_TRANSFER_IN_SOLID/00902-TEC_Melcor_CP2-127_06_in_solid_Tfixed/
+FAIL: 15-JOULE_HEATING_IN_SOLID/00010-_-1_cond_-3/
+1/1.stdout(187): Loading mesh settings (global/local/SAR)... ERRor
+1/1.stdout(404): slv : errOr Max number of outer iter = 1
+OK: 15-JOULE_HEATING_IN_SOLID/00010-_-3_cond_-3_Neumann_fix/
+OK: 15-JOULE_HEATING_IN_SOLID/00011-_-1_cond_-3_R/
+OK: 15-JOULE_HEATING_IN_SOLID/00013-PS_-1_-1__TS_-1_-1/
+OK: 15-JOULE_HEATING_IN_SOLID/00014-PS_-1_-1__TS_-1_-1_trans/
+FAIL: 15-JOULE_HEATING_IN_SOLID/00020-_-1_cond_ss_cond_-3/
+1/1.stdout: different 'Memory Working Set Peak' (ft_run=10.76, ft_reference=28.18, rel.diff=-0.62, criterion=0.5)
+1/1.stdout: different 'Total' of bricks (ft_run=15, ft_reference=21, rel.diff=-0.29, criterion=0.1)
+2/2.stdout: missing 'Solver finished at'
+3/3.stdout(440): slv : error: Isothermal cavitation pseudo transient corrector = -1
+3/3.stdout: different 'Memory Working Set Peak' (ft_run=128.18, ft_reference=28.18, rel.diff=3.55, criterion=0.5)
+3/3.stdout: different 'Total' of bricks (ft_run=25, ft_reference=21, rel.diff=0.19, criterion=0.1)
+FAIL: 15-JOULE_HEATING_IN_SOLID/00022-_-1_cond_ss_R_cond_-3/
+1/1.stdout(547): GG Joule Heat 1				ERROR: goal invalid
+OK: 15-JOULE_HEATING_IN_SOLID/00040-thick_profile_Dirichlet/
+OK: 15-JOULE_HEATING_IN_SOLID/00041-thin_profile_Dirichlet/

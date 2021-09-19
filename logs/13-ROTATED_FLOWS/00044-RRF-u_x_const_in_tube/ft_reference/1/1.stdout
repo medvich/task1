@@ -1,0 +1,2401 @@
+Number of used processors (NPROC): 1.
+Number of mesh partitions (NPART): 1.
+Operating system:	Windows 7 Service Pack 1 (Version 6.1.7601)
+Total Physical Memory = 6.00 Gb, Available Physical Memory = 3.10 Gb
+Memory Working Set Current = 18.61 Mb, Memory Working Set Peak = 19.81 Mb
+CPU:	GenuineIntel, Stepping ID = 2, Model = 13, Family = 6, Extended model = 2, MMX SSE SSE2 Hyper-Threading Technology SSE3
+CPU Brand String: Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+Cache Line Size = 64, L2 Associativity = 6, Cache Size = 256K
+Number of cores: 4, Processor type: 8664, Active processor mask: 15, Page size: 4096 bites
+std::thread::hardware_concurrency = 4
+OpenMP enabled (spec=200203). max_threads = 4, num_procs = 4, num_threads = 4.
+
+SOLIDWORKS 2016 SP3.0
+13-ROTATED_FLOWS\00044-RRF-u_x_const_in_tube\ft_run\1\1.fld
+Configuration name:	Default
+Project name:	as3d
+/*******************************************/
+/*         Project Summary                 */
+/*******************************************/
+Problem type:						internal
+Result resolution:					5
+Minimum gap size:					0.132264
+Minimum wall thickness:				0.132264
+Manual refinement:					Off
+Solid refinement:					Off
+Fluid substances count				1
+
+		Advanced capabilities
+Heat transfer						On
+Transient						Off
+Gravitation						Off
+Laminar flow						On
+Compressibility					Off
+Number of solid substances			0
+Roughness:						0
+
+************************************************
+
+Geometry database loading ...OK
+Flow Simulation 2016  x64 / 3688 / SOLVER ver. efd_16_0.3667_12.10.2016+nested_iters_for_phase_change17.5 
+
+
+
+STATIONARY
+
+ROTATIONAL COORDINATES SYSTEM:
+OMEGA 150   AXIS:  NORMAL VECTOR (-1 -0 -0)  REFERENCE POINT: (0 0 0)
+
+LAM-BREMHORST K-EPSILON TURBULENCE MODEL
+EXTERNAL=1  CHT=0  FROZEN=0  P_REF=1  RADIATION=0  HVAC_COMFORT_PARAMETERS=0
+-----------------------------------------------------------------------
+Allocating meshes:
+	CPU count: 1
+	MESH 0:
+		Sub-meshes count: 1
+-----------------------------------------------------------------------
+Memory Status before reading BCF:
+Memory Working Set Current = 22.49 Mb, Memory Working Set Peak = 22.49 Mb
+
+-----------------------------------------------------------------------
+BCF CHECKSUM DATA (Mesh 0):
+
+FACE_A Area Sum:   G.Fluid        0.4164911528138904
+FACE_A Area Sum:   G.Solid        0.0916232235381178
+FACE_W Area Sum:                  0.2008774905875644
+FACE_W Nb   Sum:                  7744
+FACE_W min curvatures sum:        -6545.75540638
+FACE_W max curvatures sum:        0.00000000
+AV Max Disbalance: G.Fluid        1.29498e-015 (cid=705, avid=645, pid=309)
+AV Max Disbalance: G.Solid        6.1579e-014 (cid=823, avid=1319, pid=369)
+-----------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------
+MESHER TOPOLOGY DATA (Mesh 0):
+
+BRICKS: Total                 1000
+BRICKS: 1-CV                  536
+BRICKS: 2-CV                  464
+BRICKS: Bad                   0
+
+AV:     G.Total               1464
+AV:     G.Fluid               880
+AV:     G.Solid               584
+
+AV:     G.Fluid Thin Profile    0.00 % (0)
+AV:     G.Solid Thin Profile    0.00 % (0)
+
+AV:     G.Fluid Thin For Mega   0.00 % (0)
+AV:     G.Solid Thin For Mega   0.00 % (0)
+
+AV:     G.Fluid Non-Convex      4.20 % (37)
+AV:     G.Solid Non-Convex     12.33 % (72)
+
+FACE_A: G.Fluid          (af) 2352 (partially opened 924)
+FACE_A: G.Solid          (as) 1272 (partially opened 924)
+
+FACE_W: G.Total                 1208        Brick/Bound
+FACE_W: G.Fluid/Solid    (fs_g) 608         0           
+FACE_W: G.Fluid/Fluid    (ff_g) 0           0           
+FACE_W: G.Solid/Solid    (ss_g) 0           0           
+FACE_W: G.Fluid/External (fe_g) 0
+FACE_W: G.Solid/External (se_g) 600
+
+AV max fa count:                6
+AV max fw count:                5
+AV max fw poly count:           5
+
+MEMORY: Total                   0.582 MB
+MEMORY: Per Brick               0.596 KB
+-----------------------------------------------------------------------
+
+----------------------------------------------------------
+BCF --> BCF.GEOMSUBDOM (bridge arrays) (cpu_num=1):
+MESH (0):
+	Fluid Subdom Constructor: 1 subdom(s).
+	Solid Subdom Constructor: 1 subdom(s).
+	Net Asm Subdom Constructor: 0 subdom(s).
+	GEOMSUBDOM (0): gi=0 fluid av=880 cv=880 fa=2352 fw=608 V=1.994401e-003
+	GEOMSUBDOM (1): gi=1 solid av=584 cv=584 fa=1272 fw=1208 V=5.823262e-004
+	Setting nb of w-faces...OK.
+
+MESH (0) checking:
+	GEOMSUBDOM (0):fa_s=0.4164911528138832 fw_s=0.0879631847315638 fw_nb=5344
+	GEOMSUBDOM (1):fa_s=0.0916232235381182 fw_s=0.2008774905875639 fw_nb=7744
+MESH (0) checking: OK.
+----------------------------------------------------------
+Memory Status after reading BCF:
+Memory Working Set Current = 24.22 Mb, Memory Working Set Peak = 24.22 Mb
+Total read CPT took 0.14 sec.
+MESH::Bricks: Total=1000 Gas=416 Solid=120 Partial=464 Irregular=0
+
+-----------------------------------------------------------------------
+Mesh dimensions:
+				I[0 ]=10
+				I[1 ]=10
+				I[2 ]=10
+Solver refinement level	I[47]=0
+
+Comp. domain size:
+				a[0  ]=-0.000147
+				a[1  ]=0.147147
+				a[2  ]=-0.066132
+				a[3  ]=0.066132
+				a[4  ]=-0.066132
+				a[5  ]=0.066132
+Wall thickness		a[231]=0
+Gap size			a[232]=1
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+Preparing for calculations started at	3.11.2016	12:25:4
+slv_max_lev=0
+CD X0= -0.000147, X1= 0.147147, Y0= -0.066132, Y1= 0.066132, Z0= -0.066132, Z1= 0.066132
+Collecting Reference Parameters... OK
+-----------------------------------------------------------------------
+CV statisticks for fluid...
+	CV number:         880
+	FACE_A max number: 6
+	FACE_W max number: 3
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+CV statisticks for solid...
+	CV number:         0
+	FACE_A max number: 0
+	FACE_W max number: 0
+-----------------------------------------------------------------------
+Update time step in solids: STATIONARY IN SOLIDS
+FLUID SUBDOMAIN 0
+LC =0 LAMTURB=-1 NONNEWTON=0  STEAM=0  CAVITATION=0 IT=6 NT=0 NC=1 U_DIM_EXT=11
+
+===ThermodynamicsHolder:===
+Subdom 0 Incompressible liquid thermodynamics
+	substance 0 type=fwLiquid, guid=6b2c6742-3f07-41fd-8be2-0a38e439e1ce, name=air-incompressible
+===ThermodynamicsHolder:===
+Memory allocation for matrix entries in solver is block-wise,
+( size of block = 1048576 bytes (1Mb) ).
+
+132 parameter(s) in list of scalar parameters
+5 parameter(s) in list of vector parameters
+-----------------------------------------------------------------------
+Loading mesh settings (global/local/SAR)...
+Setting regions...
+Setting regions takes 0.000 s
+-----------------------------------------------------------------------
+
+CollectIndata: Initialize stored in U[] parameters (pressure,momentum,dens,..)... OK(CPU=0.00287418s)
+
+THERMODYNAMICS: Initialize stored in U[] parameters (T,Cp,Pr,..)
+                and switch to Y-shifted Total Enthalpy:
+Total Enthalpy:
+        (FIS, old) sd 0: min(0,0)=304772.76            , max(270,270)=304772.76            
+Total Enthalpy, Y-shifted:
+        (FIS, old) sd 0: min(4,4)=49.999999997234      , max(270,270)=49.999999997328      
+OK: U[] is initialized.
+
+Collect Body BC...OK
+Collect Fans...OK
+Collect Surface Sources...OK
+Collect Contact resistance BC...OK
+Collect Perforated plates BC...OK
+Collect Electric contact BC...OK
+Collect Surface Goals...
+Received 0 wall face(s) and 0 virtual face(s)...
+ OK
+Total CPU time 1 s
+Collect Unused surface area...OK
+MWS estimation...
+Subdomain number = 0
+
+V_indata_max=13.8005, v_max_from_mf_on_BC = 13.8005, v_max_from_pressure_opening = 0, MWS=3.45013
+Ref. Pressure = 101325
+OK
+
+There is 1 subdomain in fluid:
+subdomain 0: INCOMPRESSIBLE,   MONOTONIC T, 880 CVs, LAMINAR ONLY
+             ROTATIONAL COORDINATES SYSTEM:
+             OMEGA=150;  AXIS: n=(-1 -0 -0) X0=(0 0 0)
+NPROC = 1, nested_parallelization = 0
+NPART = 1
+Calculate wall distance: N of points: Fluid Cv=880, Fluid Real Wall Faces(WType<0)=0 OK(CPU=0s)
+
+/-----------------------------------------------------------/
+SOLVER TOPOLOGY DATA:
+
+BRICKS: |level1| sum         0
+
+CV:     Total               880
+CV:     Fluid               880
+CV:     Solid               0
+
+CV:     G.Fluid Thin Profile    0.00 % (0)
+CV:     G.Solid Thin Profile    0.00 % (0)
+
+CV:     G.Fluid Non-Convex      4.20 % (37)
+CV:     G.Solid Non-Convex      0.00 % (0)
+
+FACE_A: Fluid          (af) 2352
+FACE_A: Max number placed on a brick-face in cv: 1
+FACE_A: Solid          (as) 1272
+
+FACE_W: Total               1208
+FACE_W: Fluid/Solid    (fs) 608
+FACE_W: Fluid/Fluid    (ff) 0
+FACE_W: Solid/Solid    (ss) 0
+FACE_W: Opening BC               (fo)  176
+FACE_W: Fluid/Bound              (fw)  608
+FACE_W: Solid/Bound              (sw)  0
+FACE_W: Fluid/Bound Real Wall    (frw) 0
+FACE_W: Solid/Bound Real Wall    (srw) 0
+FACE_W: Fluid/Bound Real Wall  hn(sum) 0.000000e+000
+FACE_W: Max number placed in cv: 3
+Fluid:
+CV Max Disbalance:                1.29498e-015 (ncv=333)
+/-----------------------------------------------------------/
+
+P static (old):
+        (FIS) sd 0: min(0,0)=101325               , max(0,0)=101325               
+Density (old):
+        (FIS) sd 0: min(0,0)=1.233                , max(0,0)=1.233                
+Velocity (old):
+        (FIS) sd 0: min(360,360)=10.097825180573      , max(673,673)=13.800523047692      
+Velocity GCS (old):
+        (FIS) sd 0: min(0,0)=10                   , max(0,0)=10                   
+Temperature (old):
+        (FIS) sd 0: min(0,0)=293.2                , max(270,270)=293.2                
+MinMax Cp:
+		subd0: min(0)=1039.3               ,	max(0)=1039.3               
+MinMax Laminar Viscosity:
+		subd0: min(0)=1e-100               ,	max(0)=1e-100               
+MinMax Speed of Sound:
+		subd0: not defined
+MinMax Fmju(turb):
+		subd0: min(0)=0                    ,	max(0)=0                    
+MinMax K(turb):
+		subd0: min(0)=1.233                ,	max(0)=1.233                
+MinMax E/Omega(turb):
+		subd0: min(0)=1e-100               ,	max(0)=1e-100               
+LOG: EQN_3M[0]=1 
+LOG: HYBRID[0]=0 
+LOG: Min_cv_size=0.1
+  nsd=0: min rho=1.233, var Kin E=1467.69
+Create solver core
+ MDS: Converting solver problem ...
+MDS: OK
+slv : Calculations at run start
+slv :     Create sub-domains supervisors:
+slv :     	1 fluid
+slv :     OK
+slv :     Create sub-domains mesh connectivity supervisors:
+slv :     OK
+slv :     Slice sub-domains:
+slv :     OK
+slv :     Collect slices by phenomena...
+slv :     	fluid flow slices were created:	1
+slv :     	heat transfer slices were created:	1
+slv :     	electric current flow slices were created:	0
+slv :     	radiation slices were created:	0
+slv :     OK
+slv :     Creating meshes proxies for multigrid...
+slv :         Convert MESH[0] to multigrid mesh proxy...
+slv :         1000 bricks are accounted by implicit methods(100% of total)
+slv :         max tree bricks count = 1
+slv :         OK
+slv :     OK
+alg :     MG: create topological coarsening...
+alg :     Mesh 0  OK
+slv :     OK
+slv :     Building views for fluid flow...
+slv :         1 views are created
+slv :     Building fluid flow views schemes...
+slv :         View 0:
+slv :         Implicit scheme in fluid
+slv :         OK
+slv :     OK
+slv :     Building views for heat transfer...
+slv :         1 views are created
+slv :     Building heat transfer views schemes...
+slv :         View 0:
+slv :         OK
+slv :     OK
+slv :     Building electric current flow views schemes...
+slv :     OK
+slv :     PrecalcAtStart views for fluid flow...
+slv :         
+slv :         === Fluid sub-domain nsd=0 ========================
+slv :         Pre-calculations at run start, Implicit Scheme:
+slvD:         
+slvD:         MARK CVs and A-FACEs WITH/NEAR GEOMETRICAL PECULIARITIES:
+slvD:         
+slvD:         
+slvD:           A-faces degraded to CUp_1st and Upwind_1st: 111 (4.71939% of all a-faces)
+slvD:             (by  curved & encumbered : 111 (4.71939% of all a-faces)),
+slvD:             (by  l- or r-cv is small : 0 (0% of all a-faces)),
+slvD:             (by  l- or r-cv is triple: 0 (0% of all a-faces)).
+slvD:             (THRESHOLD_ENCUMBERED_AREA = 0.333, THRESHOLD_ANGLE_SURFACE = 15, THRESHOLD_ANGLE_CVs = 70).
+slvD:         
+slvD:           Skip  P WALL APPROX  on w-faces = 84 (13.8158% of fluid wall w-faces),
+slvD:         
+slvD:         
+slvD:           Skip  P WALL ROTATE  in partial cvs = 125 (14.2045% of all cvs, 26.9397% of partial cvs),
+slvD:             (by  presence of degraded to CUp_1st a-faces = 122)
+slvD:             (by  curvature condition = 72),
+slvD:             (by  MEGA G-TYPE condition = 0),
+slvD:             (THRESHOLD_ANGLE_PWALL = 47).
+slvD:         
+slv :         
+slv :           A-faces placed opposite External boundary with Symmetry BC: N_face_ns=0 (0%)
+slv :         
+slvD:         BC re-definition: Real Wall to Ideal Wall: 0 w-faces
+slv :         === End of pre-calculations =======================
+alg :         mgl = 31 size = 880
+alg :         mgl = 30 size = 125
+alg :         
+alg :         mgl = 31 size = 880
+alg :         mgl = 30 size = 125
+alg :         
+alg :         mgl = 31 size = 880
+alg :         mgl = 30 size = 125
+alg :         
+slv :     PrecalcAtStart views for heat transfer...
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 880
+alg :         mgl = 30 size = 125
+alg :         
+slv :         OK
+slv :     PrecalcAtStart views for electric current flow...
+slv :     PrecalcAtStart views for radiation...
+slv : OK
+slv : ------------ Start of Preliminary step at Calculation start ------------
+slv :     ------------ End of Preliminary step at Calculation start ------------
+
+Re-define MWS=max(mws_sd) and P_ref=averaged(P_ref_sd) over fluid-flow sub-domains in view:
+nsd=0: mws=3.450131353513       , P_ref=101325               
+
+----------------------------------------------------------
+BCF checking (solver)...
+----------------------------------------------------------
+
+Estimated cfld size=0.07 Mb
+Writing cfld file "13-ROTATED_FLOWS\00044-RRF-u_x_const_in_tube\ft_run\1/r_000000.cfld"...
+Working in No GDBLight mode
+Working in No GDBLight mode
+FILE SAVED: r_000000.cfld. Total save cfld took 0.02 sec.
+real cfld size=0.02 Mb
+OK
+Estimated fld size=0.20 Mb
+Writing fld file "13-ROTATED_FLOWS\00044-RRF-u_x_const_in_tube\ft_run\1/r_000000.fld"...
+FILE SAVED: r_000000.fld. Total save fld took 0.00 sec.
+real fld size=0.06 Mb
+OK
+Init simple interpolator... OK (0.000 sec)
+BC 'Inlet Velocity 1' is on 88 faces (AS area=0.0135674, CAD area=0.0136848, difference=-0.9%)
+BC 'Static Pressure 1' is on 88 faces (AS area=0.0135674, CAD area=0.0136848, difference=-0.9%)
+BC 'Ideal Wall 1' is on 432 faces (AS area=0.0608284, CAD area=0.0609595, difference=-0.2%)
+
+Preview parameters:
+	Density (Fluid)
+	Pressure
+	Temperature
+	Temperature (Fluid)
+	Velocity
+	Velocity (X)
+	Velocity (Y)
+	Velocity (Z)
+	Axial Velocity
+	Circumferential Velocity
+	Circumferential Velocity RRF
+	Peripheral Velocity
+	Radial Velocity
+	Velocity RRF
+	Velocity RRF (X)
+	Velocity RRF (Y)
+	Velocity RRF (Z)
+	Dynamic Pressure
+	Thermodynamic Pressure
+	Total Pressure
+	Dynamic Viscosity
+	Prandtl Number
+	Specific Heat (Cp)
+	Total Enthalpy
+	Total Viscosity
+25 parameter(s) in preview list of parameters
+
+Calculation started at	3.11.2016	12:25:5
+Total CPU time 1 s
+
+================== Tstep=0 ===================
+Boundary layer settings:
+	Separation tau    on
+	Enable 3D effects on
+BL MODEL         	Ignore compressibility  off
+	BL on porous body  off
+	Separ. tau corr factor 0
+	Separ. tau kappa 0.1
+	Separ. tau KV0 0.1
+------------------------
+NumerCore CHT-start settings:
+	Min typical size					1
+	Zero vel ht factor				0.006
+	C_mju_turb_min                   0.01
+	Threshold value for K-E filter   0.00125874
+	C_mju                            0.09
+	C_eps1                           1.44
+	C_eps2                           1.92
+	Sigma_k                          1
+	Sigma_eps                        1.3
+	Sigma_c                          0.9
+	Approx mode                      1st order
+-------------
+NumCoreFESSettings:
+	Maximum possible Mach	0
+	Turbulent Prandtl		0.9
+-------------
+slv : Implicit schemes in fluid settings:
+slv :     INPR	: rel_resid=0.00790569
+slv :     BACKGROUND	: rel_resid=0.00790569
+slv :     DVGR	: rel_resid=0.00790569
+slv :     MOMENTUM	: rel_resid=0.00790569
+slv :     CHT	: rel_resid=0.00790569
+slv :     Y_TD	: rel_resid=0.00790569
+slv :     Y_TURB	: rel_resid=0.00790569
+slv :     LMA	: rel_resid=0.00790569
+slv :     UVGI	: rel_resid=0.00790569
+slv :     NOx	: rel_resid=0.00790569
+slv :     Disable wall motion impact into H threshold=10
+slv :     Relax par ring =0.05
+slv :     Isothermal cavitation CF corrector = 1
+slv :     Isothermal cavitation pseudo transient corrector = -1
+slv :     Isothermal cavitation forced time step in cavitated regions = -1
+slv :     ---------------------------------------
+------Solid settings---
+Approximation mode = 2'nd order && thin_profiles
+Solid temperature eps_abs scaling factor: 0.001
+number dofs per absorptive face: 9
+subgrid ratio: 0.500000
+Blink filter: disabled
+------------------------------
+slv : Iterations settings:
+slv :     Max number of outer iter = 1
+slv :     Max number of Mass&Energy iter = 1
+slv :     Max Courant factor = 10
+slv :     Conservation laws tolerance residuals:
+slv :         	MASS	0.005
+slv :         	MOMENTUM	0.005
+slv :         	ENERGY	0.005
+slv :         	SPECIES	0.005
+slv :         	TURBULENCE	0.005
+slv :     ---------------------------------------
+slv :     Scheme blocks settings:
+slv :         INPR	: stop_crit=residAbs_AND_residRel 
+slv :         BACKGROUND	: stop_crit=residAbs_AND_residRel 
+slv :         DVGR	: stop_crit=residAbs_AND_residRel 
+slv :         MOMENTUM	: stop_crit=residAbs_AND_residRel 
+slv :         CHT	: stop_crit=residAbs_AND_residRel 
+slv :         Y_TD	: stop_crit=residAbs_AND_residRel 
+slv :         Y_TURB	: stop_crit=residAbs_AND_residRel 
+slv :         LMA	: stop_crit=residAbs_AND_residRel 
+slv :         UVGI	: stop_crit=residAbs_AND_residRel 
+slv :         NOx	: stop_crit=residAbs_AND_residRel 
+slv :     ---------------------------------------
+Accuracy scale coeff =1
+slv :   MWS[nsd=0]=3.45005
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000205431
+slv : ROTATION: weight_WR[nsd=0]= 1
+slvD: ROTATION(nsd=0): max div_Mf(rho_av*[W x r])=9.50778e-005  at ncv=678
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=489) =4.7505e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 5.552254e-014| 3.470159e-018| 3.032620e-018|     8|  24|0|n|30|  OK  |
+slv : | 1.791528e-006|              | 3.013343e-008|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=120) =3.46727e-010 .
+slv :                 norm_L2 of div(momentum) =1.7414420214924e-009  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: ROTATION(nsd=0): max div_Mf(rho_av*[W x r])=9.50778e-005  at ncv=678
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=703) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219420876887    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.126648e-004| 2.112464e-008| 9.253084e-010|     1|   3|0|n|30|  OK  |
+slv : | 1.888111e-001|              | 3.767431e-004|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(361)=10.097822024144      , max(739)=13.834572491372      
+slv : 
+slv : NUMBER OF INNER ITERATIONS = 1
+slv : 
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.845160e-009| 1.153225e-013| 4.564679e-014|     5|  15|0|n|30|  OK  |
+slv : | 3.394908e-004|              | 5.243890e-006|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=736) =9.50897e-005 .
+slv :                 norm_L2 of div(momentum) =0.001060900527787     .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 5.891687e-024| 5.891687e-024| 7.119162e-029|     1|   3|0|y|30|  OK  |
+slv : | 5.404357e-011|              | 1.455650e-013|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(867)=101325.00622535      , max(670)=101328.18511521      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.098330160696      , max(739)=13.835905322137      
+slv :         Velocity GCS (new): min(678)=9.9527915141698      , max(499)=10.048024334907      
+slv :         Temperature (new): min(499)=293.1995284573       , max(134)=293.20045985123      
+slv :         Total enthalpy, Y-shifted (new): min(294)=49.999999997231      , max(758)=49.999999997324      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167285
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 34.92 Mb, Memory Working Set Peak = 34.92 Mb
+
+================== Tstep=1 ===================
+slv :   MWS[nsd=0]=3.44955
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.00020527
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=800) =1.23404e-007 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.580696e-013| 1.612935e-017| 1.094078e-017|     9|  27|0|n|30|  OK  |
+slv : | 8.195815e-006|              | 6.048146e-008|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=264) =6.17226e-010 .
+slv :                 norm_L2 of div(momentum) =3.3076843826281e-009  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=703) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.002121942151914     .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 7.541010e-005| 1.413939e-008| 8.785464e-011|     1|   3|0|n|30|  OK  |
+slv : | 1.740030e-001|              | 1.163442e-004|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.098611651005      , max(739)=13.869339128394      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.528031e-010| 9.550194e-015| 1.580052e-015|     3|   9|0|n|30|  OK  |
+slv : | 1.271817e-004|              | 7.833248e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =9.508e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609592260432    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.629790e-024| 3.629790e-024| 5.238838e-029|     1|   3|0|y|30|  OK  |
+slv : | 4.345619e-011|              | 1.329848e-013|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(563)=101324.94471594      , max(670)=101328.16659204      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.098644877901      , max(739)=13.869285921262      
+slv :         Velocity GCS (new): min(679)=9.9129999451282      , max(499)=10.093174725088      
+slv :         Temperature (new): min(499)=293.19908281507      , max(134)=293.20084317494      
+slv :         Total enthalpy, Y-shifted (new): min(295)=49.99999999723       , max(759)=49.999999997317      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.14 Mb, Memory Working Set Peak = 35.14 Mb
+
+================== Tstep=2 ===================
+slv :   MWS[nsd=0]=3.44462
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000205213
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=264) =2.46744e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.237915e-014| 7.736966e-019| 2.695408e-019|     9|  27|0|n|30|  OK  |
+slv : | 1.509769e-006|              | 9.432730e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=250) =9.64105e-011 .
+slv :                 norm_L2 of div(momentum) =5.1917320907234e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219420988407    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 5.258417e-005| 9.859533e-009| 4.960266e-011|     1|   3|0|n|30|  OK  |
+slv : | 1.465211e-001|              | 8.815730e-005|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.098881408869      , max(739)=13.90077323084       
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.614291e-011| 1.008932e-015| 3.939876e-016|     6|  18|0|n|30|  OK  |
+slv : | 4.624168e-005|              | 4.953631e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =9.50805e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609730042437    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.341728e-024| 2.341728e-024| 3.487936e-029|     1|   3|0|y|30|  OK  |
+slv : | 3.572642e-011|              | 1.146340e-013|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(563)=101324.90787331      , max(670)=101327.64035618      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.098800994684      , max(739)=13.900654135071      
+slv :         Velocity GCS (new): min(679)=9.8804256519942      , max(499)=10.135509001539      
+slv :         Temperature (new): min(499)=293.19866301032      , max(134)=293.20115420387      
+slv :         Total enthalpy, Y-shifted (new): min(295)=49.999999997229      , max(757)=49.99999999731       
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.18 Mb, Memory Working Set Peak = 35.18 Mb
+
+================== Tstep=3 ===================
+slv :   MWS[nsd=0]=3.39415
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000206031
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=4) =1.57967e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.636436e-015| 1.647773e-019| 9.117596e-020|     9|  27|0|n|30|  OK  |
+slv : | 8.044532e-007|              | 5.514775e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=140) =5.35052e-011 .
+slv :                 norm_L2 of div(momentum) =3.0195357036483e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421063221    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.787591e-005| 7.101732e-009| 2.952807e-011|     1|   3|0|n|30|  OK  |
+slv : | 1.223811e-001|              | 6.921102e-005|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.098938414128      , max(739)=13.930315425579      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.810506e-011| 1.131566e-015| 4.494701e-016|     5|  15|0|n|30|  OK  |
+slv : | 3.436847e-005|              | 5.191033e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=671) =9.5084e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609753691464    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.574307e-024| 1.574307e-024| 2.472894e-029|     1|   3|0|y|30|  OK  |
+slv : | 3.006180e-011|              | 9.728763e-014|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(563)=101324.88808769      , max(798)=101327.33279062      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.098876392034      , max(739)=13.930260319313      
+slv :         Velocity GCS (new): min(679)=9.8542020226202      , max(499)=10.175383954402      
+slv :         Temperature (new): min(499)=293.19826594066      , max(134)=293.20140340767      
+slv :         Total enthalpy, Y-shifted (new): min(295)=49.999999997228      , max(757)=49.999999997314      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.31 Mb, Memory Working Set Peak = 35.31 Mb
+
+================== Tstep=4 ===================
+slv :   MWS[nsd=0]=3.0793
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000211959
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=800) =1.18335e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.025664e-015| 1.266040e-019| 1.051539e-019|     9|  27|0|n|30|  OK  |
+slv : | 7.520814e-007|              | 5.919666e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=140) =5.76044e-011 .
+slv :                 norm_L2 of div(momentum) =3.2427442154191e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.002121942106414     .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.820587e-005| 5.288600e-009| 2.033651e-011|     1|   3|0|n|30|  OK  |
+slv : | 1.041813e-001|              | 5.910120e-005|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.098947297818      , max(739)=13.958870753694      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.863487e-011| 3.768415e-017| 2.267304e-017|     7|  21|0|n|30|  OK  |
+slv : | 3.398630e-005|              | 1.191954e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=671) =9.50843e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609749793723    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.093700e-024| 1.093700e-024| 2.280301e-029|     1|   3|0|y|30|  OK  |
+slv : | 2.521908e-011|              | 9.585215e-014|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(563)=101324.86995359      , max(798)=101327.06992869      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.098885777631      , max(739)=13.958825111044      
+slv :         Velocity GCS (new): min(679)=9.8330092089109      , max(499)=10.2137953912        
+slv :         Temperature (new): min(499)=293.19788205642      , max(134)=293.20160437835      
+slv :         Total enthalpy, Y-shifted (new): min(295)=49.999999997228      , max(768)=49.999999997315      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.31 Mb, Memory Working Set Peak = 35.31 Mb
+Iteration : time = 0.312006 , count = 5 , time/count = 0.0624012
+Calculate_inc() : time = 0.265205 , count = 5 , time/count = 0.053041
+TreatFlowEvolution() : time = 0.031201 , count = 5 , time/count = 0.0062402
+SolverPreview : time = 0 , count = 6 , time/count = 0
+TreatGoals : time = 0.031201 , count = 5 , time/count = 0.0062402
+
+================== Tstep=5 ===================
+slv :   MWS[nsd=0]=1.89542
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000357068
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=800) =7.6768e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 9.915027e-016| 6.196892e-020| 2.627363e-020|     8|  24|0|n|30|  OK  |
+slv : | 3.888393e-007|              | 3.086762e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=120) =3.10218e-011 .
+slv :                 norm_L2 of div(momentum) =1.6209143502452e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421140784    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.157686e-005| 4.045661e-009| 1.739353e-010|     1|   3|0|n|30|  OK  |
+slv : | 8.891042e-002|              | 1.813823e-004|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.098907153433      , max(851)=14.002134556854      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 4.629900e-011| 1.505783e-016| 8.346593e-017|     7|  21|0|n|30|  OK  |
+slv : | 5.414795e-005|              | 2.286893e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=671) =9.50848e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609770432446    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 7.754577e-025| 7.754577e-025| 1.630238e-028|     1|   3|0|y|30|  OK  |
+slv : | 2.130139e-011|              | 2.062005e-013|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(563)=101324.8460999       , max(798)=101326.78200737      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.098787146746      , max(851)=14.002045956782      
+slv :         Velocity GCS (new): min(679)=9.8100155121547      , max(81)=10.271989511785      
+slv :         Temperature (new): min(499)=293.19729996824      , max(134)=293.20182198292      
+slv :         Total enthalpy, Y-shifted (new): min(350)=49.999999997229      , max(768)=49.999999997313      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.31 Mb, Memory Working Set Peak = 35.31 Mb
+
+================== Tstep=6 ===================
+slv :   MWS[nsd=0]=0.713303
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000407062
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=668) =1.11041e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.207742e-015| 1.379839e-019| 9.762785e-020|     8|  24|0|n|30|  OK  |
+slv : | 6.511948e-007|              | 5.920208e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=120) =5.65112e-011 .
+slv :                 norm_L2 of div(momentum) =3.1245455822571e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.002121942116617     .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.494695e-005| 2.802553e-009| 1.731533e-010|     1|   3|0|n|30|  OK  |
+slv : | 7.050398e-002|              | 1.860229e-004|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.098750155638      , max(851)=14.045598157197      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 5.540468e-011| 2.890533e-016| 8.938265e-017|     7|  21|0|n|30|  OK  |
+slv : | 6.835081e-005|              | 2.367621e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=671) =9.50832e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609766637165    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 4.627178e-025| 4.627178e-025| 2.608433e-028|     1|   3|0|y|30|  OK  |
+slv : | 1.634286e-011|              | 2.713810e-013|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(563)=101324.8237269       , max(798)=101326.52645003      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.098599008473      , max(851)=14.045532359792      
+slv :         Velocity GCS (new): min(711)=9.7956311776824      , max(81)=10.334268720798      
+slv :         Temperature (new): min(499)=293.19671267835      , max(134)=293.2019577997       
+slv :         Total enthalpy, Y-shifted (new): min(350)=49.99999999723       , max(768)=49.999999997306      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.41 Mb, Memory Working Set Peak = 35.41 Mb
+
+================== Tstep=7 ===================
+slv :   MWS[nsd=0]=0.400983
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000422575
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=750) =1.24489e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.806850e-015| 1.754281e-019| 1.123713e-019|     8|  24|0|n|30|  OK  |
+slv : | 7.611613e-007|              | 6.301783e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=120) =5.9197e-011 .
+slv :                 norm_L2 of div(momentum) =3.3521833992816e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421162499    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.059832e-005| 1.987185e-009| 1.143449e-010|     1|   3|0|n|30|  OK  |
+slv : | 5.566632e-002|              | 1.508677e-004|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.098526402183      , max(81)=14.086460176392      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 4.870324e-011| 4.254912e-016| 2.362495e-016|     6|  18|0|n|30|  OK  |
+slv : | 7.312789e-005|              | 3.825225e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=671) =9.50824e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609752002956    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.786727e-025| 2.786727e-025| 2.257552e-028|     1|   3|0|y|30|  OK  |
+slv : | 1.236176e-011|              | 2.610464e-013|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(563)=101324.80550161      , max(798)=101326.32992615      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.098365254024      , max(757)=14.086397357838      
+slv :         Velocity GCS (new): min(711)=9.789646737295       , max(81)=10.39167993187       
+slv :         Temperature (new): min(81)=293.19615961856      , max(134)=293.20201750845      
+slv :         Total enthalpy, Y-shifted (new): min(214)=49.999999997231      , max(768)=49.999999997296      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.43 Mb, Memory Working Set Peak = 35.43 Mb
+
+================== Tstep=8 ===================
+slv :   MWS[nsd=0]=0.354893
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000424852
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=750) =1.12358e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.765216e-015| 1.728260e-019| 5.728121e-020|     9|  27|0|n|30|  OK  |
+slv : | 8.530753e-007|              | 4.334852e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=250) =4.49972e-011 .
+slv :                 norm_L2 of div(momentum) =2.3933494168403e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.002121942108669     .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 7.813690e-006| 1.465067e-009| 7.225858e-011|     1|   3|0|n|30|  OK  |
+slv : | 4.557413e-002|              | 1.160866e-004|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.098275158339      , max(757)=14.12397345576       
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.300376e-011| 5.400367e-016| 1.532990e-016|     6|  18|0|n|30|  OK  |
+slv : | 6.552330e-005|              | 3.084541e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=671) =9.50813e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609735310625    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.802910e-025| 1.802910e-025| 1.664789e-028|     1|   3|0|y|30|  OK  |
+slv : | 9.759383e-012|              | 2.294840e-013|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101324.77845126      , max(798)=101326.18175704      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.098121733979      , max(757)=14.123939161961      
+slv :         Velocity GCS (new): min(711)=9.7898932037298      , max(81)=10.44238848074       
+slv :         Temperature (new): min(29)=293.19565071821      , max(134)=293.20202453749      
+slv :         Total enthalpy, Y-shifted (new): min(214)=49.999999997232      , max(768)=49.999999997288      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.46 Mb, Memory Working Set Peak = 35.46 Mb
+
+================== Tstep=9 ===================
+slv :   MWS[nsd=0]=0.35017
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000424995
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=120) =9.04038e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.033628e-015| 1.271018e-019| 3.765763e-020|     9|  27|0|n|30|  OK  |
+slv : | 7.274828e-007|              | 3.508580e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=250) =3.69864e-011 .
+slv :                 norm_L2 of div(momentum) =1.940557421939e-010   .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421092898    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 5.941791e-006| 1.114086e-009| 5.005504e-011|     1|   3|0|n|30|  OK  |
+slv : | 3.958200e-002|              | 9.421998e-005|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.098030375427      , max(757)=14.156809132054      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.332988e-011| 6.379986e-016| 3.599021e-016|     5|  15|0|n|30|  OK  |
+slv : | 5.849525e-005|              | 4.669648e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=671) =9.50811e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609721282003    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.254695e-025| 1.254695e-025| 1.303847e-028|     1|   3|0|y|30|  OK  |
+slv : | 8.090954e-012|              | 2.000258e-013|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101324.63586192      , max(798)=101326.07363634      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.097903921652      , max(757)=14.156802939853      
+slv :         Velocity GCS (new): min(711)=9.7942509085412      , max(81)=10.48649564467       
+slv :         Temperature (new): min(29)=293.19520344635      , max(134)=293.20199759491      
+slv :         Total enthalpy, Y-shifted (new): min(215)=49.999999997233      , max(757)=49.999999997281      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+slv : +----------------------------------+------------+-------+------------+------------+
+slv : |          Collector name          | Total Time | Count |  Avg Time  |  Max Time  |
+slv : +----------------------------------+------------+-------+------------+------------+
+slv : | CSolver_core_update_BC_1         |       0.015|     10|       0.001|       0.002|
+slv : | Calculate_inc                    |       0.487|      9|       0.054|       0.152|
+slv : | LiSy_make_portrait               |       0.010|     41|       0.000|       0.001|
+slv : | Results_processing               |       0.046|      9|       0.005|       0.007|
+slv : | build_sl_ordering_CHT            |       0.001|     10|       0.000|       0.000|
+slv : | build_sl_ordering_MDS            |       0.002|     10|       0.000|       0.001|
+slv : | build_sl_ordering_fluid          |       0.002|     10|       0.000|       0.001|
+slv : | calc_Convolutions_MDS            |       0.012|     10|       0.001|       0.002|
+slv : | calc_DivMfWr_MDS                 |       0.003|      2|       0.002|       0.002|
+slv : | create_Gr_operators_MDS          |       0.021|     10|       0.002|       0.003|
+slv : | create_Gr_operators_portrait_MDS |       0.005|     10|       0.000|       0.001|
+slv : | init_Hy_group_MDS                |       0.013|     10|       0.001|       0.001|
+slv : | precalc_at_start_MDS             |       0.041|      4|       0.010|       0.033|
+slv : | solve_3M_MDS                     |       0.063|     10|       0.006|       0.011|
+slv : | solve_3M_alg_MDS                 |       0.013|     10|       0.001|       0.006|
+slv : | solve_BG_MDS                     |       0.143|     10|       0.014|       0.118|
+slv : | solve_BG_alg_MDS                 |       0.134|     10|       0.013|       0.117|
+slv : | solve_BL_MDS                     |       0.003|     10|       0.000|       0.000|
+slv : | solve_CHT_MDS                    |       0.152|     10|       0.015|       0.125|
+slv : | solve_CHT_alg_MDS                |       0.128|     10|       0.013|       0.123|
+slv : | solve_DvGr_MDS                   |       0.052|     10|       0.005|       0.006|
+slv : | solve_DvGr_alg_MDS               |       0.018|     10|       0.002|       0.002|
+slv : | solve_INPR_MDS                   |       0.000|      1|       0.000|       0.000|
+slv : | solve_YLMA_MDS                   |       0.000|     10|       0.000|       0.000|
+slv : | solve_YNOx_MDS                   |       0.000|     10|       0.000|       0.000|
+slv : | solve_YTd_MDS                    |       0.000|     10|       0.000|       0.000|
+slv : | solve_YTurb_MDS                  |       0.000|     10|       0.000|       0.000|
+slv : | solve_YUVGI_MDS                  |       0.000|     10|       0.000|       0.000|
+slv : | update_VelPressure_MDS           |       0.002|     10|       0.000|       0.000|
+slv : +----------------------------------+------------+-------+------------+------------+
+Memory Working Set Current = 35.46 Mb, Memory Working Set Peak = 35.46 Mb
+Iteration : time = 0.390008 , count = 5 , time/count = 0.0780016
+Calculate_inc() : time = 0.343207 , count = 5 , time/count = 0.0686414
+TreatFlowEvolution() : time = 0.046801 , count = 5 , time/count = 0.0093602
+SolverPreview : time = 0 , count = 5 , time/count = 0
+TreatGoals : time = 0.046801 , count = 5 , time/count = 0.0093602
+
+================== Tstep=10 ===================
+slv :   MWS[nsd=0]=0.350939
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000636739
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=20) =8.42864e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.818592e-015| 1.136620e-019| 9.055358e-020|     9|  27|0|n|30|  OK  |
+slv : | 7.777229e-007|              | 5.461528e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=250) =5.5745e-011 .
+slv :                 norm_L2 of div(momentum) =3.0092122157868e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421075305    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 4.591540e-006| 8.609138e-010| 2.521298e-010|     1|   3|0|n|30|  OK  |
+slv : | 3.685344e-002|              | 2.197293e-004|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.097801974118      , max(757)=14.196921061369      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.145398e-011| 1.619636e-015| 9.225335e-016|     5|  15|0|n|30|  OK  |
+slv : | 7.753954e-005|              | 7.484679e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=679) =9.50785e-005 .
+slv :                 norm_L2 of div(momentum) =0.001060967611636     .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 9.160823e-026| 9.160823e-026| 6.317343e-028|     1|   3|0|y|30|  OK  |
+slv : | 6.711093e-012|              | 4.693138e-013|      |    | | |  |      | 
+slv :     
+slv :     THERMODYNAMICS (nsd=0): Dependence H=H(p,...) enabled. Re-calculate H due to changing H=H(T,..) to H=H(p,T,..): 
+slv :         Total Enthalpy, Y-shifted, H=H(T,..):: min(536)=49.999999997236      , max(712)=49.99999999728       
+slv :         Total Enthalpy, Y-shifted, H=H(p,T,..):: min(122)=49.584952541918      , max(798)=50.782484567608      
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101324.48824649      , max(798)=101325.96480348      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.097657219102      , max(757)=14.196850422391      
+slv :         Velocity GCS (new): min(495)=9.8023298096615      , max(131)=10.539998801305      
+slv :         Temperature (new): min(29)=293.19465702275      , max(134)=293.2019231096       
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.584952541918      , max(798)=50.782484567608      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.46 Mb, Memory Working Set Peak = 35.46 Mb
+
+================== Tstep=11 ===================
+slv :   MWS[nsd=0]=0.352843
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000635256
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=122) =1.12842e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.225808e-015| 2.016130e-019| 4.367134e-020|    10|  30|0|n|30|  OK  |
+slv : | 1.127645e-006|              | 3.749752e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=140) =3.55845e-011 .
+slv :                 norm_L2 of div(momentum) =2.0897689926104e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421130261    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.158907e-006| 5.922951e-010| 1.678896e-010|     1|   3|0|n|30|  OK  |
+slv : | 3.287168e-002|              | 1.910874e-004|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.09755170686       , max(681)=14.228939427394      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.997982e-011| 1.841744e-015| 6.677099e-016|     5|  15|0|n|30|  OK  |
+slv : | 7.783187e-005|              | 6.374631e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=702) =9.50778e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609652128593    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 5.943648e-005| 3.714780e-009| 3.967736e-013|     1|   9|0|n|30|  OK  |
+slv : | 1.144903e-001|              | 7.935893e-006|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101324.35989924      , max(798)=101325.87394406      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.097492198239      , max(681)=14.228785359156      
+slv :         Velocity GCS (new): min(717)=9.802311528832       , max(131)=10.582458715125      
+slv :         Temperature (new): min(29)=293.19427980634      , max(717)=293.20190847969      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.812068623356      , max(4)=50.65967706626       
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.46 Mb, Memory Working Set Peak = 35.46 Mb
+
+================== Tstep=12 ===================
+slv :   MWS[nsd=0]=0.354437
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.00063407
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=122) =1.06705e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.769588e-015| 1.730992e-019| 1.699157e-019|     9|  27|0|n|30|  OK  |
+slv : | 1.022342e-006|              | 7.481224e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=250) =7.66469e-011 .
+slv :                 norm_L2 of div(momentum) =4.1220830588594e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421062419    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.178319e-006| 4.084348e-010| 1.166097e-010|     1|   3|0|n|30|  OK  |
+slv : | 2.923260e-002|              | 1.711859e-004|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.097397474529      , max(681)=14.254232514419      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.514345e-011| 1.571466e-015| 1.406974e-015|     4|  12|0|n|30|  OK  |
+slv : | 7.282502e-005|              | 9.003873e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=679) =9.50792e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609652141336    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.667281e-005| 1.042050e-009| 7.225574e-013|     1|   9|0|n|30|  OK  |
+slv : | 7.563001e-002|              | 1.100063e-005|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101324.26694058      , max(798)=101325.81180259      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.097373480356      , max(681)=14.254050476606      
+slv :         Velocity GCS (new): min(717)=9.8044804767761      , max(131)=10.615709790107      
+slv :         Temperature (new): min(29)=293.19398248787      , max(717)=293.20190853515      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.893789650411      , max(4)=50.593577148919      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.46 Mb, Memory Working Set Peak = 35.46 Mb
+
+================== Tstep=13 ===================
+slv :   MWS[nsd=0]=0.355706
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000633133
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=20) =8.56338e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.062556e-015| 1.914098e-019| 7.023963e-020|    10|  30|0|n|30|  OK  |
+slv : | 1.216320e-006|              | 4.757571e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=140) =4.44425e-011 .
+slv :                 norm_L2 of div(momentum) =2.6502759722528e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421138429    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.499870e-006| 2.812257e-010| 8.317748e-011|     1|   3|0|n|30|  OK  |
+slv : | 2.610067e-002|              | 1.512063e-004|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.097298901601      , max(757)=14.274108601668      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.969251e-011| 1.230782e-015| 1.050834e-015|     4|  12|0|n|30|  OK  |
+slv : | 6.978377e-005|              | 7.775466e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=679) =9.50805e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609649354145    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 8.795855e-006| 5.497409e-010| 1.128202e-012|     1|   9|0|n|30|  OK  |
+slv : | 6.454649e-002|              | 1.283007e-005|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101324.19218205      , max(798)=101325.76028194      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.097291691243      , max(757)=14.273941494203      
+slv :         Velocity GCS (new): min(717)=9.8081405712381      , max(131)=10.641517484635      
+slv :         Temperature (new): min(29)=293.19375498041      , max(717)=293.2018904204       
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.909138891366      , max(4)=50.533433992723      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.46 Mb, Memory Working Set Peak = 35.46 Mb
+
+================== Tstep=14 ===================
+slv :   MWS[nsd=0]=0.356704
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000632394
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=20) =6.68992e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.264312e-015| 1.415195e-019| 5.202347e-020|    10|  30|0|n|30|  OK  |
+slv : | 1.057779e-006|              | 4.095472e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=140) =3.80339e-011 .
+slv :                 norm_L2 of div(momentum) =2.2808654906091e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421136231    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.029921e-006| 1.931102e-010| 5.899006e-011|     1|   3|0|n|30|  OK  |
+slv : | 2.295677e-002|              | 1.313828e-004|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(360)=10.097237418055      , max(757)=14.289728436338      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.539772e-011| 9.623578e-016| 6.086723e-016|     4|  12|0|n|30|  OK  |
+slv : | 6.237565e-005|              | 5.909566e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=679) =9.50806e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609643342563    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 6.794204e-006| 4.246378e-010| 1.626598e-012|     1|   9|0|n|30|  OK  |
+slv : | 6.121573e-002|              | 1.503035e-005|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101324.1374323       , max(616)=101325.72375072      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(360)=10.097240012069      , max(757)=14.289599473294      
+slv :         Velocity GCS (new): min(717)=9.8126988187938      , max(29)=10.661415779773      
+slv :         Temperature (new): min(29)=293.19358197836      , max(717)=293.20186132817      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.896376817532      , max(4)=50.484237292923      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.46 Mb, Memory Working Set Peak = 35.46 Mb
+Iteration : time = 0.249604 , count = 5 , time/count = 0.0499208
+Calculate_inc() : time = 0.249604 , count = 5 , time/count = 0.0499208
+TreatFlowEvolution() : time = 0 , count = 5 , time/count = 0
+SolverPreview : time = 0 , count = 5 , time/count = 0
+TreatGoals : time = 0 , count = 5 , time/count = 0
+
+================== Tstep=15 ===================
+slv :   MWS[nsd=0]=0.357488
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000947712
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=134) =7.64935e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.544518e-015| 9.653238e-020| 2.965953e-020|    10|  30|0|n|30|  OK  |
+slv : | 8.488651e-007|              | 3.094515e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=140) =2.85501e-011 .
+slv :                 norm_L2 of div(momentum) =1.7221941131796e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421131133    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 7.057449e-007| 1.323272e-010| 4.107023e-013|     2|   6|0|n|30|  OK  |
+slv : | 2.003394e-002|              | 1.125345e-005|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(361)=10.097053196744      , max(757)=14.306706955497      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.163006e-011| 1.351879e-015| 1.196061e-015|     4|  12|0|n|30|  OK  |
+slv : | 7.560687e-005|              | 8.291805e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=679) =9.50802e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609585273593    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 6.245707e-006| 3.903567e-010| 8.571861e-011|     1|   9|0|n|30|  OK  |
+slv : | 5.890406e-002|              | 1.337108e-004|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101324.08884673      , max(616)=101325.69338368      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(361)=10.096857015689      , max(757)=14.306519535177      
+slv :         Velocity GCS (new): min(717)=9.8199440825941      , max(29)=10.682134447724      
+slv :         Temperature (new): min(29)=293.19339999378      , max(717)=293.20181353761      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.863179175845      , max(4)=50.431802413703      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.46 Mb, Memory Working Set Peak = 35.46 Mb
+
+================== Tstep=16 ===================
+slv :   MWS[nsd=0]=0.358347
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000946752
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=134) =9.89996e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.540995e-015| 1.588122e-019| 5.914161e-020|    10|  30|0|n|30|  OK  |
+slv : | 1.136689e-006|              | 4.375707e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=110) =4.0227e-011 .
+slv :                 norm_L2 of div(momentum) =2.4319047565698e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421143318    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 4.039399e-007| 7.573873e-011| 2.029970e-013|     2|   6|0|n|30|  OK  |
+slv : | 1.612757e-002|              | 8.317519e-006|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(361)=10.096585575856      , max(757)=14.318806420045      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.474324e-011| 1.546453e-015| 9.230813e-016|     4|  12|0|n|30|  OK  |
+slv : | 8.185338e-005|              | 7.237648e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=679) =9.50816e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609585663275    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 5.127330e-006| 3.204581e-010| 7.237091e-011|     1|   9|0|n|30|  OK  |
+slv : | 5.549396e-002|              | 1.276161e-004|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101324.04891201      , max(616)=101325.66734769      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(361)=10.096514931212      , max(757)=14.318592604091      
+slv :         Velocity GCS (new): min(717)=9.8265239426153      , max(29)=10.696131271117      
+slv :         Temperature (new): min(29)=293.19327011472      , max(717)=293.20177428657      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.828851132811      , max(4)=50.39316935653       
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.52 Mb, Memory Working Set Peak = 36.22 Mb
+
+================== Tstep=17 ===================
+slv :   MWS[nsd=0]=0.358961
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000946056
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =1.08496e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.574058e-015| 1.608786e-019| 4.206539e-020|    10|  30|0|n|30|  OK  |
+slv : | 1.109841e-006|              | 3.693307e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=238) =3.55118e-011 .
+slv :                 norm_L2 of div(momentum) =2.0509848354493e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421145235    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.344723e-007| 4.396355e-011| 1.481036e-013|     2|   6|0|n|30|  OK  |
+slv : | 1.263664e-002|              | 7.120188e-006|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(361)=10.096245191248      , max(757)=14.327485792061      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.162571e-011| 1.351607e-015| 5.024843e-016|     4|  12|0|n|30|  OK  |
+slv : | 7.958935e-005|              | 5.323456e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=679) =9.50829e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609611852015    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 4.178315e-006| 2.611447e-010| 7.063275e-011|     1|   9|0|n|30|  OK  |
+slv : | 5.097602e-002|              | 1.256507e-004|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101324.0216026       , max(616)=101325.64812342      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(361)=10.096288419616      , max(757)=14.327299189715      
+slv :         Velocity GCS (new): min(515)=9.8294185099628      , max(29)=10.70556334933       
+slv :         Temperature (new): min(29)=293.19316726407      , max(176)=293.20175116513      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.799316100274      , max(4)=50.36468498516       
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.57 Mb, Memory Working Set Peak = 36.23 Mb
+
+================== Tstep=18 ===================
+slv :   MWS[nsd=0]=0.359403
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000945542
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =1.01474e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.012958e-015| 1.258099e-019| 1.075752e-019|     9|  27|0|n|30|  OK  |
+slv : | 9.438055e-007|              | 5.996090e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=264) =6.02842e-011 .
+slv :                 norm_L2 of div(momentum) =3.2798653216228e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421058419    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.412964e-007| 2.649307e-011| 9.986027e-014|     2|   6|0|n|30|  OK  |
+slv : | 1.022649e-002|              | 5.954767e-006|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(361)=10.096084372147      , max(757)=14.33381261424       
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.446697e-011| 9.041854e-016| 2.451297e-016|     4|  12|0|n|30|  OK  |
+slv : | 7.117322e-005|              | 3.724255e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=679) =9.508e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609635747719    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.364877e-006| 2.103048e-010| 7.647530e-011|     1|   9|0|n|30|  OK  |
+slv : | 4.678527e-002|              | 1.256345e-004|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101324.00393998      , max(616)=101325.63367386      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(368)=10.095992727237      , max(757)=14.333693013265      
+slv :         Velocity GCS (new): min(515)=9.8259385618954      , max(29)=10.71190416464       
+slv :         Temperature (new): min(29)=293.19307787218      , max(176)=293.20179126401      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.776152694124      , max(4)=50.343887316096      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.57 Mb, Memory Working Set Peak = 36.28 Mb
+
+================== Tstep=19 ===================
+slv :   MWS[nsd=0]=0.359732
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.000945148
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=525) =6.59114e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.344281e-015| 8.401759e-020| 4.225088e-020|     9|  27|0|n|30|  OK  |
+slv : | 7.384300e-007|              | 3.747097e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=264) =3.79102e-011 .
+slv :                 norm_L2 of div(momentum) =2.0555019371873e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421068435    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 8.850596e-008| 1.659487e-011| 5.688690e-014|     2|   6|0|n|30|  OK  |
+slv : | 8.576706e-003|              | 4.583594e-006|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(368)=10.095731093699      , max(757)=14.338459062446      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.209855e-011| 7.561592e-016| 7.049040e-016|     3|   9|0|n|30|  OK  |
+slv : | 6.672719e-005|              | 6.150371e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=679) =9.50786e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609646781199    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.760350e-006| 1.725219e-010| 8.204548e-011|     1|   9|0|n|30|  OK  |
+slv : | 4.264656e-002|              | 1.277407e-004|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101323.99375602      , max(616)=101325.62339166      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(368)=10.09566172465       , max(757)=14.338363307561      
+slv :         Velocity GCS (new): min(515)=9.8244913807212      , max(29)=10.716197643675      
+slv :         Temperature (new): min(29)=293.19299812792      , max(177)=293.20180964227      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.759258654965      , max(4)=50.329118169552      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+slv : +----------------------------------+------------+-------+------------+------------+
+slv : |          Collector name          | Total Time | Count |  Avg Time  |  Max Time  |
+slv : +----------------------------------+------------+-------+------------+------------+
+slv : | CSolver_core_update_BC_1         |       0.029|     20|       0.001|       0.002|
+slv : | Calculate_inc                    |       0.991|     19|       0.052|       0.152|
+slv : | LiSy_make_portrait               |       0.017|     71|       0.000|       0.001|
+slv : | Results_processing               |       0.091|     19|       0.005|       0.007|
+slv : | build_sl_ordering_CHT            |       0.001|     20|       0.000|       0.000|
+slv : | build_sl_ordering_MDS            |       0.002|     20|       0.000|       0.001|
+slv : | build_sl_ordering_fluid          |       0.002|     20|       0.000|       0.001|
+slv : | calc_Convolutions_MDS            |       0.024|     20|       0.001|       0.002|
+slv : | calc_DivMfWr_MDS                 |       0.003|      2|       0.002|       0.002|
+slv : | create_Gr_operators_MDS          |       0.041|     20|       0.002|       0.003|
+slv : | create_Gr_operators_portrait_MDS |       0.009|     20|       0.000|       0.001|
+slv : | init_Hy_group_MDS                |       0.025|     20|       0.001|       0.001|
+slv : | precalc_at_start_MDS             |       0.041|      4|       0.010|       0.033|
+slv : | solve_3M_MDS                     |       0.137|     20|       0.007|       0.011|
+slv : | solve_3M_alg_MDS                 |       0.039|     20|       0.002|       0.007|
+slv : | solve_BG_MDS                     |       0.171|     20|       0.009|       0.118|
+slv : | solve_BG_alg_MDS                 |       0.153|     20|       0.008|       0.117|
+slv : | solve_BL_MDS                     |       0.005|     20|       0.000|       0.000|
+slv : | solve_CHT_MDS                    |       0.178|     20|       0.009|       0.125|
+slv : | solve_CHT_alg_MDS                |       0.134|     20|       0.007|       0.123|
+slv : | solve_DvGr_MDS                   |       0.099|     20|       0.005|       0.006|
+slv : | solve_DvGr_alg_MDS               |       0.032|     20|       0.002|       0.002|
+slv : | solve_INPR_MDS                   |       0.000|      1|       0.000|       0.000|
+slv : | solve_YLMA_MDS                   |       0.000|     20|       0.000|       0.000|
+slv : | solve_YNOx_MDS                   |       0.000|     20|       0.000|       0.000|
+slv : | solve_YTd_MDS                    |       0.000|     20|       0.000|       0.000|
+slv : | solve_YTurb_MDS                  |       0.000|     20|       0.000|       0.000|
+slv : | solve_YUVGI_MDS                  |       0.000|     20|       0.000|       0.000|
+slv : | update_VelPressure_MDS           |       0.003|     20|       0.000|       0.000|
+slv : +----------------------------------+------------+-------+------------+------------+
+Memory Working Set Current = 35.57 Mb, Memory Working Set Peak = 36.28 Mb
+Iteration : time = 0.187204 , count = 5 , time/count = 0.0374408
+Calculate_inc() : time = 0.171604 , count = 5 , time/count = 0.0343208
+TreatFlowEvolution() : time = 0.0156 , count = 5 , time/count = 0.00312
+SolverPreview : time = 0 , count = 5 , time/count = 0
+TreatGoals : time = 0.0156 , count = 5 , time/count = 0.00312
+
+================== Tstep=20 ===================
+slv :   MWS[nsd=0]=0.359976
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.00141728
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=525) =8.02604e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.759940e-015| 1.099962e-019| 6.294199e-020|     9|  27|0|n|30|  OK  |
+slv : | 8.905458e-007|              | 4.562788e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=264) =4.63814e-011 .
+slv :                 norm_L2 of div(momentum) =2.508824142019e-010   .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421063658    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 5.768136e-008| 1.081525e-011| 2.959047e-013|     2|   6|0|n|30|  OK  |
+slv : | 7.004276e-003|              | 1.108045e-005|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(368)=10.095348479642      , max(757)=14.343073230976      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.400690e-011| 8.754310e-016| 3.351193e-016|     4|  12|0|n|30|  OK  |
+slv : | 7.442207e-005|              | 4.397846e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =9.50784e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609634262295    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.293512e-006| 1.433445e-010| 2.145419e-014|     2|  18|0|n|30|  OK  |
+slv : | 3.884442e-002|              | 1.863395e-006|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101323.9848627       , max(616)=101325.61380549      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(368)=10.095321038784      , max(757)=14.342951133988      
+slv :         Velocity GCS (new): min(515)=9.8251625330309      , max(29)=10.720049639539      
+slv :         Temperature (new): min(29)=293.19290388346      , max(177)=293.2017963896       
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.743539662583      , max(4)=50.315170627938      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.66 Mb, Memory Working Set Peak = 36.28 Mb
+
+================== Tstep=21 ===================
+slv :   MWS[nsd=0]=0.360216
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.00141684
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=525) =1.1792e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.902185e-015| 1.188866e-019| 4.103075e-020|     9|  27|0|n|30|  OK  |
+slv : | 8.273211e-007|              | 3.653140e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=270) =3.81954e-011 .
+slv :                 norm_L2 of div(momentum) =2.0256048305825e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421063552    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.374960e-008| 6.328050e-012| 1.278003e-013|     2|   6|0|n|30|  OK  |
+slv : | 5.401324e-003|              | 7.091878e-006|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(369)=10.094982269967      , max(757)=14.346045040144      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.339144e-011| 8.369651e-016| 2.053945e-016|     4|  12|0|n|30|  OK  |
+slv : | 7.224455e-005|              | 3.393056e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =9.50789e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609644860419    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.743113e-006| 1.089445e-010| 1.718878e-014|     2|  18|0|n|30|  OK  |
+slv : | 3.319900e-002|              | 1.546858e-006|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101323.98038429      , max(798)=101325.60810853      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(369)=10.094894826664      , max(757)=14.34592441557       
+slv :         Velocity GCS (new): min(515)=9.8273205411567      , max(29)=10.722293852744      
+slv :         Temperature (new): min(29)=293.19283224286      , max(847)=293.20180080364      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.734215338709      , max(4)=50.306893029168      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.67 Mb, Memory Working Set Peak = 36.35 Mb
+
+================== Tstep=22 ===================
+slv :   MWS[nsd=0]=0.360379
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.00141654
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=499) =1.39668e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.000678e-015| 1.250424e-019| 8.390319e-020|     8|  24|0|n|30|  OK  |
+slv : | 7.551131e-007|              | 5.323352e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=233) =5.15743e-011 .
+slv :                 norm_L2 of div(momentum) =2.8966048115548e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421173703    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.090754e-008| 3.920165e-012| 1.291986e-013|     2|   6|0|n|30|  OK  |
+slv : | 4.306968e-003|              | 6.860346e-006|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(369)=10.09459944184       , max(757)=14.347976866546      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.116624e-011| 6.978900e-016| 1.226917e-016|     4|  12|0|n|30|  OK  |
+slv : | 6.628752e-005|              | 2.669245e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =9.5079e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609666906869    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.358936e-006| 8.493351e-011| 1.165103e-014|     2|  18|0|n|30|  OK  |
+slv : | 2.860915e-002|              | 1.215885e-006|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101323.9791389       , max(798)=101325.60779847      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(369)=10.094603885137      , max(757)=14.347869141233      
+slv :         Velocity GCS (new): min(515)=9.8299522651929      , max(29)=10.723617098277      
+slv :         Temperature (new): min(29)=293.19278300266      , max(847)=293.20183672454      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.729219746158      , max(4)=50.302619560436      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.66 Mb, Memory Working Set Peak = 36.35 Mb
+
+================== Tstep=23 ===================
+slv :   MWS[nsd=0]=0.360486
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.00141634
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=499) =1.31736e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.647858e-015| 1.029911e-019| 4.966507e-020|     8|  24|0|n|30|  OK  |
+slv : | 6.645442e-007|              | 3.461746e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=233) =5.48277e-011 .
+slv :                 norm_L2 of div(momentum) =2.2285661107094e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=679) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421125633    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.323631e-008| 2.481808e-012| 1.442411e-013|     2|   6|0|n|30|  OK  |
+slv : | 3.499621e-003|              | 6.642368e-006|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(369)=10.09439522307       , max(757)=14.349237751524      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 8.641480e-012| 5.400925e-016| 4.487978e-016|     3|   9|0|n|30|  OK  |
+slv : | 5.968611e-005|              | 4.910260e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =9.50779e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609673150217    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.071153e-006| 6.694709e-011| 8.365886e-015|     2|  18|0|n|30|  OK  |
+slv : | 2.463248e-002|              | 9.462263e-007|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101323.97937316      , max(798)=101325.60836393      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(424)=10.09438456438       , max(757)=14.349150434707      
+slv :         Velocity GCS (new): min(737)=9.8312773455237      , max(29)=10.724399086737      
+slv :         Temperature (new): min(29)=293.19275243144      , max(847)=293.20184616193      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.726848939146      , max(4)=50.300701704558      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.67 Mb, Memory Working Set Peak = 36.36 Mb
+
+================== Tstep=24 ===================
+slv :   MWS[nsd=0]=0.360558
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.00141621
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=499) =1.05272e-008 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.435951e-015| 8.974695e-020| 7.281062e-020|     8|  24|0|n|30|  OK  |
+slv : | 7.330582e-007|              | 4.754750e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=2) =5.70722e-011 .
+slv :                 norm_L2 of div(momentum) =2.6983442968003e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=703) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421066614    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 8.331759e-009| 1.562205e-012| 1.407008e-013|     2|   6|0|n|30|  OK  |
+slv : | 2.869411e-003|              | 6.332979e-006|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(424)=10.094202767548      , max(757)=14.350082900691      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 6.123129e-012| 3.826955e-016| 2.776213e-016|     3|   9|0|n|30|  OK  |
+slv : | 5.099378e-005|              | 3.919780e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =9.50779e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609691696854    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 8.507132e-007| 5.316957e-011| 4.440346e-015|     2|  18|0|n|30|  OK  |
+slv : | 2.100822e-002|              | 6.471641e-007|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101323.97976359      , max(798)=101325.60867465      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(424)=10.094185192987      , max(757)=14.350006913731      
+slv :         Velocity GCS (new): min(737)=9.8309521332818      , max(29)=10.724863458024      
+slv :         Temperature (new): min(29)=293.19273283944      , max(847)=293.20183718491      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.725761830116      , max(4)=50.299848977079      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.66 Mb, Memory Working Set Peak = 36.36 Mb
+Iteration : time = 0.202804 , count = 5 , time/count = 0.0405608
+Calculate_inc() : time = 0.156004 , count = 5 , time/count = 0.0312008
+TreatFlowEvolution() : time = 0.0468 , count = 5 , time/count = 0.00936
+SolverPreview : time = 0 , count = 5 , time/count = 0
+TreatGoals : time = 0.0468 , count = 5 , time/count = 0.00936
+
+================== Tstep=25 ===================
+slv :   MWS[nsd=0]=0.360607
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.00212418
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=499) =6.95321e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 8.030870e-016| 5.019294e-020| 3.121365e-020|     8|  24|0|n|30|  OK  |
+slv : | 5.741599e-007|              | 3.104696e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=2) =3.82507e-011 .
+slv :                 norm_L2 of div(momentum) =1.7667384254763e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=703) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421085349    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 5.300436e-009| 9.938317e-013| 6.411529e-013|     2|   6|0|n|30|  OK  |
+slv : | 2.286746e-003|              | 1.321619e-005|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(424)=10.094014646192      , max(757)=14.350832552579      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 5.636275e-012| 3.522672e-016| 2.203409e-016|     3|   9|0|n|30|  OK  |
+slv : | 4.884596e-005|              | 3.367376e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=702) =9.50783e-005 .
+slv :                 norm_L2 of div(momentum) =0.001060970713033     .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 6.455300e-007| 4.034562e-011| 9.004859e-014|     2|  18|0|n|30|  OK  |
+slv : | 1.770955e-002|              | 3.145761e-006|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101323.97973737      , max(798)=101325.60846491      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(424)=10.094034497775      , max(757)=14.350762671833      
+slv :         Velocity GCS (new): min(847)=9.8316468498289      , max(29)=10.725230487487      
+slv :         Temperature (new): min(29)=293.19271730305      , max(847)=293.20180067094      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.725049274827      , max(4)=50.299254762357      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.66 Mb, Memory Working Set Peak = 36.38 Mb
+
+================== Tstep=26 ===================
+slv :   MWS[nsd=0]=0.36065
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.00212405
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=499) =3.81833e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 5.382180e-016| 3.363863e-020| 1.587306e-020|     8|  24|0|n|30|  OK  |
+slv : | 5.063191e-007|              | 2.423331e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=50) =2.56624e-011 .
+slv :                 norm_L2 of div(momentum) =1.2598834981969e-010  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=710) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421117578    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.077153e-009| 5.769661e-013| 3.363210e-014|     3|   9|0|n|30|  OK  |
+slv : | 1.726006e-003|              | 2.318880e-006|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(424)=10.093916267734      , max(757)=14.351284375453      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 4.925417e-012| 3.078386e-016| 1.533317e-016|     3|   9|0|n|30|  OK  |
+slv : | 4.487193e-005|              | 2.757630e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=702) =9.5079e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609722097205    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.822909e-007| 2.389318e-011| 2.842301e-014|     2|  18|0|n|30|  OK  |
+slv : | 1.273496e-002|              | 1.608825e-006|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101323.97941646      , max(798)=101325.60795315      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(425)=10.093956681886      , max(757)=14.351222741728      
+slv :         Velocity GCS (new): min(847)=9.8328272996577      , max(29)=10.725418147338      
+slv :         Temperature (new): min(29)=293.19270983212      , max(847)=293.20175974869      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.724518536867      , max(4)=50.298741656885      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.66 Mb, Memory Working Set Peak = 36.38 Mb
+
+================== Tstep=27 ===================
+slv :   MWS[nsd=0]=0.360676
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.00212398
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=691) =2.57206e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.723341e-016| 2.327088e-020| 5.229956e-021|     9|  27|0|n|30|  OK  |
+slv : | 4.327342e-007|              | 1.351681e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=141) =1.23643e-011 .
+slv :                 norm_L2 of div(momentum) =7.2318433659548e-011  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421097684    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.903472e-009| 3.569009e-013| 2.763865e-014|     3|   9|0|n|30|  OK  |
+slv : | 1.338671e-003|              | 2.090023e-006|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(424)=10.093893526389      , max(757)=14.351563219337      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 4.076159e-012| 2.547599e-016| 7.483356e-017|     3|   9|0|n|30|  OK  |
+slv : | 3.972712e-005|              | 1.985351e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=702) =9.50792e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609727901714    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.025746e-007| 1.266091e-011| 7.284284e-015|     2|  18|0|n|30|  OK  |
+slv : | 8.666966e-003|              | 7.677689e-007|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101323.97906335      , max(798)=101325.60738326      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(425)=10.093894768843      , max(757)=14.351511394548      
+slv :         Velocity GCS (new): min(847)=9.8339678078241      , max(29)=10.725510262272      
+slv :         Temperature (new): min(29)=293.19270626366      , max(847)=293.20172450063      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.724023249986      , max(4)=50.298223117983      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.67 Mb, Memory Working Set Peak = 36.38 Mb
+
+================== Tstep=28 ===================
+slv :   MWS[nsd=0]=0.360692
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.00212393
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=120) =2.19949e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.892311e-016| 1.807694e-020| 4.586533e-021|     9|  27|0|n|30|  OK  |
+slv : | 3.677141e-007|              | 1.243905e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=140) =1.21943e-011 .
+slv :                 norm_L2 of div(momentum) =6.7723949233679e-011  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421094832    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.238530e-009| 2.322243e-013| 2.010362e-014|     3|   9|0|n|30|  OK  |
+slv : | 1.059686e-003|              | 1.767308e-006|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(425)=10.093856545938      , max(757)=14.351737072665      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.416359e-012| 2.135224e-016| 3.616616e-017|     3|   9|0|n|30|  OK  |
+slv : | 3.514258e-005|              | 1.363750e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=702) =9.50793e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609726300712    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 9.496848e-008| 5.935530e-012| 1.994858e-015|     2|  18|0|n|30|  OK  |
+slv : | 5.556370e-003|              | 3.664609e-007|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101323.97878418      , max(798)=101325.60686094      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(425)=10.093868254175      , max(757)=14.351695396667      
+slv :         Velocity GCS (new): min(717)=9.834849147299       , max(29)=10.725549775813      
+slv :         Temperature (new): min(29)=293.19270466563      , max(847)=293.20169809317      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.723570932719      , max(4)=50.297732213464      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+Memory Working Set Current = 35.66 Mb, Memory Working Set Peak = 36.38 Mb
+
+================== Tstep=29 ===================
+slv :   MWS[nsd=0]=0.360702
+slv : dt: nsd = 0 min dt/dtG(nCV=0)=1.00 , max dt/dtG(nCV=0)=1.0    , dtG=0.0021239
+slv : ROTATION: weight_WR[nsd=0]= 1
+slv : SOLVE BACKGROUND (ff_view=0)
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=499) =2.71643e-009 .
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.561842e-016| 1.601152e-020| 3.209970e-021|     9|  27|0|n|30|  OK  |
+slv : | 3.176688e-007|              | 1.019091e-009|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=140) =1.06833e-011 .
+slv :                 norm_L2 of div(momentum) =5.6656596708802e-011  .
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+slvD: Conv_fw[] is skipped for 269 w-faces
+slv : ***** boundary layer calculation in subdom 0 *****
+slv :  real faces number = 0
+slv : LOG nsd = 0: numb_of_convergent=0, numb_of_divergent=0
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=678) =0.000190156 .
+slv :                 norm_L2 of div(momentum) =0.0021219421094822    .
+slv : nsd = 0 BC: AP Inlet occurs on 0 w-faces
+slv : SOLVE 3M (ff_view=0):
+slv : Algebraic view 0
+slvD: LOG: number of a-faces with weighted approximations in 0 subdomain: 0 percent
+slvD: LOG: Rate of a-faces corrected to CUp1st in 0 subdomain: 0 %
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 8.100742e-010| 1.518889e-013| 1.274892e-014|     3|   9|0|n|30|  OK  |
+slv : | 8.484474e-004|              | 1.414718e-006|      |    | | |  |      | 
+slv : Velocity (predicted):
+slv :         (FIS) sd 0: min(425)=10.093847386868      , max(757)=14.351846726888      
+slv : SOLVE DvGr (ff_view=0)
+slv : Flow alg-view 0 is not Neumann (not for Phase Change + Nested Iters)
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 2.731069e-012| 1.706918e-016| 2.512348e-017|     3|   9|0|n|30|  OK  |
+slv : | 3.067986e-005|              | 1.050689e-007|      |    | | |  |      | 
+slv : Calculation_Mf nsd = 0: maximum value of div(momentum) (ncv=702) =9.50794e-005 .
+slv :                 norm_L2 of div(momentum) =0.0010609721561191    .
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 3.977572e-008| 2.485982e-012| 5.022348e-016|     2|  18|0|n|30|  OK  |
+slv : | 3.475643e-003|              | 1.836014e-007|      |    | | |  |      | 
+slv :     Fluid subdom(new) 0
+slv :         P static (new): min(122)=101323.97858249      , max(798)=101325.60640093      
+slv :         Density (new): min(0)=1.233                , max(0)=1.233                
+slv :         Velocity (new): min(425)=10.093860183144      , max(757)=14.351815339933      
+slv :         Velocity GCS (new): min(717)=9.8350705129399      , max(29)=10.725562195058      
+slv :         Temperature (new): min(29)=293.19270406867      , max(717)=293.20168110658      
+slv :         Total enthalpy, Y-shifted (new): min(122)=49.723172692826      , max(4)=50.297292187851      
+slv :         MASS FLUXES AT OPENINGS: MF=-0.167286, AP=0.167286
+slv : DvGr statistics: min alpha=0.928287(nfa=2119, geom_slice=0)
+slv : +----------------------------------+------------+-------+------------+------------+
+slv : |          Collector name          | Total Time | Count |  Avg Time  |  Max Time  |
+slv : +----------------------------------+------------+-------+------------+------------+
+slv : | CSolver_core_update_BC_1         |       0.044|     30|       0.001|       0.002|
+slv : | Calculate_inc                    |       1.329|     29|       0.046|       0.152|
+slv : | LiSy_make_portrait               |       0.025|    101|       0.000|       0.001|
+slv : | Results_processing               |       0.137|     29|       0.005|       0.007|
+slv : | build_sl_ordering_CHT            |       0.001|     30|       0.000|       0.000|
+slv : | build_sl_ordering_MDS            |       0.003|     30|       0.000|       0.001|
+slv : | build_sl_ordering_fluid          |       0.002|     30|       0.000|       0.001|
+slv : | calc_Convolutions_MDS            |       0.035|     30|       0.001|       0.002|
+slv : | calc_DivMfWr_MDS                 |       0.003|      2|       0.002|       0.002|
+slv : | create_Gr_operators_MDS          |       0.060|     30|       0.002|       0.003|
+slv : | create_Gr_operators_portrait_MDS |       0.014|     30|       0.000|       0.001|
+slv : | init_Hy_group_MDS                |       0.039|     30|       0.001|       0.002|
+slv : | precalc_at_start_MDS             |       0.041|      4|       0.010|       0.033|
+slv : | solve_3M_MDS                     |       0.237|     30|       0.008|       0.011|
+slv : | solve_3M_alg_MDS                 |       0.092|     30|       0.003|       0.007|
+slv : | solve_BG_MDS                     |       0.198|     30|       0.007|       0.118|
+slv : | solve_BG_alg_MDS                 |       0.170|     30|       0.006|       0.117|
+slv : | solve_BL_MDS                     |       0.012|     30|       0.000|       0.004|
+slv : | solve_CHT_MDS                    |       0.215|     30|       0.007|       0.125|
+slv : | solve_CHT_alg_MDS                |       0.149|     30|       0.005|       0.123|
+slv : | solve_DvGr_MDS                   |       0.149|     30|       0.005|       0.006|
+slv : | solve_DvGr_alg_MDS               |       0.046|     30|       0.002|       0.002|
+slv : | solve_INPR_MDS                   |       0.000|      1|       0.000|       0.000|
+slv : | solve_YLMA_MDS                   |       0.000|     30|       0.000|       0.000|
+slv : | solve_YNOx_MDS                   |       0.000|     30|       0.000|       0.000|
+slv : | solve_YTd_MDS                    |       0.000|     30|       0.000|       0.000|
+slv : | solve_YTurb_MDS                  |       0.000|     30|       0.000|       0.000|
+slv : | solve_YUVGI_MDS                  |       0.000|     30|       0.000|       0.000|
+slv : | update_VelPressure_MDS           |       0.005|     30|       0.000|       0.000|
+slv : +----------------------------------+------------+-------+------------+------------+
+Memory Working Set Current = 35.67 Mb, Memory Working Set Peak = 36.38 Mb
+/************Goal values******************/
+GG Max Velocity 1				10.7313612 m/s
+GG Max Velocity RRF 1				14.3518153 m/s
+/************End of Goal values******************/
+/************	Min/Max Parameters	************/
+Density (Fluid):		min = 1.233 kg/m^3		max = 1.233 kg/m^3
+Pressure:		min = 101323.979 Pa		max = 101325.606 Pa
+Temperature (Fluid):		min = 293.192704 K		max = 293.201681 K
+Velocity:		min = 9.83507051 m/s		max = 10.7313612 m/s
+Velocity (X):		min = 9.83507051 m/s		max = 10.7255314 m/s
+Velocity (Y):		min = -1.00384132 m/s		max = 1.00251284 m/s
+Velocity (Z):		min = -1.00005506 m/s		max = 1.00331771 m/s
+Velocity RRF:		min = 10.0938602 m/s		max = 14.3518153 m/s
+Velocity RRF (X):		min = 9.83507051 m/s		max = 10.7255314 m/s
+Velocity RRF (Y):		min = -8.89366366 m/s		max = 8.89302916 m/s
+Velocity RRF (Z):		min = -8.89313301 m/s		max = 8.89206902 m/s
+/************	End of Min/Max Parameters	************/
+Solver finished at	3.11.2016	12:25:6
+ENDING PROGRAM...
+Estimated fld size=0.20 Mb
+Writing fld file "13-ROTATED_FLOWS\00044-RRF-u_x_const_in_tube\ft_run\1\1.fld"...
+FILE SAVED: 1.fld. Total save fld took 0.02 sec.
+real fld size=0.17 Mb
+FILE RENAMED: r_000000.cfld -> 1.cfld
+OK
+Depository creating ...
+stream_line (0.000 s)
+FS triangles count 624 
+wall_triangles (0.012 s)
+nb_bricks (0.005 s)
+Face_aver_on (0.001 s)
+size of cv_intrp_f = 0.09 Mb
+size of cv_intrp_s = 0.01 Mb
+size of cv_intrp_fw = 0.08 Mb
+size of cv_intrp_sw = 0.03 Mb
+CCVInterp_DepEntry::Calculate duration = 0.031 s
+cv_interp (0.033 s)
+favorite_params (0.017 s)
+Face_aver_off (0.000 s)
+Depository creating ...OK (0.069 s)
+Solver finished at	3.11.2016	12:25:6
+Total CPU time 2 s
+Free memory:
+slv : +----------------------------------+------------+-------+------------+------------+
+slv : |          Collector name          | Total Time | Count |  Avg Time  |  Max Time  |
+slv : +----------------------------------+------------+-------+------------+------------+
+slv : | CSolver_core_update_BC_1         |       0.044|     30|       0.001|       0.002|
+slv : | Calculate_inc                    |       1.367|     30|       0.046|       0.152|
+slv : | LiSy_make_portrait               |       0.025|    101|       0.000|       0.001|
+slv : | Results_processing               |       0.141|     30|       0.005|       0.007|
+slv : | build_sl_ordering_CHT            |       0.001|     30|       0.000|       0.000|
+slv : | build_sl_ordering_MDS            |       0.003|     30|       0.000|       0.001|
+slv : | build_sl_ordering_fluid          |       0.002|     30|       0.000|       0.001|
+slv : | calc_Convolutions_MDS            |       0.035|     30|       0.001|       0.002|
+slv : | calc_DivMfWr_MDS                 |       0.003|      2|       0.002|       0.002|
+slv : | create_Gr_operators_MDS          |       0.060|     30|       0.002|       0.003|
+slv : | create_Gr_operators_portrait_MDS |       0.014|     30|       0.000|       0.001|
+slv : | init_Hy_group_MDS                |       0.039|     30|       0.001|       0.002|
+slv : | precalc_at_start_MDS             |       0.041|      4|       0.010|       0.033|
+slv : | solve_3M_MDS                     |       0.237|     30|       0.008|       0.011|
+slv : | solve_3M_alg_MDS                 |       0.092|     30|       0.003|       0.007|
+slv : | solve_BG_MDS                     |       0.198|     30|       0.007|       0.118|
+slv : | solve_BG_alg_MDS                 |       0.170|     30|       0.006|       0.117|
+slv : | solve_BL_MDS                     |       0.012|     30|       0.000|       0.004|
+slv : | solve_CHT_MDS                    |       0.215|     30|       0.007|       0.125|
+slv : | solve_CHT_alg_MDS                |       0.149|     30|       0.005|       0.123|
+slv : | solve_DvGr_MDS                   |       0.149|     30|       0.005|       0.006|
+slv : | solve_DvGr_alg_MDS               |       0.046|     30|       0.002|       0.002|
+slv : | solve_INPR_MDS                   |       0.000|      1|       0.000|       0.000|
+slv : | solve_YLMA_MDS                   |       0.000|     30|       0.000|       0.000|
+slv : | solve_YNOx_MDS                   |       0.000|     30|       0.000|       0.000|
+slv : | solve_YTd_MDS                    |       0.000|     30|       0.000|       0.000|
+slv : | solve_YTurb_MDS                  |       0.000|     30|       0.000|       0.000|
+slv : | solve_YUVGI_MDS                  |       0.000|     30|       0.000|       0.000|
+slv : | update_VelPressure_MDS           |       0.005|     30|       0.000|       0.000|
+slv : +----------------------------------+------------+-------+------------+------------+
+alg : 
+alg :  size = 880
+alg :  assembling_nnz_PardisoCholesky   0.001  30
+alg :  build_coarse_select_omega        0.000  30
+alg :  build_fine_select_omega          0.000  30
+alg :  build_select_pivot_nonzeros      0.002  30
+alg :  build_select_vectors             0.000  30
+alg :  calc_residual_LU                 0.005  131
+alg :  call_MG_solver                   0.038  30
+alg :  clean_coarse_levels              0.000  30
+alg :  clean_fine_level                 0.000  30
+alg :  init_RB_coarse_nonzeros          0.000  30
+alg :  init_RB_fine_nonzeros            0.000  30
+alg :  init_coarse_levels               0.008  30
+alg :  init_fine_level                  0.003  30
+alg :  mg_cycle                         0.033  30
+alg :  numerical_PardisoCholesky        0.004  30
+alg :  perform_prolongation             0.001  101
+alg :  perform_restriction              0.001  101
+alg :  run_smoothing                    0.017  131
+alg :  smoother_fine                    0.011  393
+alg :  solve_MG                         0.042  30
+alg :  solve_PardisoCholesky            0.005  101
+alg :  symbolic_PardisoCholesky         0.000  1
+alg :  update_mg_status                 0.001  232
+alg : 
+alg :  size = 880
+alg :  assembling_nnz_PardisoCholesky   0.001  30
+alg :  build_coarse_select_omega        0.000  30
+alg :  build_fine_select_omega          0.000  30
+alg :  build_select_pivot_nonzeros      0.001  30
+alg :  build_select_vectors             0.000  30
+alg :  calc_residual_LU                 0.006  267
+alg :  call_MG_solver                   0.165  30
+alg :  clean_coarse_levels              0.000  30
+alg :  clean_fine_level                 0.000  30
+alg :  init_RB_coarse_nonzeros          0.000  30
+alg :  init_RB_fine_nonzeros            0.000  30
+alg :  init_coarse_levels               0.122  30
+alg :  init_fine_level                  0.002  30
+alg :  mg_cycle                         0.160  30
+alg :  numerical_PardisoCholesky        0.005  30
+alg :  perform_prolongation             0.002  237
+alg :  perform_restriction              0.002  237
+alg :  run_smoothing                    0.020  267
+alg :  smoother_fine                    0.012  801
+alg :  solve_MG                         0.167  30
+alg :  solve_PardisoCholesky            0.010  237
+alg :  symbolic_PardisoCholesky         0.115  1
+alg :  update_mg_status                 0.001  504
+alg : 
+alg :  size = 880
+alg :  build_coarse_select_omega     0.000  14
+alg :  build_fine_select_omega       0.002  30
+alg :  build_select_pivot_nonzeros   0.003  30
+alg :  build_select_vectors          0.001  30
+alg :  calc_residual_LU              0.003  49
+alg :  call_MG_solver                0.080  30
+alg :  clean_coarse_levels           0.000  14
+alg :  clean_fine_level              0.000  30
+alg :  init_RB_coarse_nonzeros       0.000  14
+alg :  init_RB_fine_nonzeros         0.000  30
+alg :  init_coarse_levels            0.050  14
+alg :  init_fine_level               0.007  30
+alg :  mg_cycle                      0.069  30
+alg :  numerical_PardisoLU           0.046  14
+alg :  perform_prolongation          0.000  18
+alg :  perform_restriction           0.000  18
+alg :  run_smoothing                 0.010  49
+alg :  smoother_fine                 0.007  147
+alg :  solve_MG                      0.088  30
+alg :  solve_PardisoLU               0.008  18
+alg :  symbolic_PardisoLU            0.002  1
+alg :  update_mg_status              0.000  67
+alg : 
+alg :  size = 880
+alg :  build_coarse_select_omega     0.000  10
+alg :  build_fine_select_omega       0.001  30
+alg :  build_select_pivot_nonzeros   0.001  30
+alg :  build_select_vectors          0.000  30
+alg :  calc_residual_LU              0.001  40
+alg :  call_MG_solver                0.143  30
+alg :  clean_coarse_levels           0.000  10
+alg :  clean_fine_level              0.000  30
+alg :  init_RB_coarse_nonzeros       0.000  10
+alg :  init_RB_fine_nonzeros         0.000  30
+alg :  init_coarse_levels            0.006  10
+alg :  init_fine_level               0.003  30
+alg :  mg_cycle                      0.015  30
+alg :  numerical_PardisoLU           0.004  10
+alg :  perform_prolongation          0.000  10
+alg :  perform_restriction           0.000  10
+alg :  run_smoothing                 0.008  40
+alg :  smoother_fine                 0.006  294
+alg :  solve_MG                      0.146  30
+alg :  solve_PardisoLU               0.001  10
+alg :  symbolic_PardisoLU            0.000  1
+alg :  update_mg_status              0.000  50
+Free Geometry DB takes 0.000 s
+OK

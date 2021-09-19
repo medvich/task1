@@ -1,0 +1,3863 @@
+Number of used processors (NPROC): 1.
+Number of mesh partitions (NPART): 1.
+Operating system:	Windows 7 Service Pack 1 (Version 6.1.7601)
+Total Physical Memory = 6.00 Gb, Available Physical Memory = 3.12 Gb
+Memory Working Set Current = 18.32 Mb, Memory Working Set Peak = 29.73 Mb
+CPU:	GenuineIntel, Stepping ID = 2, Model = 13, Family = 6, Extended model = 2, MMX SSE SSE2 Hyper-Threading Technology SSE3
+CPU Brand String: Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+Cache Line Size = 64, L2 Associativity = 6, Cache Size = 256K
+Number of cores: 4, Processor type: 8664, Active processor mask: 15, Page size: 4096 bites
+std::thread::hardware_concurrency = 4
+OpenMP enabled (spec=200203). max_threads = 4, num_procs = 4, num_threads = 4.
+
+SOLIDWORKS 2016 SP3.0
+14-HEAT_TRANSFER_IN_SOLID\00022-Lambda_v_projections\ft_run\1\1.fld
+Configuration name:	Default
+Project name:	as3d
+/*******************************************/
+/*         Project Summary                 */
+/*******************************************/
+Problem type:						internal
+Result resolution:					5
+Minimum gap size:					1
+Minimum wall thickness:				0.5
+Manual refinement:					Off
+Solid refinement:					Off
+Fluid substances count				0
+
+		Advanced capabilities
+Heat transfer						Off
+Transient						Off
+Gravitation						Off
+Laminar flow						Off
+Compressibility					Off
+Default wall condition				adiabatic wall
+Roughness:						0
+
+************************************************
+
+Geometry database loading ...OK
+Flow Simulation 2016  x64 / 3688 / SOLVER ver. efd_16_0.3667_12.10.2016+nested_iters_for_phase_change17.5 
+
+
+
+STATIONARY
+
+SOLID HEAT TRANSFER ONLY
+
+EXTERNAL=1  CHT=1  FROZEN=0  P_REF=1  RADIATION=0  HVAC_COMFORT_PARAMETERS=0
+IT=0   NT=2   NZ=0
+US_DIM=1
+-----------------------------------------------------------------------
+Allocating meshes:
+	CPU count: 1
+	MESH 0:
+		Sub-meshes count: 1
+-----------------------------------------------------------------------
+Memory Status before reading BCF:
+Memory Working Set Current = 21.84 Mb, Memory Working Set Peak = 29.73 Mb
+
+-----------------------------------------------------------------------
+BCF CHECKSUM DATA (Mesh 0):
+
+FACE_A Area Sum:   G.Fluid        0.0000000000000000
+FACE_A Area Sum:   G.Solid        54.1440719999942960
+FACE_W Area Sum:                  10.7242347569327960
+FACE_W Nb   Sum:                  18296
+AV Max Disbalance: G.Fluid        0 (cid=-1, avid=-1, pid=-1)
+AV Max Disbalance: G.Solid        1.3167e-013 (cid=4435, avid=5811, pid=2752)
+-----------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------
+MESHER TOPOLOGY DATA (Mesh 0):
+
+BRICKS: Total                 6859
+BRICKS: 1-CV                  4731
+BRICKS: 2-CV                  2128
+BRICKS: Bad                   0
+
+AV:     G.Total               8987
+AV:     G.Fluid               0
+AV:     G.Solid               8987
+
+AV:     G.Fluid Thin Profile    0.00 % (0)
+AV:     G.Solid Thin Profile    0.00 % (0)
+
+AV:     G.Fluid Thin For Mega   0.00 % (0)
+AV:     G.Solid Thin For Mega   0.00 % (0)
+
+AV:     G.Fluid Non-Convex      0.00 % (0)
+AV:     G.Solid Non-Convex      0.00 % (0)
+
+FACE_A: G.Fluid          (af) 0 (partially opened 0)
+FACE_A: G.Solid          (as) 23638 (partially opened 8288)
+
+FACE_W: G.Total                 4518        Brick/Bound
+FACE_W: G.Fluid/Solid    (fs_g) 0           0           
+FACE_W: G.Fluid/Fluid    (ff_g) 0           0           
+FACE_W: G.Solid/Solid    (ss_g) 2128        0           
+FACE_W: G.Fluid/External (fe_g) 0
+FACE_W: G.Solid/External (se_g) 2390
+
+AV max fa count:                6
+AV max fw count:                3
+AV max fw poly count:           3
+
+MEMORY: Total                   3.036 MB
+MEMORY: Per Brick               0.453 KB
+-----------------------------------------------------------------------
+
+----------------------------------------------------------
+BCF --> BCF.GEOMSUBDOM (bridge arrays) (cpu_num=1):
+MESH (0):
+	Fluid Subdom Constructor: 0 subdom(s).
+	Solid Subdom Constructor: 3 subdom(s).
+	Net Asm Subdom Constructor: 0 subdom(s).
+	GEOMSUBDOM (0): gi=2 solid av=2280 cv=2280 fa=5352 fw=3052 V=2.199383e-001
+	GEOMSUBDOM (1): gi=0 solid av=5016 cv=5016 fa=13720 fw=2656 V=5.891281e-001
+	GEOMSUBDOM (2): gi=1 solid av=1691 cv=1691 fa=4566 fw=938 V=1.949376e-001
+	Setting nb of w-faces...OK.
+
+MESH (0) checking:
+	GEOMSUBDOM (0):fa_s=10.6010868427168440 fw_s=7.5881359712271612 fw_nb=12216
+	GEOMSUBDOM (1):fa_s=32.4708796376464970 fw_s=5.8864829359986226 fw_nb=10624
+	GEOMSUBDOM (2):fa_s=11.0721055196333380 fw_s=1.9578426066395289 fw_nb=3744
+MESH (0) checking: OK.
+----------------------------------------------------------
+Memory Status after reading BCF:
+Memory Working Set Current = 30.86 Mb, Memory Working Set Peak = 30.86 Mb
+Total read CPT took 0.08 sec.
+MESH::Bricks: Total=6859 Gas=0 Solid=4731 Partial=2128 Irregular=0
+
+-----------------------------------------------------------------------
+Mesh dimensions:
+				I[0 ]=19
+				I[1 ]=19
+				I[2 ]=19
+Solver refinement level	I[47]=0
+
+Comp. domain size:
+				a[0  ]=-0.501
+				a[1  ]=0.501
+				a[2  ]=-0.501
+				a[3  ]=0.501
+				a[4  ]=-0.5
+				a[5  ]=0.5
+Wall thickness		a[231]=0
+Gap size			a[232]=1
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+Preparing for calculations started at	3.11.2016	12:26:1
+slv_max_lev=0
+CD X0= -0.501, X1= 0.501, Y0= -0.501, Y1= 0.501, Z0= -0.5, Z1= 0.5
+Collecting Reference Parameters... OK
+-----------------------------------------------------------------------
+CV statisticks for fluid...
+	CV number:         0
+	FACE_A max number: 0
+	FACE_W max number: 0
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+CV statisticks for solid...
+	CV number:         6707
+	FACE_A max number: 6
+	FACE_W max number: 2
+-----------------------------------------------------------------------
+Update time step in solids: STATIONARY IN SOLIDS
+Memory allocation for matrix entries in solver is block-wise,
+( size of block = 1048576 bytes (1Mb) ).
+
+There are 90 subdomains in solid:
+subdomain 0: 5016 control volumes
+subdomain 1: 19 control volumes
+subdomain 2: 19 control volumes
+subdomain 3: 19 control volumes
+subdomain 4: 19 control volumes
+subdomain 5: 19 control volumes
+subdomain 6: 19 control volumes
+subdomain 7: 19 control volumes
+subdomain 8: 19 control volumes
+subdomain 9: 19 control volumes
+subdomain 10: 19 control volumes
+subdomain 11: 19 control volumes
+subdomain 12: 19 control volumes
+subdomain 13: 19 control volumes
+subdomain 14: 19 control volumes
+subdomain 15: 19 control volumes
+subdomain 16: 19 control volumes
+subdomain 17: 19 control volumes
+subdomain 18: 19 control volumes
+subdomain 19: 19 control volumes
+subdomain 20: 19 control volumes
+subdomain 21: 19 control volumes
+subdomain 22: 19 control volumes
+subdomain 23: 19 control volumes
+subdomain 24: 19 control volumes
+subdomain 25: 19 control volumes
+subdomain 26: 19 control volumes
+subdomain 27: 19 control volumes
+subdomain 28: 19 control volumes
+subdomain 29: 19 control volumes
+subdomain 30: 19 control volumes
+subdomain 31: 19 control volumes
+subdomain 32: 19 control volumes
+subdomain 33: 19 control volumes
+subdomain 34: 19 control volumes
+subdomain 35: 19 control volumes
+subdomain 36: 19 control volumes
+subdomain 37: 19 control volumes
+subdomain 38: 19 control volumes
+subdomain 39: 19 control volumes
+subdomain 40: 19 control volumes
+subdomain 41: 19 control volumes
+subdomain 42: 19 control volumes
+subdomain 43: 19 control volumes
+subdomain 44: 19 control volumes
+subdomain 45: 19 control volumes
+subdomain 46: 19 control volumes
+subdomain 47: 19 control volumes
+subdomain 48: 19 control volumes
+subdomain 49: 19 control volumes
+subdomain 50: 19 control volumes
+subdomain 51: 19 control volumes
+subdomain 52: 19 control volumes
+subdomain 53: 19 control volumes
+subdomain 54: 19 control volumes
+subdomain 55: 19 control volumes
+subdomain 56: 19 control volumes
+subdomain 57: 19 control volumes
+subdomain 58: 19 control volumes
+subdomain 59: 19 control volumes
+subdomain 60: 19 control volumes
+subdomain 61: 19 control volumes
+subdomain 62: 19 control volumes
+subdomain 63: 19 control volumes
+subdomain 64: 19 control volumes
+subdomain 65: 19 control volumes
+subdomain 66: 19 control volumes
+subdomain 67: 19 control volumes
+subdomain 68: 19 control volumes
+subdomain 69: 19 control volumes
+subdomain 70: 19 control volumes
+subdomain 71: 19 control volumes
+subdomain 72: 19 control volumes
+subdomain 73: 19 control volumes
+subdomain 74: 19 control volumes
+subdomain 75: 19 control volumes
+subdomain 76: 19 control volumes
+subdomain 77: 19 control volumes
+subdomain 78: 19 control volumes
+subdomain 79: 19 control volumes
+subdomain 80: 19 control volumes
+subdomain 81: 19 control volumes
+subdomain 82: 19 control volumes
+subdomain 83: 19 control volumes
+subdomain 84: 19 control volumes
+subdomain 85: 19 control volumes
+subdomain 86: 19 control volumes
+subdomain 87: 19 control volumes
+subdomain 88: 19 control volumes
+subdomain 89: 19 control volumes
+
+43 parameter(s) in list of scalar parameters
+2 parameter(s) in list of vector parameters
+-----------------------------------------------------------------------
+Loading mesh settings (global/local/SAR)...
+Setting regions...
+Setting regions takes 0.000 s
+-----------------------------------------------------------------------
+
+CollectIndata: Initialize stored in U[] parameters (pressure,momentum,dens,..)... OK(CPU=0.0032354s)
+
+Collect Body BC...OK
+Collect Fans...OK
+Collect Surface Sources...OK
+Collect Contact resistance BC...OK
+Collect Perforated plates BC...OK
+Collect Electric contact BC...OK
+Collect Surface Goals...
+Received 0 wall face(s) and 0 virtual face(s)...
+ OK
+Total CPU time 0 s
+Collect Unused surface area...OK
+
+MWS =0.25
+NPROC = 1, nested_parallelization = 0
+NPART = 1
+
+/-----------------------------------------------------------/
+SOLVER TOPOLOGY DATA:
+
+BRICKS: |level1| sum         0
+
+CV:     Total               6707
+CV:     Fluid               0
+CV:     Solid               6707
+
+CV:     G.Fluid Thin Profile    0.00 % (0)
+CV:     G.Solid Thin Profile    0.00 % (0)
+
+CV:     G.Fluid Non-Convex      0.00 % (0)
+CV:     G.Solid Non-Convex      0.00 % (0)
+
+FACE_A: Fluid          (af) 0
+FACE_A: Max number placed on a brick-face in cv: 0
+FACE_A: Solid          (as) 23638
+
+FACE_W: Total               4518
+FACE_W: Fluid/Solid    (fs) 0
+FACE_W: Fluid/Fluid    (ff) 0
+FACE_W: Solid/Solid    (ss) 760
+FACE_W: Opening BC               (fo)  0
+FACE_W: Fluid/Bound              (fw)  0
+FACE_W: Solid/Bound              (sw)  2074
+FACE_W: Fluid/Bound Real Wall    (frw) 0
+FACE_W: Solid/Bound Real Wall    (srw) 2074
+FACE_W: Fluid/Bound Real Wall  hn(sum) 0.000000e+000
+FACE_W: Max number placed in cv: 0
+Solid:
+CV Max Disbalance:                1.3167e-013 (ncv=2250)
+/-----------------------------------------------------------/
+
+Create solver core
+ MDS: Converting solver problem ...
+MDS: OK
+slv : Calculations at run start
+slv :     Create sub-domains supervisors:
+slv :     	2 solid
+slv :     OK
+slv :     Create sub-domains mesh connectivity supervisors:
+slv :     	1 fw one to one
+slv :     OK
+slv :     Slice sub-domains:
+slv :     OK
+slv :     Collect slices by phenomena...
+slv :     	fluid flow slices were created:	0
+slv :     	heat transfer slices were created:	90
+slv :     	electric current flow slices were created:	0
+slv :     	radiation slices were created:	0
+slv :     OK
+slv :     Creating meshes proxies for multigrid...
+slv :         Convert MESH[0] to multigrid mesh proxy...
+slv :         6859 bricks are accounted by implicit methods(100% of total)
+slv :         max tree bricks count = 1
+slv :         OK
+slv :     OK
+alg :     MG: create topological coarsening...
+alg :     Mesh 0  OK
+slv :     OK
+slv :     Building fluid flow views schemes...
+slv :     OK
+slv :     Building views for heat transfer...
+slv :         90 views are created
+slv :     Building heat transfer views schemes...
+slv :         View 0:
+slv :         OK
+slv :         View 1:
+slv :         OK
+slv :         View 2:
+slv :         OK
+slv :         View 3:
+slv :         OK
+slv :         View 4:
+slv :         OK
+slv :         View 5:
+slv :         OK
+slv :         View 6:
+slv :         OK
+slv :         View 7:
+slv :         OK
+slv :         View 8:
+slv :         OK
+slv :         View 9:
+slv :         OK
+slv :         View 10:
+slv :         OK
+slv :         View 11:
+slv :         OK
+slv :         View 12:
+slv :         OK
+slv :         View 13:
+slv :         OK
+slv :         View 14:
+slv :         OK
+slv :         View 15:
+slv :         OK
+slv :         View 16:
+slv :         OK
+slv :         View 17:
+slv :         OK
+slv :         View 18:
+slv :         OK
+slv :         View 19:
+slv :         OK
+slv :         View 20:
+slv :         OK
+slv :         View 21:
+slv :         OK
+slv :         View 22:
+slv :         OK
+slv :         View 23:
+slv :         OK
+slv :         View 24:
+slv :         OK
+slv :         View 25:
+slv :         OK
+slv :         View 26:
+slv :         OK
+slv :         View 27:
+slv :         OK
+slv :         View 28:
+slv :         OK
+slv :         View 29:
+slv :         OK
+slv :         View 30:
+slv :         OK
+slv :         View 31:
+slv :         OK
+slv :         View 32:
+slv :         OK
+slv :         View 33:
+slv :         OK
+slv :         View 34:
+slv :         OK
+slv :         View 35:
+slv :         OK
+slv :         View 36:
+slv :         OK
+slv :         View 37:
+slv :         OK
+slv :         View 38:
+slv :         OK
+slv :         View 39:
+slv :         OK
+slv :         View 40:
+slv :         OK
+slv :         View 41:
+slv :         OK
+slv :         View 42:
+slv :         OK
+slv :         View 43:
+slv :         OK
+slv :         View 44:
+slv :         OK
+slv :         View 45:
+slv :         OK
+slv :         View 46:
+slv :         OK
+slv :         View 47:
+slv :         OK
+slv :         View 48:
+slv :         OK
+slv :         View 49:
+slv :         OK
+slv :         View 50:
+slv :         OK
+slv :         View 51:
+slv :         OK
+slv :         View 52:
+slv :         OK
+slv :         View 53:
+slv :         OK
+slv :         View 54:
+slv :         OK
+slv :         View 55:
+slv :         OK
+slv :         View 56:
+slv :         OK
+slv :         View 57:
+slv :         OK
+slv :         View 58:
+slv :         OK
+slv :         View 59:
+slv :         OK
+slv :         View 60:
+slv :         OK
+slv :         View 61:
+slv :         OK
+slv :         View 62:
+slv :         OK
+slv :         View 63:
+slv :         OK
+slv :         View 64:
+slv :         OK
+slv :         View 65:
+slv :         OK
+slv :         View 66:
+slv :         OK
+slv :         View 67:
+slv :         OK
+slv :         View 68:
+slv :         OK
+slv :         View 69:
+slv :         OK
+slv :         View 70:
+slv :         OK
+slv :         View 71:
+slv :         OK
+slv :         View 72:
+slv :         OK
+slv :         View 73:
+slv :         OK
+slv :         View 74:
+slv :         OK
+slv :         View 75:
+slv :         OK
+slv :         View 76:
+slv :         OK
+slv :         View 77:
+slv :         OK
+slv :         View 78:
+slv :         OK
+slv :         View 79:
+slv :         OK
+slv :         View 80:
+slv :         OK
+slv :         View 81:
+slv :         OK
+slv :         View 82:
+slv :         OK
+slv :         View 83:
+slv :         OK
+slv :         View 84:
+slv :         OK
+slv :         View 85:
+slv :         OK
+slv :         View 86:
+slv :         OK
+slv :         View 87:
+slv :         OK
+slv :         View 88:
+slv :         OK
+slv :         View 89:
+slv :         OK
+slv :     OK
+slv :     Building electric current flow views schemes...
+slv :     OK
+slv :     PrecalcAtStart views for fluid flow...
+slv :     PrecalcAtStart views for heat transfer...
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :13720
+slvD:         	N of computed(stored) approximations:3952
+slvD:             	2-point approximations    : 71.2 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 5016
+alg :         mgl = 30 size =  932
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slvD:         Laplacian approximations statisticks:
+slvD:         	Number of open faces        :18
+slvD:         	N of computed(stored) approximations:0
+slvD:             	2-point approximations    :100.0 %
+slvD:             	Thin profile approximations :  0.0 %
+slvD:             
+slv :         Creating view scheme...
+slv :         1 heat transfer algebraic views are created
+alg :         mgl = 31 size = 19
+alg :         mgl = 30 size = 10
+alg :         
+slv :         OK
+slv :     PrecalcAtStart views for electric current flow...
+slv :     PrecalcAtStart views for radiation...
+slv : OK
+slv : ------------ Start of Preliminary step at Calculation start ------------
+slv :     View 0(0) T_solid:min(solid,ncvloc=0,sd_id=1,ncvglob=0)=300                  max(solid,ncvloc=0,sd_id=1,ncvglob=0)=300                  
+slv :     View 1(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5016)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5016)=300                  
+slv :     View 2(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5035)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5035)=300                  
+slv :     View 3(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5054)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5054)=300                  
+slv :     View 4(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5073)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5073)=300                  
+slv :     View 5(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5092)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5092)=300                  
+slv :     View 6(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5111)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5111)=300                  
+slv :     View 7(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5130)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5130)=300                  
+slv :     View 8(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5149)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5149)=300                  
+slv :     View 9(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5168)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5168)=300                  
+slv :     View 10(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5187)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5187)=300                  
+slv :     View 11(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5206)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5206)=300                  
+slv :     View 12(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5225)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5225)=300                  
+slv :     View 13(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5244)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5244)=300                  
+slv :     View 14(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5263)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5263)=300                  
+slv :     View 15(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5282)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5282)=300                  
+slv :     View 16(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5301)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5301)=300                  
+slv :     View 17(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5320)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5320)=300                  
+slv :     View 18(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5339)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5339)=300                  
+slv :     View 19(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5358)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5358)=300                  
+slv :     View 20(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5377)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5377)=300                  
+slv :     View 21(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5396)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5396)=300                  
+slv :     View 22(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5415)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5415)=300                  
+slv :     View 23(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5434)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5434)=300                  
+slv :     View 24(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5453)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5453)=300                  
+slv :     View 25(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5472)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5472)=300                  
+slv :     View 26(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5491)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5491)=300                  
+slv :     View 27(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5510)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5510)=300                  
+slv :     View 28(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5529)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5529)=300                  
+slv :     View 29(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5548)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5548)=300                  
+slv :     View 30(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5567)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5567)=300                  
+slv :     View 31(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5586)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5586)=300                  
+slv :     View 32(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5605)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5605)=300                  
+slv :     View 33(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5624)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5624)=300                  
+slv :     View 34(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5643)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5643)=300                  
+slv :     View 35(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5662)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5662)=300                  
+slv :     View 36(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5681)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5681)=300                  
+slv :     View 37(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5700)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5700)=300                  
+slv :     View 38(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5719)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5719)=300                  
+slv :     View 39(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5738)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5738)=300                  
+slv :     View 40(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5757)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5757)=300                  
+slv :     View 41(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5776)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5776)=300                  
+slv :     View 42(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5795)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5795)=300                  
+slv :     View 43(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5814)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5814)=300                  
+slv :     View 44(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5833)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5833)=300                  
+slv :     View 45(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5852)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5852)=300                  
+slv :     View 46(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5871)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5871)=300                  
+slv :     View 47(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5890)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5890)=300                  
+slv :     View 48(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5909)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5909)=300                  
+slv :     View 49(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5928)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5928)=300                  
+slv :     View 50(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5947)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5947)=300                  
+slv :     View 51(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5966)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5966)=300                  
+slv :     View 52(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5985)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5985)=300                  
+slv :     View 53(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6004)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6004)=300                  
+slv :     View 54(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6023)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6023)=300                  
+slv :     View 55(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6042)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6042)=300                  
+slv :     View 56(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6061)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6061)=300                  
+slv :     View 57(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6080)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6080)=300                  
+slv :     View 58(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6099)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6099)=300                  
+slv :     View 59(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6118)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6118)=300                  
+slv :     View 60(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6137)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6137)=300                  
+slv :     View 61(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6156)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6156)=300                  
+slv :     View 62(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6175)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6175)=300                  
+slv :     View 63(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6194)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6194)=300                  
+slv :     View 64(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6213)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6213)=300                  
+slv :     View 65(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6232)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6232)=300                  
+slv :     View 66(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6251)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6251)=300                  
+slv :     View 67(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6270)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6270)=300                  
+slv :     View 68(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6289)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6289)=300                  
+slv :     View 69(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6308)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6308)=300                  
+slv :     View 70(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6327)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6327)=300                  
+slv :     View 71(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6346)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6346)=300                  
+slv :     View 72(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6365)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6365)=300                  
+slv :     View 73(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6384)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6384)=300                  
+slv :     View 74(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6403)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6403)=300                  
+slv :     View 75(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6422)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6422)=300                  
+slv :     View 76(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6441)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6441)=300                  
+slv :     View 77(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6460)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6460)=300                  
+slv :     View 78(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6479)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6479)=300                  
+slv :     View 79(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6498)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6498)=300                  
+slv :     View 80(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6517)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6517)=300                  
+slv :     View 81(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6536)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6536)=300                  
+slv :     View 82(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6555)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6555)=300                  
+slv :     View 83(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6574)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6574)=300                  
+slv :     View 84(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6593)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6593)=300                  
+slv :     View 85(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6612)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6612)=300                  
+slv :     View 86(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6631)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6631)=300                  
+slv :     View 87(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6650)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6650)=300                  
+slv :     View 88(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6669)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6669)=300                  
+slv :     View 89(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6688)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6688)=300                  
+slv :     Global T_solid:min(solid,ncvloc=0,sd_id=1,ncvglob=0)=300                  max(solid,ncvloc=0,sd_id=1,ncvglob=0)=300                  
+slv :     ------------ End of Preliminary step at Calculation start ------------
+
+----------------------------------------------------------
+BCF checking (solver)...
+----------------------------------------------------------
+
+Estimated cfld size=0.54 Mb
+Writing cfld file "14-HEAT_TRANSFER_IN_SOLID\00022-Lambda_v_projections\ft_run\1/r_000000.cfld"...
+Working in No GDBLight mode
+Working in No GDBLight mode
+FILE SAVED: r_000000.cfld. Total save cfld took 0.02 sec.
+real cfld size=0.07 Mb
+OK
+Estimated fld size=1.63 Mb
+Writing fld file "14-HEAT_TRANSFER_IN_SOLID\00022-Lambda_v_projections\ft_run\1/r_000000.fld"...
+FILE SAVED: r_000000.fld. Total save fld took 0.00 sec.
+real fld size=0.06 Mb
+OK
+Init simple interpolator... OK (0.000 sec)
+BC 'Outer Wall 1' is on 1368 faces (AS area=3.14026, CAD area=3.14788, difference=-0.2%)
+
+Preview parameters:
+	Density (Solid)
+	Temperature (Solid)
+	Solid Thermal Conductivity (X)
+	Solid Thermal Conductivity (Y)
+	Solid Thermal Conductivity (Z)
+	Heat Flux
+	Heat Flux (X)
+	Heat Flux (Y)
+	Heat Flux (Z)
+	Overheat above Melting Temperature
+10 parameter(s) in preview list of parameters
+
+Calculation started at	3.11.2016	12:26:2
+Total CPU time 1 s
+//-------------There are no openings in task--------------//
+
+================== Tstep=0 ===================
+Boundary layer settings:
+	Separation tau    on
+	Enable 3D effects on
+BL MODEL         	Ignore compressibility  off
+	BL on porous body  off
+	Separ. tau corr factor 0
+	Separ. tau kappa 0.1
+	Separ. tau KV0 0.1
+------------------------
+NumerCore CHT-start settings:
+	Min typical size					1
+	Zero vel ht factor				0.006
+	C_mju_turb_min                   0.01
+	Threshold value for K-E filter   0
+	C_mju                            0.09
+	C_eps1                           1.44
+	C_eps2                           1.92
+	Sigma_k                          1
+	Sigma_eps                        1.3
+	Sigma_c                          0.9
+	Approx mode                      1st order
+-------------
+NumCoreFESSettings:
+	Maximum possible Mach	0
+	Turbulent Prandtl		0.9
+-------------
+slv : Implicit schemes in fluid settings:
+slv :     INPR	: rel_resid=0.00790569
+slv :     BACKGROUND	: rel_resid=0.00790569
+slv :     DVGR	: rel_resid=0.00790569
+slv :     MOMENTUM	: rel_resid=0.00790569
+slv :     CHT	: rel_resid=0.00790569
+slv :     Y_TD	: rel_resid=0.00790569
+slv :     Y_TURB	: rel_resid=0.00790569
+slv :     LMA	: rel_resid=0.00790569
+slv :     UVGI	: rel_resid=0.00790569
+slv :     NOx	: rel_resid=0.00790569
+slv :     Disable wall motion impact into H threshold=10
+slv :     Relax par ring =0.05
+slv :     Isothermal cavitation CF corrector = 1
+slv :     Isothermal cavitation pseudo transient corrector = -1
+slv :     Isothermal cavitation forced time step in cavitated regions = -1
+slv :     ---------------------------------------
+------Solid settings---
+Approximation mode = 2'nd order && thin_profiles
+Solid temperature eps_abs scaling factor: 0.001
+number dofs per absorptive face: 9
+subgrid ratio: 0.500000
+Blink filter: disabled
+------------------------------
+slv : Iterations settings:
+slv :     Max number of outer iter = 1
+slv :     Max number of Mass&Energy iter = 1
+slv :     Max Courant factor = 10
+slv :     Conservation laws tolerance residuals:
+slv :         	MASS	0.005
+slv :         	MOMENTUM	0.005
+slv :         	ENERGY	0.005
+slv :         	SPECIES	0.005
+slv :         	TURBULENCE	0.005
+slv :     ---------------------------------------
+slv :     Scheme blocks settings:
+slv :         INPR	: stop_crit=residAbs_AND_residRel 
+slv :         BACKGROUND	: stop_crit=residAbs_AND_residRel 
+slv :         DVGR	: stop_crit=residAbs_AND_residRel 
+slv :         MOMENTUM	: stop_crit=residAbs_AND_residRel 
+slv :         CHT	: stop_crit=residAbs_AND_residRel 
+slv :         Y_TD	: stop_crit=residAbs_AND_residRel 
+slv :         Y_TURB	: stop_crit=residAbs_AND_residRel 
+slv :         LMA	: stop_crit=residAbs_AND_residRel 
+slv :         UVGI	: stop_crit=residAbs_AND_residRel 
+slv :         NOx	: stop_crit=residAbs_AND_residRel 
+slv :     ---------------------------------------
+Accuracy scale coeff =1
+slv : SOLVE HT
+slv : 	Heat Transfer physical view 0
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 1.759228e+011| 3.702554e-003| 9.880991e-004|    12| 108|0|n|30|  OK  |
+slv : | 1.352890e+007|              | 1.590711e+000|      |    | | |  |      | 
+slv : 	Heat Transfer physical view 1
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 2
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 3
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 4
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 5
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 6
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 7
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 8
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 9
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 10
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 11
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 12
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 13
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 14
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 15
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 16
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 17
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 18
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 19
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 20
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 21
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 22
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 23
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 24
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 25
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 26
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 27
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 28
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 29
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 30
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 31
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 32
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 33
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 34
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 35
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 36
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 37
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 38
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 39
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 40
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 41
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 42
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 43
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 44
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 45
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 46
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 47
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 48
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 49
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 50
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 51
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 52
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 53
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 54
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 55
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 56
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 57
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 58
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 59
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 60
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 61
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 62
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 63
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 64
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 65
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 66
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 67
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 68
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 69
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 70
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 71
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 72
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 73
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 74
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 75
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 76
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 77
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 78
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 79
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 80
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 81
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 82
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 83
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 84
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 85
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 86
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 87
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 88
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv : 	Heat Transfer physical view 89
+slv : Initial neumann fix: current subunion 
+alg : | Initial res  | Target res   | Final res    |Visits|Iter|R|F|CL|Status|
+alg : | 0.000000e+000| 0.000000e+000| 0.000000e+000|     1|   3|0|y|30|  OK  |
+slv : | 0.000000e+000|              | 0.000000e+000|      |    | | |  |      | 
+slv : neumann fix solution. y[row=0][ncv=17]=   3.0000e+002
+slv :     View 0(0) T_solid:min(solid,ncvloc=161,sd_id=1,ncvglob=161)=499.99936363038      max(solid,ncvloc=5010,sd_id=1,ncvglob=5010)=499.99999824218      
+slv :     View 1(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5016)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5016)=300                  
+slv :     View 2(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5035)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5035)=300                  
+slv :     View 3(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5054)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5054)=300                  
+slv :     View 4(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5073)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5073)=300                  
+slv :     View 5(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5092)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5092)=300                  
+slv :     View 6(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5111)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5111)=300                  
+slv :     View 7(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5130)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5130)=300                  
+slv :     View 8(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5149)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5149)=300                  
+slv :     View 9(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5185)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5168)=300                  
+slv :     View 10(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5204)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5187)=300                  
+slv :     View 11(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5223)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5206)=300                  
+slv :     View 12(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5225)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=5242)=300                  
+slv :     View 13(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5261)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5244)=300                  
+slv :     View 14(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5263)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5263)=300                  
+slv :     View 15(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5282)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=5299)=300                  
+slv :     View 16(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5301)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=5318)=300                  
+slv :     View 17(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5320)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=5337)=300                  
+slv :     View 18(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5339)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5339)=300                  
+slv :     View 19(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5358)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5358)=300                  
+slv :     View 20(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5394)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5377)=300                  
+slv :     View 21(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5396)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5396)=300                  
+slv :     View 22(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5415)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5415)=300                  
+slv :     View 23(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5434)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5434)=300                  
+slv :     View 24(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5453)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5453)=300                  
+slv :     View 25(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5472)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5472)=300                  
+slv :     View 26(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5491)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5491)=300                  
+slv :     View 27(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5510)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5510)=300                  
+slv :     View 28(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5529)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5529)=300                  
+slv :     View 29(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5548)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5548)=300                  
+slv :     View 30(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5567)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5567)=300                  
+slv :     View 31(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5586)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=5603)=300                  
+slv :     View 32(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5605)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=5622)=300                  
+slv :     View 33(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5641)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5624)=300                  
+slv :     View 34(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5660)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5643)=300                  
+slv :     View 35(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5662)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=5679)=300                  
+slv :     View 36(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5681)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=5698)=300                  
+slv :     View 37(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5700)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=5717)=300                  
+slv :     View 38(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5719)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5719)=300                  
+slv :     View 39(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5738)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5738)=300                  
+slv :     View 40(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5774)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5757)=300                  
+slv :     View 41(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5793)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5776)=300                  
+slv :     View 42(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5812)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5795)=300                  
+slv :     View 43(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5831)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5814)=300                  
+slv :     View 44(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5850)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5833)=300                  
+slv :     View 45(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5852)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5852)=300                  
+slv :     View 46(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5871)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5871)=300                  
+slv :     View 47(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5890)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5890)=300                  
+slv :     View 48(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5909)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=5926)=300                  
+slv :     View 49(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5928)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5928)=300                  
+slv :     View 50(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=5947)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5947)=300                  
+slv :     View 51(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5983)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5966)=300                  
+slv :     View 52(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=6002)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=5985)=300                  
+slv :     View 53(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6004)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6004)=300                  
+slv :     View 54(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=6040)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6023)=300                  
+slv :     View 55(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6042)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6042)=300                  
+slv :     View 56(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6061)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=6078)=300                  
+slv :     View 57(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6080)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6080)=300                  
+slv :     View 58(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6099)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6099)=300                  
+slv :     View 59(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6118)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6118)=300                  
+slv :     View 60(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6137)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6137)=300                  
+slv :     View 61(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6156)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6156)=300                  
+slv :     View 62(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=6192)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6175)=300                  
+slv :     View 63(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6194)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6194)=300                  
+slv :     View 64(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=6230)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6213)=300                  
+slv :     View 65(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=6249)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6232)=300                  
+slv :     View 66(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6251)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6251)=300                  
+slv :     View 67(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6270)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=6287)=300                  
+slv :     View 68(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6289)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=6306)=300                  
+slv :     View 69(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6308)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6308)=300                  
+slv :     View 70(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6327)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6327)=300                  
+slv :     View 71(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=6363)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6346)=300                  
+slv :     View 72(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6365)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6365)=300                  
+slv :     View 73(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=6401)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6384)=300                  
+slv :     View 74(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6403)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6403)=300                  
+slv :     View 75(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6422)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6422)=300                  
+slv :     View 76(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6441)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=6458)=300                  
+slv :     View 77(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6460)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=6477)=300                  
+slv :     View 78(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6479)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6479)=300                  
+slv :     View 79(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6498)=300                  max(solid,ncvloc=17,sd_id=2,ncvglob=6515)=300                  
+slv :     View 80(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=6534)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6517)=300                  
+slv :     View 81(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6536)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6536)=300                  
+slv :     View 82(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6555)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6555)=300                  
+slv :     View 83(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6574)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6574)=300                  
+slv :     View 84(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6593)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6593)=300                  
+slv :     View 85(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6612)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6612)=300                  
+slv :     View 86(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6631)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6631)=300                  
+slv :     View 87(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6650)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6650)=300                  
+slv :     View 88(0) T_solid:min(solid,ncvloc=0,sd_id=2,ncvglob=6669)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6669)=300                  
+slv :     View 89(0) T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=6705)=300                  max(solid,ncvloc=0,sd_id=2,ncvglob=6688)=300                  
+slv :     Global T_solid:min(solid,ncvloc=17,sd_id=2,ncvglob=5394)=300                  max(solid,ncvloc=5010,sd_id=1,ncvglob=5010)=499.99999824218      
+Memory Working Set Current = 45.16 Mb, Memory Working Set Peak = 45.16 Mb
+/************Goal values******************/
+GG Av Temperature (Solid) 1				450.275027 K
+/************End of Goal values******************/
+/************	Min/Max Parameters	************/
+Temperature (Solid):		min = 300 K		max = 500.000001 K
+/************	End of Min/Max Parameters	************/
+Solver finished at	3.11.2016	12:26:2
+ENDING PROGRAM...
+Estimated fld size=1.63 Mb
+Writing fld file "14-HEAT_TRANSFER_IN_SOLID\00022-Lambda_v_projections\ft_run\1\1.fld"...
+FILE SAVED: 1.fld. Total save fld took 0.02 sec.
+real fld size=0.51 Mb
+FILE RENAMED: r_000000.cfld -> 1.cfld
+OK
+Depository creating ...
+stream_line (0.000 s)
+FS triangles count 332 
+wall_triangles (0.034 s)
+nb_bricks (0.028 s)
+Face_aver_on (0.000 s)
+size of cv_intrp_s = 0.61 Mb
+size of cv_intrp_fw = 0.10 Mb
+size of cv_intrp_sw = 0.35 Mb
+CCVInterp_DepEntry::Calculate duration = 0.203 s
+cv_interp (0.223 s)
+favorite_params (0.007 s)
+Face_aver_off (0.000 s)
+Depository creating ...OK (0.292 s)
+Solver finished at	3.11.2016	12:26:2
+Total CPU time 1 s
+Free memory:
+slv : +--------------------------+------------+-------+------------+------------+
+slv : |      Collector name      | Total Time | Count |  Avg Time  |  Max Time  |
+slv : +--------------------------+------------+-------+------------+------------+
+slv : | CHT_MDS_import_export    |       0.001|      1|       0.001|       0.001|
+slv : | CSolver_core_update_BC_1 |       0.001|      1|       0.001|       0.001|
+slv : | Calculate_inc            |       0.320|      1|       0.320|       0.320|
+slv : | LiSy_make_portrait       |       0.010|    180|       0.000|       0.006|
+slv : | Results_processing       |       0.012|      1|       0.012|       0.012|
+slv : | build_sl_ordering_CHT    |       0.000|     90|       0.000|       0.000|
+slv : | precalc_at_start_MDS     |       0.137|      4|       0.034|       0.137|
+slv : | solve_CHT_MDS            |       0.304|     90|       0.003|       0.234|
+slv : | solve_CHT_alg_MDS        |       0.262|     90|       0.003|       0.210|
+slv : +--------------------------+------------+-------+------------+------------+
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 19
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.000  1
+alg :  call_MG_solver                0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_fine_level               0.000  1
+alg :  mg_cycle                      0.000  1
+alg :  run_smoothing                 0.000  1
+alg :  smoother_fine                 0.000  3
+alg :  solve_MG                      0.000  1
+alg :  update_mg_status              0.000  1
+alg : 
+alg :  size = 5016
+alg :  build_coarse_select_omega     0.000  1
+alg :  build_fine_select_omega       0.000  1
+alg :  build_select_pivot_nonzeros   0.000  1
+alg :  build_select_vectors          0.000  1
+alg :  calc_residual_LU              0.001  12
+alg :  call_MG_solver                0.209  1
+alg :  clean_coarse_levels           0.000  1
+alg :  clean_fine_level              0.000  1
+alg :  init_RB_coarse_nonzeros       0.000  1
+alg :  init_RB_fine_nonzeros         0.000  1
+alg :  init_coarse_levels            0.118  1
+alg :  init_fine_level               0.001  1
+alg :  mg_cycle                      0.209  1
+alg :  numerical_PardisoLU           0.003  1
+alg :  perform_prolongation          0.000  11
+alg :  perform_restriction           0.000  11
+alg :  run_smoothing                 0.012  12
+alg :  smoother_fine                 0.010  108
+alg :  solve_MG                      0.210  1
+alg :  solve_PardisoLU               0.079  11
+alg :  symbolic_PardisoLU            0.114  1
+alg :  update_mg_status              0.000  23
+Free Geometry DB takes 0.000 s
+OK

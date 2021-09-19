@@ -1,0 +1,1218 @@
+Number of used processors (NPROC): 1.
+Number of mesh partitions (NPART): 1.
+Operating system:	Windows 7 Service Pack 1 (Version 6.1.7601)
+Total Physical Memory = 6.00 Gb, Available Physical Memory = 3.73 Gb
+Memory Working Set Current = 20.87 Mb, Memory Working Set Peak = 20.88 Mb
+CPU:	GenuineIntel, Stepping ID = 2, Model = 13, Family = 6, Extended model = 2, MMX SSE SSE2 Hyper-Threading Technology SSE3
+CPU Brand String:        Intel(R) Xeon(R) CPU E5-2680 0 @ 2.70GHz
+Cache Line Size = 64, L2 Associativity = 6, Cache Size = 256K
+Number of cores: 8, Processor type: 8664, Active processor mask: 255, Page size: 4096 bites
+std::thread::hardware_concurrency = 8
+OpenMP enabled (spec=200203). max_threads = 8, num_procs = 8, num_threads = 8.
+
+SOLIDWORKS 2016 SP3.0
+14-HEAT_TRANSFER_IN_SOLID\00564-thin_profile_T_across_BC_-2_-3_-1_comp\ft_run\1\1.fld
+Configuration name:	Default
+Project name:	as3d
+/*******************************************/
+/*         Project Summary                 */
+/*******************************************/
+Problem type:						internal
+Result resolution:					5
+Minimum gap size:					0.1
+Minimum wall thickness:				0.1
+Manual refinement:					Off
+Solid refinement:					Off
+Fluid substances count				1
+
+		Advanced capabilities
+Heat transfer						On
+Transient						Off
+Gravitation						Off
+Laminar flow						Off
+Compressibility					On
+Number of solid substances			1
+Roughness:						0
+
+************************************************
+
+Geometry database loading ...OK
+Flow Simulation 2016  x64 / 3800 / SOLVER ver. efd_17_0.3746_30.12.2016+VOF_GUI_Therm_Slv_Integration_1 
+
+
+
+STATIONARY
+
+
+COMPRESSIBLE
+LAM-BREMHORST K-EPSILON TURBULENCE MODEL
+EXTERNAL=1  CHT=1  FROZEN=0  P_REF=0  RADIATION=0  HVAC_COMFORT_PARAMETERS=0
+IT=6   NT=2   NZ=1
+US_DIM=1
+-----------------------------------------------------------------------
+Allocating meshes:
+	CPU count: 1
+	MESH 0:
+		Sub-meshes count: 1
+-----------------------------------------------------------------------
+Memory Status before reading BCF:
+Memory Working Set Current = 25.42 Mb, Memory Working Set Peak = 25.42 Mb
+Process Threads Number: 11
+
+-----------------------------------------------------------------------
+BCF CHECKSUM DATA (Mesh 0):
+
+FACE_A Area Sum:   G.Fluid        0.4753515305117086
+FACE_A Area Sum:   G.Solid        0.4856339369357444
+FACE_W Area Sum:                  1.7329757242658210
+FACE_W Nb   Sum:                  5734
+FACE_W min curvatures sum:        -0.00000000
+FACE_W max curvatures sum:        0.00000000
+AV Max Disbalance: G.Fluid        9.09473e-17 (cid=536, avid=309, pid=84)
+AV Max Disbalance: G.Solid        1.14907e-16 (cid=34, avid=358, pid=14)
+BRICK-AV Volume Disbalance:       0 (cid=0)
+-----------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------
+MESHER TOPOLOGY DATA (Mesh 0):
+
+BRICKS: Total                 572
+BRICKS: 1-CV                  464
+BRICKS: 2-CV                  32
+BRICKS: 3-CV                  72
+BRICKS: 4-CV                  3
+BRICKS: 5-CV                  1
+BRICKS: Bad                   0
+
+AV:     G.Total               761
+AV:     G.Fluid               318
+AV:     G.Solid               443
+
+AV:     G.Fluid Thin Profile    0.00 % (0)
+AV:     G.Solid Thin Profile   17.38 % (77)
+
+AV:     G.Fluid Thin For Mega   0.00 % (0)
+AV:     G.Solid Thin For Mega  16.70 % (74)
+
+AV:     G.Fluid Non-Convex      0.00 % (0)
+AV:     G.Solid Non-Convex      0.00 % (0)
+
+FACE_A: G.Fluid          (af) 588 (partially opened 92)
+FACE_A: G.Solid          (as) 689 (partially opened 213)
+
+FACE_W: G.Total                 1823        Brick/Bound
+FACE_W: G.Fluid/Solid    (fs_g) 96          0           
+FACE_W: G.Fluid/Fluid    (ff_g) 0           0           
+FACE_W: G.Solid/Solid    (ss_g) 97          0           
+FACE_W: G.Fluid/External (fe_g) 636
+FACE_W: G.Solid/External (se_g) 994
+
+AV/CV max fa count (on brick side):1
+AV/CV max fw count:                1
+AV/CV max fw poly count:           6
+
+MEMORY: Total                   0.384 MB
+MEMORY: Per Brick               0.687 KB
+-----------------------------------------------------------------------
+
+----------------------------------------------------------
+BCF --> BCF.GEOMSUBDOM (bridge arrays) (cpu_num=1):
+MESH (0):
+	Fluid Subdom Constructor: 1 subdom(s).
+	Solid Subdom Constructor: 8 subdom(s).
+	Net Asm Subdom Constructor: 0 subdom(s).
+	GEOMSUBDOM (0): gi=0 fluid av=318 cv=318 fa=588 fw=732 V=8.686741e-03
+	GEOMSUBDOM (1): gi=3 solid av=38 cv=38 fa=59 fw=109 V=9.168023e-04
+	GEOMSUBDOM (2): gi=1 solid av=17 cv=17 fa=17 fw=70 V=8.219849e-05
+	GEOMSUBDOM (3): gi=2 solid av=38 cv=38 fa=43 fw=144 V=2.034470e-04
+	GEOMSUBDOM (4): gi=3 solid av=129 cv=129 fa=226 fw=321 V=3.632862e-03
+	GEOMSUBDOM (5): gi=2 solid av=39 cv=39 fa=45 fw=146 V=2.026317e-04
+	GEOMSUBDOM (6): gi=3 solid av=128 cv=128 fa=224 fw=319 V=3.603405e-03
+	GEOMSUBDOM (7): gi=1 solid av=18 cv=18 fa=19 fw=72 V=8.740001e-05
+	GEOMSUBDOM (8): gi=3 solid av=36 cv=36 fa=56 fw=103 V=9.076930e-04
+	Setting nb of w-faces...OK.
+
+MESH (0) checking:
+	GEOMSUBDOM (0):fa_s=0.4753515305117079 fw_s=0.7850754424445361 fw_nb=2544
+	GEOMSUBDOM (1):fa_s=0.0434603802509714 fw_s=0.1002523421398222 fw_nb=302
+	GEOMSUBDOM (2):fa_s=0.0041617347238852 fw_s=0.0276588825142869 fw_nb=140
+	GEOMSUBDOM (3):fa_s=0.0106717634379609 fw_s=0.0584004365790107 fw_nb=308
+	GEOMSUBDOM (4):fa_s=0.1854132178314835 fw_s=0.3502188963933496 fw_nb=1030
+	GEOMSUBDOM (5):fa_s=0.0106306806398644 fw_s=0.0581694466115793 fw_nb=316
+	GEOMSUBDOM (6):fa_s=0.1838650324964753 fw_s=0.3475712087926848 fw_nb=1022
+	GEOMSUBDOM (7):fa_s=0.0044148494743397 fw_s=0.0280813702619865 fw_nb=148
+	GEOMSUBDOM (8):fa_s=0.0430162780807653 fw_s=0.0993744398211054 fw_nb=286
+MESH (0) checking: OK.
+----------------------------------------------------------
+Memory Status after reading BCF:
+Memory Working Set Current = 26.66 Mb, Memory Working Set Peak = 26.66 Mb
+Process Threads Number: 11
+Total read CPT took 0.02 sec.
+MESH::Bricks: Total=572 Gas=226 Solid=238 Partial=108 Irregular=0
+
+-----------------------------------------------------------------------
+Mesh dimensions:
+				I[0 ]=26
+				I[1 ]=22
+				I[2 ]=1
+Solver refinement level	I[47]=0
+
+Comp. domain size:
+				a[0  ]=-0.455527
+				a[1  ]=0.5
+				a[2  ]=-0.399
+				a[3  ]=0.4
+				a[4  ]=-0.012
+				a[5  ]=0.012
+Wall thickness		a[231]=0
+Gap size			a[232]=1
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+Preparing for calculations started at	22.2.2017	7:50:23
+slv_max_lev=0
+CD X0= -0.455526721126, X1= 0.5, Y0= -0.399, Y1= 0.4, Z0= -0.012, Z1= 0.012
+Collecting Reference Parameters... OK
+-----------------------------------------------------------------------
+CV statisticks for fluid...
+	CV number:         318
+	FACE_A max number: 4
+	FACE_W max number: 4
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+CV statisticks for solid...
+	CV number:         77
+	FACE_A max number: 3
+	FACE_W max number: 6
+-----------------------------------------------------------------------
+Update time step in solids: STATIONARY IN SOLIDS
+FLUID SUBDOMAIN   0 LC =0 LAMTURB=1 NONNEWTON=0  STEAM=0  CAVITATION=0 IT=6 NT=2 NC=1 U_DIM_EXT=14
+
+===ThermodynamicsHolder:===
+Subdom 0 Perfect gas thermodynamics
+	substance 0 type=fwGas, guid=2B966F4A9A9F11D4A50048A0E8000000, name=Air
+===ThermodynamicsHolder:===
+Memory allocation for matrix entries in solver is block-wise,
+( size of block = 1048576 bytes (1Mb) ).
+
+There are 2 subdomains in solid:
+subdomain 0: 38 control volumes
+subdomain 1: 39 control volumes
+
+159 parameter(s) in list of scalar parameters
+6 parameter(s) in list of vector parameters
+-----------------------------------------------------------------------
+Loading mesh settings (global/local/SAR)...
+Setting regions...
+Setting regions takes 0.000 s
+-----------------------------------------------------------------------
+
+CollectIndata: Initialize stored in U[] parameters (pressure,momentum,dens,..)... OK(CPU=0.000423727s)
+
+THERMODYNAMICS: Initialize stored in U[] parameters (T,Cp,Pr,..)
+                and switch to Y-shifted Total Enthalpy:
+OK: U[] is initialized.
+
+Collect Body BC...OK
+Collect Fans...OK
+Collect Surface Sources...OK
+Collect Contact resistance BC...OK
+Collect Perforated plates BC...OK
+Collect Electric contact BC...OK
+Collect Surface Goals...
+Received 4 wall face(s) and 0 virtual face(s)...
+ OK
+Total CPU time 0 s
+Collect Unused surface area...OK
+
+MWS =85.792
+
+There is 1 subdomain in fluid:
+NPROC = 1, nested_parallelization = 0
+NPART = 1
+Calculate gap size: 
+	Min gap size       4.270625e-01 (fid=0)
+	Max gap size       4.270625e-01 (fid=33)
+	Enlarged by r_d_cv 0
+	Time               0s
+Calculate wall distance: initialization -> real wall faces = 64 (CPU=0s)
+	geomsd(0) min=1.820950e-02 (nav=313), max=2.130678e-01 (nav=177) (CPU=0.001s)
+
+/-----------------------------------------------------------/
+SOLVER TOPOLOGY DATA:
+
+BRICKS: |level1| sum         0
+
+CV:     Total               395
+CV:     Fluid               318
+CV:     Solid               77
+
+CV:     G.Fluid Thin Profile    0.00 % (0)
+CV:     G.Solid Thin Profile   63.64 % (49)
+
+CV:     G.Fluid Non-Convex      0.00 % (0)
+CV:     G.Solid Non-Convex      0.00 % (0)
+
+FACE_A: Fluid          (af) 588
+FACE_A: Max number placed on a brick-face in cv: 1
+FACE_A: Solid          (as) 689
+
+FACE_W: Total               1823
+FACE_W: Fluid/Solid    (fs) 96
+FACE_W: Fluid/Fluid    (ff) 0
+FACE_W: Solid/Solid    (ss) 0
+FACE_W: Opening BC               (fo)  32
+FACE_W: Fluid/Bound              (fw)  732
+FACE_W: Solid/Bound              (sw)  290
+FACE_W: Fluid/Bound Real Wall    (frw) 64
+FACE_W: Solid/Bound Real Wall    (srw) 130
+FACE_W: Max number placed in cv: 4
+Fluid:
+CV Max Disbalance:                9.09473e-17 (ncv=309)
+Solid:
+CV Max Disbalance:                1.14907e-16 (ncv=5)
+/-----------------------------------------------------------/
+
+Create solver core
+ MDS: Converting solver problem ...
+MDS: OK
+slv : Calculations at run start
+slv : Create sub-domains supervisors:
+slv : 	1 fluid
+slv : 	2 solid
+slv : Create sub-domains mesh connectivity supervisors:
+slv : 	2 fw one to one
+slv : Collect slices by phenomena...
+slv : 	fluid flow slices were created:	1
+slv : 	heat transfer slices were created:	3
+slv : 	electric current flow slices were created:	0
+slv : 	radiation slices were created:	0
+slv : Creating meshes proxies for multigrid...
+slv : Convert MESH[0] to multigrid mesh proxy...
+slv : 572 bricks are accounted by implicit methods(100% of total)
+slv : max tree bricks count = 1
+alg : MG: create topological coarsening...
+alg : Mesh 0  OK
+slv : Building views for fluid flow...
+slv : 1 views are created
+slv : Building fluid flow views schemes...
+slv : Building views for heat transfer...
+slv : 1 views are created
+slv : Building heat transfer views schemes...
+slv : Building electric current flow views schemes...
+slv : PrecalcAtStart views for fluid flow...
+== precalculation at run start at fluid subdom 0
+
+MARK CVs and A-FACEs WITH/NEAR GEOMETRICAL PECULIARITIES:
+
+== precalculation ok
+slv : PrecalcAtStart views for heat transfer...
+== precalculation at run start at fluid subdom 0
+
+MARK CVs and A-FACEs WITH/NEAR GEOMETRICAL PECULIARITIES:
+
+== precalculation ok
+Laplacian approximations statisticks:
+	Number of open faces        :43
+	N of computed(stored) approximations:42
+	2-point approximations    :  2.3 %
+	Thin profile approximations : 97.7 %
+
+Laplacian approximations statisticks:
+	Number of open faces        :45
+	N of computed(stored) approximations:44
+	2-point approximations    :  2.2 %
+	Thin profile approximations : 97.8 %
+
+Creating view scheme...
+2 heat transfer algebraic views are created
+mgl = 31 size = 38
+mgl = 30 size = 17
+
+mgl = 31 size = 39
+mgl = 30 size = 19
+
+slv : PrecalcAtStart views for electric current flow...
+slv : PrecalcAtStart views for radiation...
+slv : ------------ Start of Preliminary step at Calculation start ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(0)=686.33637134413      , max(0)=686.33637134413      
+slv :    rho:         min(0)=1.2036462258349      , max(0)=1.2036462258349      
+slv :    p:           min(0)=101320               , max(0)=101320               
+slv :    e:           min(0)=210971.32333596      , max(0)=210971.32333596      
+slv :    T:           min(0)=293.2                , max(0)=293.2                
+slv :    Mach:        min(0)=2                    , max(0)=2                    
+slv :    Y_turb[0]:   min(0)=282.6345687779       , max(0)=282.6345687779       
+slv :    Y_turb[1]:   min(0)=650636.69677096      , max(0)=650636.69677096      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+slv : ------------ End of Preliminary step at Calculation start ------------
+
+----------------------------------------------------------
+BCF checking (solver)...
+----------------------------------------------------------
+
+Estimated cfld size=0.04 Mb
+Writing cfld file "14-HEAT_TRANSFER_IN_SOLID\00564-thin_profile_T_across_BC_-2_-3_-1_comp\ft_run\1/r_000000.cfld"...
+Working in No GDBLight mode
+Working in No GDBLight mode
+FILE SAVED: r_000000.cfld. Total save cfld took 0.03 sec.
+real cfld size=0.01 Mb
+OK
+Estimated fld size=0.13 Mb
+Writing fld file "14-HEAT_TRANSFER_IN_SOLID\00564-thin_profile_T_across_BC_-2_-3_-1_comp\ft_run\1/r_000000.fld"...
+FILE SAVED: r_000000.fld. Total save fld took 0.00 sec.
+real fld size=0.02 Mb
+OK
+Init simple interpolator... OK (0.001 sec)
+BC 'Inlet Mach Number 1' is on 16 faces (AS area=0.0102495, CAD area=0.01027, difference=-0.2%)
+BC 'Static Pressure 1' is on 16 faces (AS area=0.0102495, CAD area=0.01027, difference=-0.2%)
+BC 'Outer Wall 1' is on 31 faces (AS area=0.019986, CAD area=0.020091, difference=-0.5%)
+Surface goal 'SG Heat Transfer Rate 1' is on 31 faces
+Surface goal 'SG Av Temperature (Solid) 1' is on 31 faces
+Surface goal 'SG Max Temperature (Solid) 1' is on 66 faces
+Surface goal 'SG Max Temperature (Solid) 2' is on 66 faces
+
+Preview parameters:
+	Density (Fluid)
+	Density (Solid)
+	Pressure
+	Temperature
+	Temperature (Fluid)
+	Temperature (Solid)
+	Velocity
+	Velocity (X)
+	Velocity (Y)
+	Velocity (Z)
+	Mach Number
+	Dynamic Pressure
+	Thermodynamic Pressure
+	Total Pressure
+	Dynamic Viscosity
+	Prandtl Number
+	Solid Thermal Conductivity (X)
+	Solid Thermal Conductivity (Y)
+	Solid Thermal Conductivity (Z)
+	Sonic Speed
+	Specific Heat (Cp)
+	Stagnation Density
+	Heat Flux
+	Heat Flux (X)
+	Heat Flux (Y)
+	Heat Flux (Z)
+	Overheat above Melting Temperature
+	Total Enthalpy
+	Total Temperature
+	Fmju
+	Total Viscosity
+	Turbulence Intensity
+	Turbulence Length
+	Turbulent Dissipation
+	Turbulent Energy
+	Turbulent Time
+	Turbulent Viscosity
+	Acoustic Power
+	Acoustic Power Level
+39 parameter(s) in preview list of parameters
+
+Calculation started at	22.2.2017	7:50:23
+Total CPU time 0 s
+
+================== Tstep=0 ===================
+Boundary layer settings:
+	Separation tau    on
+	Enable 3D effects off
+BL MODEL         	Ignore compressibility  off
+	BL on porous body  off
+	Separ. tau corr factor 0
+	Separ. tau kappa 0.1
+	Separ. tau KV0 0.1
+------------------------
+NumerCore CHT-start settings:
+	Min typical size					1
+	Zero vel ht factor				0.006
+	C_mju_turb_min                   0.01
+	Threshold value for K-E filter   0.00205567
+	C_mju                            0.09
+	C_eps1                           1.44
+	C_eps2                           1.92
+	Sigma_k                          1
+	Sigma_eps                        1.3
+	Sigma_c                          0.9
+	Approx mode                      1st order
+-------------
+NumCoreFESSettings:
+	Maximum possible Mach	0
+	Turbulent Prandtl		0.9
+-------------
+slv : Implicit schemes in fluid settings:
+slv : INPR	: rel_resid=0.00790569
+slv : BACKGROUND	: rel_resid=0.00790569
+slv : DVGR	: rel_resid=0.00790569
+slv : MOMENTUM	: rel_resid=0.00790569
+slv : CHT	: rel_resid=0.00790569
+slv : Y_TD	: rel_resid=0.00790569
+slv : Y_TURB	: rel_resid=0.00790569
+slv : LMA	: rel_resid=0.00790569
+slv : UVGI	: rel_resid=0.00790569
+slv : NOx	: rel_resid=0.00790569
+slv : VOL_FRAC_IM_PHASE	: rel_resid=0.00790569
+slv : Disable wall motion impact into H threshold=10
+slv : Relax par ring =0.05
+slv : Isothermal cavitation CF corrector = 1
+slv : Isothermal cavitation pseudo transient corrector = -1
+slv : Isothermal cavitation forced time step in cavitated regions = -1
+slv : force_free_surface_VOF = -1
+slv : ---------------------------------------
+------Solid settings---
+Approximation mode = 2'nd order && thin_profiles
+Solid temperature eps_abs scaling factor: 0.001
+number dofs per absorptive face: 9
+subgrid ratio: 0.500000
+Blink filter: disabled
+------------------------------
+slv : Iterations settings:
+slv : Max number of outer iter = 1
+slv : Max number of Mass&Energy iter = 1
+slv : Max Courant factor = 10
+slv : Conservation laws tolerance residuals:
+slv : 	MASS	0.005
+slv : 	MOMENTUM	0.005
+slv : 	ENERGY	0.005
+slv : 	SPECIES	0.005
+slv : 	TURBULENCE	0.005
+slv : ---------------------------------------
+slv : Scheme blocks settings:
+slv : INPR	: stop_crit=residAbs_AND_residRel 
+slv : BACKGROUND	: stop_crit=residAbs_AND_residRel 
+slv : DVGR	: stop_crit=residAbs_AND_residRel 
+slv : MOMENTUM	: stop_crit=residAbs_AND_residRel 
+slv : CHT	: stop_crit=residAbs_AND_residRel 
+slv : Y_TD	: stop_crit=residAbs_AND_residRel 
+slv : Y_TURB	: stop_crit=residAbs_AND_residRel 
+slv : LMA	: stop_crit=residAbs_AND_residRel 
+slv : UVGI	: stop_crit=residAbs_AND_residRel 
+slv : NOx	: stop_crit=residAbs_AND_residRel 
+slv : VOL_FRAC_IM_PHASE	: stop_crit=residAbs_AND_residRel 
+slv : ---------------------------------------
+Accuracy scale coeff =1
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.688611     |    211|1.09462      |    728|1003.35      |    215|1855.24      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  1.488808e+04|  6.225614e+02|  4.630356e-10|  5.146585e-26|  8.717194e-13|     1|   9|0|n|30|  OK  |
+|  3.381946e+03|  3.287525e+02|  6.722967e-10|  7.578113e-26|  1.016076e-12|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(4)=686.11432437147      , max(0)=686.33637134413      
+slv :    rho:         min(73)=1.2036462258349      , max(95)=1.2036462258349      
+slv :    p:           min(3)=101320               , max(4)=101388.59994683      
+slv :    e:           min(3)=210971.32333596      , max(4)=211114.16405412      
+slv :    T:           min(3)=293.2                , max(4)=293.39851465072      
+slv :    Mach:        min(4)=1.9986764503103      , max(3)=2                    
+slv :    Y_turb[0]:   min(23)=275.9771564037       , max(188)=282.63360197074      
+slv :    Y_turb[1]:   min(23)=621211.46020261      , max(188)=650632.42355973      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.05 Mb, Memory Working Set Peak = 34.05 Mb
+Process Threads Number: 11
+
+================== Tstep=1 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    728|0.547616     |      3|0.905827     |    636|415.265      |     13|1496.49      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  8.633745e+03|  4.870059e+02|  8.666849e-07|  6.855849e-23|  3.421441e-11|     1|   9|0|n|30|  OK  |
+|  1.612519e+03|  2.143174e+02|  1.504026e-06|  1.854091e-24|  3.909761e-12|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(4)=685.94837285036      , max(0)=686.33637134413      
+slv :    rho:         min(96)=1.2035933479068      , max(4)=1.2036961336357      
+slv :    p:           min(302)=101320               , max(4)=101442.25090793      
+slv :    e:           min(302)=210971.32333596      , max(4)=211217.11970427      
+slv :    T:           min(302)=293.2                , max(4)=293.54159853599      
+slv :    Mach:        min(4)=1.9977059685225      , max(27)=2                    
+slv :    Y_turb[0]:   min(24)=269.60803548605      , max(188)=282.6282476865       
+slv :    Y_turb[1]:   min(24)=593685.21043076      , max(188)=650608.7696632       
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+slv : Approximations in solid correction reasons:
+slv : 	Nonmonotonic = 12
+slv : Operator was corrected 0 times 
+Memory Working Set Current = 34.03 Mb, Memory Working Set Peak = 34.20 Mb
+Process Threads Number: 11
+
+================== Tstep=2 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    576|0.550572     |      3|0.91108      |    498|476.22       |     13|1506.56      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  5.706541e+03|  3.935453e+02|  2.159508e-06|  1.571577e-21|  1.684334e-10|     1|   9|0|n|30|  OK  |
+|  7.917190e+02|  1.266143e+02|  5.928118e-06|  1.368427e-23|  1.147704e-11|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(4)=685.79259132705      , max(171)=686.33732642133      
+slv :    rho:         min(96)=1.2035325539932      , max(4)=1.2037751916666      
+slv :    p:           min(168)=101319.98720452      , max(4)=101494.25225093      
+slv :    e:           min(2)=210971.31251908      , max(4)=211311.51504622      
+slv :    T:           min(2)=293.1999849671       , max(4)=293.67278562731      
+slv :    Mach:        min(4)=1.9968061338994      , max(2)=2.0000001022468      
+slv :    Y_turb[0]:   min(35)=263.50938135802      , max(19)=282.62214409992      
+slv :    Y_turb[1]:   min(35)=567900.71537518      , max(19)=650581.84913982      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+slv : Approximations in solid correction reasons:
+slv : 	Nonmonotonic = 12
+slv : Operator was corrected 0 times 
+Memory Working Set Current = 34.08 Mb, Memory Working Set Peak = 34.20 Mb
+Process Threads Number: 11
+
+================== Tstep=3 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    576|0.547853     |      3|0.903085     |    116|467.53       |    215|1494.27      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  3.418294e+03|  2.993368e+02|  1.603105e-06|  4.623254e-21|  3.054984e-10|     1|   9|0|n|30|  OK  |
+|  4.791785e+02|  8.521975e+01|  1.310071e-05|  2.996366e-23|  1.595879e-11|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(4)=685.64881225864      , max(171)=686.33877833361      
+slv :    rho:         min(96)=1.2034780897051      , max(4)=1.2038770213349      
+slv :    p:           min(283)=101319.99539583      , max(4)=101543.63001965      
+slv :    e:           min(2)=210971.28688681      , max(4)=211396.43736224      
+slv :    T:           min(2)=293.19994934434      , max(4)=293.79080746394      
+slv :    Mach:        min(4)=1.9959864604429      , max(2)=2.0000003379845      
+slv :    Y_turb[0]:   min(36)=257.66478378903      , max(19)=282.61805585393      
+slv :    Y_turb[1]:   min(36)=543716.49029396      , max(19)=650563.83742733      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+slv : Approximations in solid correction reasons:
+slv : 	Nonmonotonic = 1
+slv : Operator was corrected 0 times 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.23 Mb
+Process Threads Number: 11
+
+================== Tstep=4 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    576|0.544749     |      3|0.893501     |    116|442.16       |    215|1494.53      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  1.781221e+03|  2.081982e+02|  2.752395e-06|  1.912391e-18|  6.081666e-09|     1|   9|0|n|30|  OK  |
+|  3.098743e+02|  6.226713e+01|  2.274335e-05|  3.139838e-22|  3.947775e-11|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(4)=685.51647080195      , max(171)=686.33988215467      
+slv :    rho:         min(96)=1.2034383099113      , max(4)=1.2039957878977      
+slv :    p:           min(283)=101319.99091845      , max(4)=101590.27019372      
+slv :    e:           min(2)=210971.24454373      , max(4)=211472.67171414      
+slv :    T:           min(2)=293.19989049752      , max(4)=293.89675509522      
+slv :    Mach:        min(4)=1.9952414701032      , max(2)=2.0000007171935      
+slv :    Y_turb[0]:   min(39)=252.05911118763      , max(19)=282.61400073175      
+slv :    Y_turb[1]:   min(39)=521004.96003171      , max(19)=650545.98288916      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+slv : Approximations in solid correction reasons:
+slv : 	Nonmonotonic = 12
+slv : Operator was corrected 0 times 
+Interpolator cache: total calls 180, optimised calls 67 (37.2 %)
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.23 Mb
+Process Threads Number: 11
+Iteration : time = 0.140405 , count = 5 , time/count = 0.028081
+Calculate_inc() : time = 0.015601 , count = 5 , time/count = 0.0031202
+TreatFlowEvolution() : time = 0.093603 , count = 5 , time/count = 0.0187206
+SolverPreview : time = 0 , count = 6 , time/count = 0
+TreatGoals : time = 0.093603 , count = 5 , time/count = 0.0187206
+
+================== Tstep=5 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    576|0.543145     |    211|0.888927     |    116|465.282      |    215|1494.71      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  6.194352e+02|  1.277435e+02|  2.439990e-06|  5.609088e-18|  1.051783e-08|     1|   9|0|n|30|  OK  |
+|  2.004998e+02|  4.745903e+01|  3.428633e-05|  2.771697e-22|  3.974776e-11|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(4)=685.39490682912      , max(45)=686.34085291558      
+slv :    rho:         min(79)=1.2033949629941      , max(4)=1.2041265328477      
+slv :    p:           min(8)=101319.98571833      , max(4)=101634.10366717      
+slv :    e:           min(2)=210971.18516749      , max(41)=211550.51846997      
+slv :    T:           min(2)=293.19980797865      , max(41)=294.00494358477      
+slv :    Mach:        min(4)=1.9945657076865      , max(2)=2.0000012349934      
+slv :    Y_turb[0]:   min(40)=246.67838999845      , max(19)=282.60998088135      
+slv :    Y_turb[1]:   min(131)=499650.86480933      , max(19)=650528.29228342      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.23 Mb
+Process Threads Number: 11
+
+================== Tstep=6 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    576|0.540552     |    211|0.888694     |    116|461.338      |    215|1494.8       |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  2.039338e+02|  6.480646e+01|  3.035752e-06|  1.500648e-16|  5.557376e-08|     1|   9|0|n|30|  OK  |
+|  1.274294e+02|  3.610566e+01|  4.668704e-05|  7.429511e-23|  2.505729e-11|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(113)=685.27500161667      , max(81)=686.34203355815      
+slv :    rho:         min(79)=1.2033452460919      , max(4)=1.2042651063958      
+slv :    p:           min(8)=101319.97511273      , max(4)=101675.08318475      
+slv :    e:           min(2)=210971.10944315      , max(41)=211630.07071684      
+slv :    T:           min(2)=293.19970273982      , max(41)=294.11550230153      
+slv :    Mach:        min(41)=1.993813035442       , max(2)=2.0000018847471      
+slv :    Y_turb[0]:   min(124)=241.50969736244      , max(19)=282.60599774128      
+slv :    Y_turb[1]:   min(137)=479549.87358985      , max(19)=650510.76987198      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+slv : Approximations in solid correction reasons:
+slv : 	Nonmonotonic = 4
+slv : Operator was corrected 0 times 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=7 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    576|0.538953     |    211|0.888476     |    116|496.379      |    215|1494.8       |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  8.322024e+01|  3.063122e+01|  3.973546e-06|  1.849658e-16|  5.785583e-08|     1|   9|0|n|30|  OK  |
+|  7.920588e+01|  2.707660e+01|  5.822945e-05|  2.809029e-23|  1.685407e-11|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=685.14217962771      , max(45)=686.34257417836      
+slv :    rho:         min(79)=1.203303301783       , max(4)=1.2044079269094      
+slv :    p:           min(8)=101319.9632188       , max(4)=101713.25644953      
+slv :    e:           min(2)=210971.01864768      , max(41)=211705.43818329      
+slv :    T:           min(2)=293.19957655569      , max(41)=294.22024516808      
+slv :    Mach:        min(41)=1.9930555012834      , max(2)=2.000002651014       
+slv :    Y_turb[0]:   min(179)=236.54106538306      , max(19)=282.60205224087      
+slv :    Y_turb[1]:   min(179)=460607.37489022      , max(19)=650493.41816082      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+slv : Approximations in solid correction reasons:
+slv : 	Nonmonotonic = 1
+slv : Operator was corrected 0 times 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=8 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.537738     |    211|0.888275     |    116|611.191      |    215|1494.74      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  6.482203e+00|  8.130464e+00|  4.499473e-06|  1.688904e-17|  1.496797e-08|     1|   9|0|n|30|  OK  |
+|  4.801767e+01|  2.003820e+01|  6.690866e-05|  3.000195e-23|  1.563016e-11|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=685.00407461447      , max(81)=686.34259787458      
+slv :    rho:         min(43)=1.203258804287       , max(4)=1.2045525050328      
+slv :    p:           min(8)=101319.94839881      , max(4)=101748.95397863      
+slv :    e:           min(2)=210970.91398361      , max(41)=211776.58580784      
+slv :    T:           min(2)=293.19943109751      , max(41)=294.31912345726      
+slv :    Mach:        min(41)=1.9923190082988      , max(2)=2.0000035163036      
+slv :    Y_turb[0]:   min(139)=231.76139559673      , max(19)=282.59814494368      
+slv :    Y_turb[1]:   min(139)=442737.41982185      , max(19)=650476.23841968      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=9 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536832     |    211|0.888093     |    579|785.886      |    215|1494.65      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  1.583605e+00|  4.152638e+00|  4.354316e-06|  1.973965e-18|  4.178894e-09|     1|   9|0|n|30|  OK  |
+|  2.808834e+01|  1.474474e+01|  7.229454e-05|  2.503308e-23|  1.316991e-11|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=684.86952817381      , max(45)=686.3420541169       
+slv :    rho:         min(43)=1.2032174195304      , max(4)=1.20469230311        
+slv :    p:           min(8)=101319.92988604      , max(4)=101781.87549054      
+slv :    e:           min(2)=210970.79588168      , max(41)=211845.92410939      
+slv :    T:           min(2)=293.1992669639       , max(41)=294.41548721748      
+slv :    Mach:        min(41)=1.9916016720306      , max(2)=2.0000044565007      
+slv :    Y_turb[0]:   min(179)=227.1603825923       , max(19)=282.59427615026      
+slv :    Y_turb[1]:   min(297)=425861.79674041      , max(19)=650459.23104727      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+slv : +--------------------------+------------+-------+------------+------------+
+slv : |      Collector name      | Total Time | Count |  Avg Time  |  Max Time  |
+slv : +--------------------------+------------+-------+------------+------------+
+slv : | CHT_MDS_import_export    |       0.001|      9|       0.000|       0.000|
+slv : | CSolver_core_update_BC_1 |       0.002|     10|       0.000|       0.000|
+slv : | Calculate_inc            |       0.059|      9|       0.007|       0.007|
+slv : | LiSy_make_portrait       |       0.000|      4|       0.000|       0.000|
+slv : | Results_processing       |       0.101|      9|       0.011|       0.094|
+slv : | build_sl_ordering_CHT    |       0.000|     10|       0.000|       0.000|
+slv : | perform_stage_total      |       0.114|      4|       0.029|       0.114|
+slv : | precalc_at_start_MDS     |       0.114|      4|       0.029|       0.114|
+slv : | solve_CHT_MDS            |       0.013|     10|       0.001|       0.002|
+slv : | solve_CHT_alg_MDS        |       0.004|     20|       0.000|       0.000|
+slv : | solve_PSQJ_MDS_total     |       0.000|     10|       0.000|       0.000|
+slv : | update_BC_MDS            |       0.001|     11|       0.000|       0.000|
+slv : +--------------------------+------------+-------+------------+------------+
+Interpolator cache: total calls 180, optimised calls 67 (37.2 %)
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+Iteration : time = 0.046801 , count = 5 , time/count = 0.0093602
+Calculate_inc() : time = 0.0312 , count = 5 , time/count = 0.00624
+TreatFlowEvolution() : time = 0.015601 , count = 5 , time/count = 0.0031202
+SolverPreview : time = 0 , count = 5 , time/count = 0
+TreatGoals : time = 0 , count = 5 , time/count = 0
+
+================== Tstep=10 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.53642      |    211|0.887934     |    579|785.151      |    215|1494.56      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  4.608169e-01|  2.401595e+00|  4.298661e-06|  1.201238e-18|  3.330435e-09|     1|   9|0|n|30|  OK  |
+|  1.566921e+01|  1.068161e+01|  7.619011e-05|  1.340029e-23|  9.947598e-12|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=684.73781556688      , max(81)=686.34181708565      
+slv :    rho:         min(43)=1.2031810534313      , max(4)=1.2048274030142      
+slv :    p:           min(8)=101319.90654293      , max(90)=101813.23960343      
+slv :    e:           min(2)=210970.66186717      , max(41)=211913.2043204       
+slv :    T:           min(2)=293.19908071558      , max(41)=294.50899072097      
+slv :    Mach:        min(41)=1.9909025309904      , max(2)=2.0000054417057      
+slv :    Y_turb[0]:   min(136)=222.7284454631       , max(19)=282.59044597198      
+slv :    Y_turb[1]:   min(136)=409909.21831341      , max(19)=650442.39582832      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=11 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536296     |    211|0.8878       |    579|784.907      |    215|1494.51      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  9.957565e-02|  1.056816e+00|  4.349324e-06|  2.627510e-19|  1.665777e-09|     1|   9|0|n|30|  OK  |
+|  8.250204e+00|  7.546574e+00|  7.956169e-05|  6.192511e-24|  6.677325e-12|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=684.60944880833      , max(51)=686.34155121513      
+slv :    rho:         min(43)=1.2031499224723      , max(4)=1.2049591309779      
+slv :    p:           min(8)=101319.87718768      , max(90)=101844.77345639      
+slv :    e:           min(2)=210970.47773354      , max(41)=211978.35899465      
+slv :    T:           min(2)=293.1988248136       , max(41)=294.59954023352      
+slv :    Mach:        min(41)=1.9902233667407      , max(2)=2.0000063674026      
+slv :    Y_turb[0]:   min(136)=218.45666670505      , max(19)=282.58665438392      
+slv :    Y_turb[1]:   min(136)=394814.60787579      , max(19)=650425.73211486      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=12 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536285     |    211|0.887694     |    579|784.849      |    215|1494.5       |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  1.984013e-02|  4.387354e-01|  4.358490e-06|  4.255232e-20|  6.609318e-10|     1|   9|0|n|30|  OK  |
+|  4.055611e+00|  5.171155e+00|  8.244821e-05|  4.060908e-24|  6.204814e-12|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=684.48205506402      , max(145)=686.3424010383       
+slv :    rho:         min(43)=1.2031236845272      , max(4)=1.2050875506102      
+slv :    p:           min(8)=101319.85415473      , max(90)=101874.22318135      
+slv :    e:           min(2)=210970.26862728      , max(41)=212040.18904369      
+slv :    T:           min(2)=293.19853420559      , max(41)=294.68546930715      
+slv :    Mach:        min(41)=1.9895628836325      , max(2)=2.0000072345711      
+slv :    Y_turb[0]:   min(233)=214.33673737485      , max(19)=282.58290126311      
+slv :    Y_turb[1]:   min(233)=380518.46960344      , max(19)=650409.2389544       
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=13 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536313     |    211|0.887617     |    579|784.85       |    215|1494.53      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  3.771552e-03|  1.833100e-01|  4.360749e-06|  6.257965e-21|  3.034839e-10|     1|   9|0|n|30|  OK  |
+|  1.834830e+00|  3.416862e+00|  8.482136e-05|  2.974286e-24|  5.483614e-12|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=684.35651798533      , max(145)=686.34349290563      
+slv :    rho:         min(79)=1.2030999383755      , max(4)=1.2052119001342      
+slv :    p:           min(2)=101319.82269965      , max(90)=101901.64209977      
+slv :    e:           min(2)=210970.10078196      , max(41)=212099.25749234      
+slv :    T:           min(2)=293.19830094048      , max(41)=294.76756041258      
+slv :    Mach:        min(41)=1.9889209793707      , max(2)=2.000008150682       
+slv :    Y_turb[0]:   min(233)=210.36090554055      , max(19)=282.57918641601      
+slv :    Y_turb[1]:   min(233)=366966.32599885      , max(19)=650392.91518084      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=14 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536352     |    211|0.887563     |    579|784.864      |    215|1494.6       |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  7.204752e-04|  8.547167e-02|  4.360873e-06|  3.009380e-21|  2.292907e-10|     1|   9|0|n|30|  OK  |
+|  7.519708e-01|  2.167712e+00|  8.666740e-05|  1.695398e-24|  4.176215e-12|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=684.234127762        , max(145)=686.34440078254      
+slv :    rho:         min(79)=1.2030758737555      , max(4)=1.2053316772118      
+slv :    p:           min(2)=101319.72094805      , max(90)=101927.09285712      
+slv :    e:           min(2)=210969.91547432      , max(41)=212156.15243717      
+slv :    T:           min(2)=293.19804340691      , max(41)=294.84663086423      
+slv :    Mach:        min(41)=1.9882986215436      , max(2)=2.0000089765304      
+slv :    Y_turb[0]:   min(233)=206.52193544267      , max(19)=282.57550959845      
+slv :    Y_turb[1]:   min(233)=354108.2376032       , max(19)=650376.759479        
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Interpolator cache: total calls 180, optimised calls 67 (37.2 %)
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+Iteration : time = 0.046802 , count = 5 , time/count = 0.0093604
+Calculate_inc() : time = 0.046802 , count = 5 , time/count = 0.0093604
+TreatFlowEvolution() : time = 0 , count = 5 , time/count = 0
+SolverPreview : time = 0 , count = 5 , time/count = 0
+TreatGoals : time = 0 , count = 5 , time/count = 0
+
+================== Tstep=15 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536392     |    211|0.887526     |    579|784.879      |    215|1494.7       |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  1.680237e-04|  5.057197e-02|  4.360659e-06|  3.640992e-21|  2.624816e-10|     1|   9|0|n|30|  OK  |
+|  2.755060e-01|  1.315153e+00|  8.800320e-05|  8.486881e-25|  3.076650e-12|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=684.11495571807      , max(145)=686.34485307704      
+slv :    rho:         min(79)=1.2030550478107      , max(4)=1.2054466823129      
+slv :    p:           min(2)=101319.59344455      , max(41)=101951.01279608      
+slv :    e:           min(2)=210969.71477546      , max(41)=212211.01326893      
+slv :    T:           min(2)=293.19776448319      , max(41)=294.92287438216      
+slv :    Mach:        min(41)=1.9876953430024      , max(2)=2.0000097039176      
+slv :    Y_turb[0]:   min(233)=202.81306492768      , max(19)=282.5718705301       
+slv :    Y_turb[1]:   min(233)=341898.35778125      , max(19)=650360.77043073      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=16 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536433     |    211|0.887501     |    579|784.893      |    215|1494.81      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  7.248119e-05|  4.041002e-02|  4.360406e-06|  4.211530e-21|  2.921055e-10|     1|   9|0|n|30|  OK  |
+|  8.986319e-02|  7.654407e-01|  8.888958e-05|  4.277646e-25|  2.184919e-12|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=683.99887358578      , max(156)=686.34474389384      
+slv :    rho:         min(48)=1.2030269581608      , max(4)=1.2055570342493      
+slv :    p:           min(2)=101319.46574229      , max(41)=101976.33264213      
+slv :    e:           min(2)=210969.51492651      , max(47)=212266.11618317      
+slv :    T:           min(2)=293.19748674065      , max(47)=294.99945433719      
+slv :    Mach:        min(41)=1.9871102455822      , max(2)=2.0000105031278      
+slv :    Y_turb[0]:   min(233)=199.2279695948       , max(19)=282.56826890497      
+slv :    Y_turb[1]:   min(233)=330294.54561197      , max(19)=650344.94654779      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=17 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536474     |    211|0.887482     |    579|784.904      |    215|1494.92      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  5.496403e-05|  3.856336e-02|  3.435252e-06|  4.350426e-21|  2.982009e-10|     1|   9|0|n|30|  OK  |
+|  2.633964e-02|  4.314229e-01|  8.942680e-05|  1.802516e-25|  1.481482e-12|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=683.88560445438      , max(1)=686.35358762409      
+slv :    rho:         min(113)=1.2029788665938      , max(4)=1.2056630120109      
+slv :    p:           min(2)=101319.34282901      , max(41)=102000.60365706      
+slv :    e:           min(2)=210969.31955253      , max(47)=212319.72437135      
+slv :    T:           min(2)=293.19721521724      , max(47)=295.07395697825      
+slv :    Mach:        min(41)=1.9865425850497      , max(2)=2.0000113997449      
+slv :    Y_turb[0]:   min(233)=195.76072954033      , max(19)=282.5647043991       
+slv :    Y_turb[1]:   min(233)=319258.01831452      , max(19)=650329.28629548      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=18 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536515     |    211|0.887467     |    579|784.912      |    215|1495.03      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  4.928644e-05|  3.679461e-02|  3.080402e-06|  4.186916e-21|  2.922478e-10|     1|   9|0|n|30|  OK  |
+|  7.140152e-03|  2.410195e-01|  8.972771e-05|  1.069191e-25|  1.005418e-12|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=683.77484150359      , max(1)=686.37226357312      
+slv :    rho:         min(113)=1.2028788966974      , max(4)=1.2057648749581      
+slv :    p:           min(2)=101319.22432184      , max(41)=102023.83555433      
+slv :    e:           min(2)=210969.12906826      , max(47)=212370.81913679      
+slv :    T:           min(2)=293.19695048938      , max(47)=295.14496655903      
+slv :    Mach:        min(41)=1.9859916032923      , max(2)=2.0000123748616      
+slv :    Y_turb[0]:   min(233)=192.40579892368      , max(19)=282.56117667616      
+slv :    Y_turb[1]:   min(150)=308753.03269377      , max(19)=650313.78810967      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=19 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536555     |    211|0.887453     |    579|784.917      |    215|1495.13      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  4.525884e-05|  3.506211e-02|  2.828678e-06|  4.000754e-21|  2.850773e-10|     1|   9|0|n|30|  OK  |
+|  1.872482e-03|  1.383332e-01|  8.988735e-05|  8.292821e-26|  8.189005e-13|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=683.66629054158      , max(1)=686.39183773961      
+slv :    rho:         min(113)=1.2027755188902      , max(4)=1.2058628720026      
+slv :    p:           min(2)=101319.11014343      , max(41)=102046.03464266      
+slv :    e:           min(2)=210968.94432283      , max(47)=212421.16245434      
+slv :    T:           min(2)=293.19669373714      , max(47)=295.21493180583      
+slv :    Mach:        min(41)=1.9854566345302      , max(2)=2.0000133963764      
+slv :    Y_turb[0]:   min(233)=189.15797790073      , max(19)=282.5576853916       
+slv :    Y_turb[1]:   min(150)=298746.62439387      , max(19)=650298.45040906      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+slv : +--------------------------+------------+-------+------------+------------+
+slv : |      Collector name      | Total Time | Count |  Avg Time  |  Max Time  |
+slv : +--------------------------+------------+-------+------------+------------+
+slv : | CHT_MDS_import_export    |       0.001|     19|       0.000|       0.000|
+slv : | CSolver_core_update_BC_1 |       0.005|     20|       0.000|       0.000|
+slv : | Calculate_inc            |       0.123|     19|       0.006|       0.007|
+slv : | LiSy_make_portrait       |       0.000|      4|       0.000|       0.000|
+slv : | Results_processing       |       0.113|     19|       0.006|       0.094|
+slv : | build_sl_ordering_CHT    |       0.000|     20|       0.000|       0.000|
+slv : | perform_stage_total      |       0.114|      4|       0.029|       0.114|
+slv : | precalc_at_start_MDS     |       0.114|      4|       0.029|       0.114|
+slv : | solve_CHT_MDS            |       0.024|     20|       0.001|       0.002|
+slv : | solve_CHT_alg_MDS        |       0.008|     40|       0.000|       0.000|
+slv : | solve_PSQJ_MDS_total     |       0.000|     20|       0.000|       0.000|
+slv : | update_BC_MDS            |       0.003|     21|       0.000|       0.000|
+slv : +--------------------------+------------+-------+------------+------------+
+Interpolator cache: total calls 180, optimised calls 67 (37.2 %)
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+Iteration : time = 0.046801 , count = 5 , time/count = 0.0093602
+Calculate_inc() : time = 0.046801 , count = 5 , time/count = 0.0093602
+TreatFlowEvolution() : time = 0 , count = 5 , time/count = 0
+SolverPreview : time = 0 , count = 5 , time/count = 0
+TreatGoals : time = 0 , count = 5 , time/count = 0
+
+================== Tstep=20 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536595     |    211|0.887441     |    579|784.918      |    215|1495.23      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  4.115349e-05|  3.309278e-02|  2.572093e-06|  3.757918e-21|  2.763486e-10|     1|   9|0|n|30|  OK  |
+|  5.110926e-04|  8.486137e-02|  3.194329e-05|  5.817376e-26|  6.430412e-13|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=683.55972238537      , max(1)=686.41228446469      
+slv :    rho:         min(113)=1.2026689847535      , max(4)=1.2059572443404      
+slv :    p:           min(2)=101319.00003029      , max(41)=102067.22057144      
+slv :    e:           min(2)=210968.76551048      , max(47)=212470.34895136      
+slv :    T:           min(2)=293.19644523047      , max(47)=295.28328934703      
+slv :    Mach:        min(41)=1.984937067577       , max(2)=2.0000144402135      
+slv :    Y_turb[0]:   min(239)=186.01238330857      , max(19)=282.55423019563      
+slv :    Y_turb[1]:   min(239)=289208.25055415      , max(19)=650283.27160401      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=21 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536634     |    211|0.887429     |    579|784.916      |    215|1495.32      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  3.775435e-05|  3.145313e-02|  2.359647e-06|  3.552315e-21|  2.685813e-10|     1|   9|0|n|30|  OK  |
+|  1.625117e-04|  5.693837e-02|  1.015698e-05|  4.297714e-26|  6.217249e-13|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=683.45494113144      , max(1)=686.43358025085      
+slv :    rho:         min(113)=1.2025597624768      , max(4)=1.2060482267753      
+slv :    p:           min(2)=101318.89421137      , max(41)=102087.43178928      
+slv :    e:           min(2)=210968.59363643      , max(47)=212518.15814423      
+slv :    T:           min(2)=293.19620636639      , max(47)=295.34973276278      
+slv :    Mach:        min(41)=1.9844321983666      , max(2)=2.000015497084       
+slv :    Y_turb[0]:   min(239)=182.96438693153      , max(19)=282.55081073553      
+slv :    Y_turb[1]:   min(239)=280109.74620407      , max(19)=650268.25010305      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=22 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536673     |    211|0.887418     |    579|784.912      |    215|1495.41      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  3.421807e-05|  2.961096e-02|  2.138630e-06|  3.264205e-21|  2.572619e-10|     1|   9|0|n|30|  OK  |
+|  6.976509e-05|  4.223622e-02|  4.360318e-06|  3.742672e-26|  5.666578e-13|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=683.35182518656      , max(1)=686.45570404465      
+slv :    rho:         min(113)=1.2024489539813      , max(4)=1.2061360433003      
+slv :    p:           min(2)=101318.79355019      , max(41)=102106.73891094      
+slv :    e:           min(2)=210968.43095954      , max(113)=212568.27644555      
+slv :    T:           min(2)=293.19598028417      , max(113)=295.41938529051      
+slv :    Mach:        min(41)=1.9839412635904      , max(2)=2.0000165254895      
+slv :    Y_turb[0]:   min(239)=180.00970066764      , max(19)=282.54742665723      
+slv :    Y_turb[1]:   min(239)=271425.0480425       , max(19)=650253.38431751      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 
+slv : nsd=1 
+Memory Working Set Current = 34.09 Mb, Memory Working Set Peak = 34.24 Mb
+Process Threads Number: 11
+
+================== Tstep=23 ===================
+slv : Calculations before CHT ------------
+|nsd|Real WF|NormalF|Cycle F|CriticF| EdgeF |CyclBrF|ExtParF|RWFnumSt|StLvlNum|  nfw  |  alp_U_min  |  nfw  |  alp_U_max  |  nfw  |  alp_T_min  |  nfw  |  alp_T_max  |  nfw  |  BL_s_min   |  nfw  |   BL_s_max  |
+|  0|     64|     62|      0|      0|      2|      0|      0|      64|      32|    579|0.536712     |    211|0.887408     |    579|784.903      |    215|1495.49      |      3|0            |      3|0            |
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  3.155550e-05|  2.812029e-02|  1.972219e-06|  2.981738e-21|  2.463151e-10|     1|   9|0|n|30|  OK  |
+|  4.107005e-05|  3.362990e-02|  2.566878e-06|  3.248845e-26|  4.973799e-13|     1|   9|0|n|30|  OK  |
+slv : Calculations after CHT ------------
+slv : View 0(0) T_solid: 
+slv : View 0(1) T_solid: 
+slv : min max in fluid subdom 0
+slv :    u:           min(41)=683.2503297706       , max(1)=686.47535595851      
+slv :    rho:         min(113)=1.2023380772218      , max(4)=1.2062261919119      
+slv :    p:           min(8)=101318.67631946      , max(41)=102125.18475604      
+slv :    e:           min(2)=210968.2769388       , max(113)=212619.07704151      
+slv :    T:           min(2)=293.19576623194      , max(113)=295.48998604562      
+slv :    Mach:        min(41)=1.9834638335707      , max(2)=2.0000174838966      
+slv :    Y_turb[0]:   min(239)=177.14426340242      , max(19)=282.54407760656      
+slv :    Y_turb[1]:   min(176)=263129.87448386      , max(19)=650238.67266491      
+slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
+slv : nsd=0 

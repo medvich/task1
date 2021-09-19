@@ -1,0 +1,593 @@
+Number of used processors (NPROC): 1.
+Number of mesh partitions (NPART): 1.
+Operating system:	Windows 7 Service Pack 1 (Version 6.1.7601)
+Total Physical Memory = 6.00 Gb, Available Physical Memory = 3.96 Gb
+Memory Working Set Current = 19.15 Mb, Memory Working Set Peak = 19.15 Mb
+CPU:	GenuineIntel, Stepping ID = 2, Model = 13, Family = 6, Extended model = 2, MMX SSE SSE2 Hyper-Threading Technology SSE3
+CPU Brand String:        Intel(R) Xeon(R) CPU E5-2680 0 @ 2.70GHz
+Cache Line Size = 64, L2 Associativity = 6, Cache Size = 256K
+Number of cores: 8, Processor type: 8664, Active processor mask: 255, Page size: 4096 bites
+std::thread::hardware_concurrency = 8
+OpenMP enabled (spec=200203). max_threads = 8, num_procs = 8, num_threads = 8.
+
+SOLIDWORKS 2016 SP3.0
+14-HEAT_TRANSFER_IN_SOLID\00804-Net_asm_2_objects\ft_run\1\1.fld
+Configuration name:	Default
+Project name:	as3d
+/*******************************************/
+/*         Project Summary                 */
+/*******************************************/
+Problem type:						internal
+Result resolution:					5
+Minimum gap size:					0.1
+Minimum wall thickness:				0.2
+Manual refinement:					Off
+Solid refinement:					Off
+Fluid substances count				0
+
+		Advanced capabilities
+Heat transfer						Off
+Transient						Off
+Gravitation						Off
+Laminar flow						Off
+Compressibility					Off
+Default wall condition				adiabatic wall
+Roughness:						0
+
+************************************************
+
+Geometry database loading ...OK
+Flow Simulation 2016  x64 / 3800 / SOLVER ver. efd_17_0.3746_30.12.2016+VOF_GUI_Therm_Slv_Integration_1 
+
+
+
+STATIONARY
+
+SOLID HEAT TRANSFER ONLY
+
+EXTERNAL=1  CHT=1  FROZEN=0  P_REF=1  RADIATION=0  HVAC_COMFORT_PARAMETERS=0
+IT=0   NT=2   NZ=0
+US_DIM=1
+-----------------------------------------------------------------------
+Allocating meshes:
+	CPU count: 1
+	MESH 0:
+		Sub-meshes count: 1
+-----------------------------------------------------------------------
+Memory Status before reading BCF:
+Memory Working Set Current = 23.60 Mb, Memory Working Set Peak = 23.60 Mb
+Process Threads Number: 11
+
+-----------------------------------------------------------------------
+BCF CHECKSUM DATA (Mesh 0):
+
+WARNING! 4 w-face(s) without fw-neigbours.
+FACE_A Area Sum:   G.Fluid        0.0000000000000000
+FACE_A Area Sum:   G.Solid        0.0400000000000000
+FACE_W Area Sum:                  0.9057600000000000
+FACE_W Nb   Sum:                  120
+AV Max Disbalance: G.Fluid        0 (cid=-1, avid=-1, pid=-1)
+AV Max Disbalance: G.Solid        0 (cid=-1, avid=-1, pid=-1)
+-----------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------
+MESHER TOPOLOGY DATA (Mesh 0):
+
+BRICKS: Total                 11
+BRICKS: 1-CV                  7
+BRICKS: 2-CV                  4
+BRICKS: Bad                   0
+
+AV:     G.Total               15
+AV:     G.Fluid               0
+AV:     G.Solid               15
+
+AV:     G.Fluid Thin Profile    0.00 % (0)
+AV:     G.Solid Thin Profile    0.00 % (0)
+
+AV:     G.Fluid Thin For Mega   0.00 % (0)
+AV:     G.Solid Thin For Mega   0.00 % (0)
+
+AV:     G.Fluid Non-Convex      0.00 % (0)
+AV:     G.Solid Non-Convex      0.00 % (0)
+
+FACE_A: G.Fluid          (af) 0 (partially opened 0)
+FACE_A: G.Solid          (as) 10 (partially opened 0)
+
+FACE_W: G.Total                 66          Brick/Bound
+FACE_W: G.Fluid/Solid    (fs_g) 0           0           
+FACE_W: G.Fluid/Fluid    (ff_g) 0           0           
+FACE_W: G.Solid/Solid    (ss_g) 4           0           
+FACE_W: G.Fluid/External (fe_g) 0
+FACE_W: G.Solid/External (se_g) 62
+
+AV/CV max fa count (on brick side):1
+AV/CV max fw count:                1
+AV/CV max fw poly count:           6
+
+MEMORY: Total                   0.010 MB
+MEMORY: Per Brick               0.899 KB
+-----------------------------------------------------------------------
+
+----------------------------------------------------------
+BCF --> BCF.GEOMSUBDOM (bridge arrays) (cpu_num=1):
+MESH (0):
+	Fluid Subdom Constructor: 0 subdom(s).
+	Solid Subdom Constructor: 3 subdom(s).
+	Net Asm Subdom Constructor: 2 subdom(s).
+	GEOMSUBDOM (0): gi=3 solid av=1 cv=1 fa=0 fw=6 V=8.000000e-06
+	GEOMSUBDOM (1): gi=0 solid av=7 cv=7 fa=6 fw=30 V=4.000000e-03
+	GEOMSUBDOM (2): gi=3 solid av=1 cv=1 fa=0 fw=6 V=8.000000e-06
+	GEOMSUBDOM (3): gi=2 netasm av=3 cv=3 fa=2 fw=14 V=2.000000e-03
+	GEOMSUBDOM (4): gi=1 netasm av=3 cv=3 fa=2 fw=14 V=2.000000e-03
+	Setting nb of w-faces...OK.
+
+MESH (0) checking:
+	GEOMSUBDOM (0):fa_s=0.0000000000000000 fw_s=0.0088800000000000 fw_nb=8
+		WARNING! 2 w-face(s) without fw-neighbors.
+	GEOMSUBDOM (1):fa_s=0.0240000000000000 fw_s=0.4480000000000000 fw_nb=56
+	GEOMSUBDOM (2):fa_s=0.0000000000000000 fw_s=0.0088800000000000 fw_nb=8
+		WARNING! 2 w-face(s) without fw-neighbors.
+	GEOMSUBDOM (3):fa_s=0.0080000000000000 fw_s=0.2280000000000000 fw_nb=24
+	GEOMSUBDOM (4):fa_s=0.0080000000000000 fw_s=0.2280000000000000 fw_nb=24
+MESH (0) checking: OK.
+----------------------------------------------------------
+Memory Status after reading BCF:
+Memory Working Set Current = 24.08 Mb, Memory Working Set Peak = 24.08 Mb
+Process Threads Number: 11
+Total read CPT took 0.02 sec.
+MESH::Bricks: Total=11 Gas=0 Solid=7 Partial=4 Irregular=0
+
+-----------------------------------------------------------------------
+Mesh dimensions:
+				I[0 ]=11
+				I[1 ]=1
+				I[2 ]=1
+Solver refinement level	I[47]=0
+
+Comp. domain size:
+				a[0  ]=-1.002
+				a[1  ]=1.002
+				a[2  ]=-0.1
+				a[3  ]=0.1
+				a[4  ]=-0.01
+				a[5  ]=0.01
+Wall thickness		a[231]=0
+Gap size			a[232]=1
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+Preparing for calculations started at	22.2.2017	7:50:26
+slv_max_lev=0
+CD X0= -1.002, X1= 1.002, Y0= -0.1, Y1= 0.1, Z0= -0.01, Z1= 0.01
+Collecting Reference Parameters... OK
+-----------------------------------------------------------------------
+CV statisticks for fluid...
+	CV number:         0
+	FACE_A max number: 0
+	FACE_W max number: 0
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+CV statisticks for solid...
+	CV number:         7
+	FACE_A max number: 2
+	FACE_W max number: 5
+-----------------------------------------------------------------------
+Update time step in solids: STATIONARY IN SOLIDS
+Memory allocation for matrix entries in solver is block-wise,
+( size of block = 1048576 bytes (1Mb) ).
+
+There is 1 subdomain in solid:
+subdomain 0: 7 control volumes
+
+43 parameter(s) in list of scalar parameters
+2 parameter(s) in list of vector parameters
+-----------------------------------------------------------------------
+Loading mesh settings (global/local/SAR)...
+Setting regions...
+Setting regions takes 0.000 s
+-----------------------------------------------------------------------
+
+CollectIndata: Initialize stored in U[] parameters (pressure,momentum,dens,..)... OK(CPU=3.88318e-05s)
+
+Collect Body BC...OK
+Collect Fans...OK
+Collect Surface Sources...OK
+Collect Contact resistance BC...OK
+Collect Perforated plates BC...OK
+Collect Electric contact BC...OK
+Collect Surface Goals...
+Received 0 wall face(s) and 0 virtual face(s)...
+ OK
+
+Collecting data for fictitious medium Network Assembly...
+N_obj = 2
+	Object 0         -----------------------
+	Number of nodes=3
+		node 0	inner
+		node 1	surface (is lying on 1 w-faces)
+		node 2	surface (is lying on 1 w-faces)
+	Object 1         -----------------------
+	Number of nodes=3
+		node 0	inner
+		node 1	surface (is lying on 1 w-faces)
+		node 2	surface (is lying on 1 w-faces)
+OK
+Surface node area:
+n_obj= 0 n_node= 0 Area= 0 
+n_obj= 0 n_node= 1 Area= 0.004 
+n_obj= 0 n_node= 2 Area= 0.004 
+n_obj= 1 n_node= 0 Area= 0 
+n_obj= 1 n_node= 1 Area= 0.004 
+n_obj= 1 n_node= 2 Area= 0.004 
+Total CPU time 0 s
+Collect Unused surface area...OK
+
+MWS =0.25
+NPROC = 1, nested_parallelization = 0
+NPART = 1
+BC's on 24 sw w-faces are redefined
+BC's on 2 ss w-faces are redefined
+
+/-----------------------------------------------------------/
+SOLVER TOPOLOGY DATA:
+
+BRICKS: |level1| sum         0
+
+CV:     Total               7
+CV:     Fluid               0
+CV:     Solid               7
+
+CV:     G.Fluid Thin Profile    0.00 % (0)
+CV:     G.Solid Thin Profile    0.00 % (0)
+
+CV:     G.Fluid Non-Convex      0.00 % (0)
+CV:     G.Solid Non-Convex      0.00 % (0)
+
+FACE_A: Fluid          (af) 0
+FACE_A: Max number placed on a brick-face in cv: 0
+FACE_A: Solid          (as) 10
+
+FACE_W: Total               66
+FACE_W: Fluid/Solid    (fs) 0
+FACE_W: Fluid/Fluid    (ff) 0
+FACE_W: Solid/Solid    (ss) 2
+FACE_W: Opening BC               (fo)  0
+FACE_W: Fluid/Bound              (fw)  0
+FACE_W: Solid/Bound              (sw)  54
+FACE_W: Fluid/Bound Real Wall    (frw) 0
+FACE_W: Solid/Bound Real Wall    (srw) 40
+FACE_W: Max number placed in cv: 0
+Solid:
+CV Max Disbalance:                0 (ncv=6)
+/-----------------------------------------------------------/
+
+Create solver core
+ MDS: Converting solver problem ...
+MDS: OK
+slv : Calculations at run start
+slv : Create sub-domains supervisors:
+slv : 	1 solid
+slv : 	2 heat network
+slv : Create sub-domains mesh connectivity supervisors:
+slv : 	2 fw mesh to EMT
+slv : Collect slices by phenomena...
+slv : 	fluid flow slices were created:	0
+slv : 	heat transfer slices were created:	3
+slv : 	electric current flow slices were created:	0
+slv : 	radiation slices were created:	0
+slv : Creating meshes proxies for multigrid...
+slv : Convert MESH[0] to multigrid mesh proxy...
+slv : 11 bricks are accounted by implicit methods(100% of total)
+slv : max tree bricks count = 1
+alg : MG: create topological coarsening...
+alg : Mesh 0  OK
+slv : Building fluid flow views schemes...
+slv : Building views for heat transfer...
+slv : 1 views are created
+slv : Building heat transfer views schemes...
+slv : Building electric current flow views schemes...
+slv : PrecalcAtStart views for fluid flow...
+slv : PrecalcAtStart views for heat transfer...
+Laplacian approximations statisticks:
+	Number of open faces        :6
+	N of computed(stored) approximations:0
+	2-point approximations    :100.0 %
+	Thin profile approximations :  0.0 %
+
+Creating view scheme...
+1 heat transfer algebraic views are created
+mgl = 31 size = 13
+mgl = 30 size = 10
+
+slv : PrecalcAtStart views for electric current flow...
+slv : PrecalcAtStart views for radiation...
+slv : ------------ Start of Preliminary step at Calculation start ------------
+slv : View 0(0) T_solid: 
+slv : nsd=0 
+slv : Net asm 0 T (new): min(      0) = 293.2                , max(      0) = 293.2                
+slv : Net asm 1 T (new): min(      0) = 293.2                , max(      0) = 293.2                
+slv : ------------ End of Preliminary step at Calculation start ------------
+
+----------------------------------------------------------
+BCF checking (solver)...
+----------------------------------------------------------
+
+Estimated cfld size=0.02 Mb
+Writing cfld file "14-HEAT_TRANSFER_IN_SOLID\00804-Net_asm_2_objects\ft_run\1/r_000000.cfld"...
+Working in No GDBLight mode
+Working in No GDBLight mode
+FILE SAVED: r_000000.cfld. Total save cfld took 0.27 sec.
+real cfld size=0.00 Mb
+OK
+Estimated fld size=0.07 Mb
+Writing fld file "14-HEAT_TRANSFER_IN_SOLID\00804-Net_asm_2_objects\ft_run\1/r_000000.fld"...
+FILE SAVED: r_000000.fld. Total save fld took 0.00 sec.
+real fld size=0.01 Mb
+OK
+Init simple interpolator... OK (0.000 sec)
+BC 'Outer Wall LEFT' is on 1 faces (AS area=0.004, CAD area=0.00401602, difference=-0.4%)
+BC 'Outer Wall RIGHT' is on 1 faces (AS area=0.004, CAD area=0.00401602, difference=-0.4%)
+BC 'Two-Resistor Component LEFT'
+node 1 is on 1 faces (AS area/CAD area=0.996012)
+node 2 is on 1 faces (AS area/CAD area=0.996012)
+BC 'Two-Resistor Component RIGHT'
+node 1 is on 1 faces (AS area/CAD area=0.996012)
+node 2 is on 1 faces (AS area/CAD area=0.996012)
+
+Preview parameters:
+	Density (Solid)
+	Temperature (Solid)
+	Solid Thermal Conductivity (X)
+	Solid Thermal Conductivity (Y)
+	Solid Thermal Conductivity (Z)
+	Heat Flux
+	Heat Flux (X)
+	Heat Flux (Y)
+	Heat Flux (Z)
+	Overheat above Melting Temperature
+10 parameter(s) in preview list of parameters
+
+Calculation started at	22.2.2017	7:50:27
+Total CPU time 1 s
+//-------------There are no openings in task--------------//
+
+================== Tstep=0 ===================
+Boundary layer settings:
+	Separation tau    on
+	Enable 3D effects off
+BL MODEL         	Ignore compressibility  off
+	BL on porous body  off
+	Separ. tau corr factor 0
+	Separ. tau kappa 0.1
+	Separ. tau KV0 0.1
+------------------------
+NumerCore CHT-start settings:
+	Min typical size					1
+	Zero vel ht factor				0.006
+	C_mju_turb_min                   0.01
+	Threshold value for K-E filter   0
+	C_mju                            0.09
+	C_eps1                           1.44
+	C_eps2                           1.92
+	Sigma_k                          1
+	Sigma_eps                        1.3
+	Sigma_c                          0.9
+	Approx mode                      1st order
+-------------
+NumCoreFESSettings:
+	Maximum possible Mach	0
+	Turbulent Prandtl		0.9
+-------------
+slv : Implicit schemes in fluid settings:
+slv : INPR	: rel_resid=0.00790569
+slv : BACKGROUND	: rel_resid=0.00790569
+slv : DVGR	: rel_resid=0.00790569
+slv : MOMENTUM	: rel_resid=0.00790569
+slv : CHT	: rel_resid=0.00790569
+slv : Y_TD	: rel_resid=0.00790569
+slv : Y_TURB	: rel_resid=0.00790569
+slv : LMA	: rel_resid=0.00790569
+slv : UVGI	: rel_resid=0.00790569
+slv : NOx	: rel_resid=0.00790569
+slv : VOL_FRAC_IM_PHASE	: rel_resid=0.00790569
+slv : Disable wall motion impact into H threshold=10
+slv : Relax par ring =0.05
+slv : Isothermal cavitation CF corrector = 1
+slv : Isothermal cavitation pseudo transient corrector = -1
+slv : Isothermal cavitation forced time step in cavitated regions = -1
+slv : force_free_surface_VOF = -1
+slv : ---------------------------------------
+------Solid settings---
+Approximation mode = 2'nd order && thin_profiles
+Solid temperature eps_abs scaling factor: 0.001
+number dofs per absorptive face: 9
+subgrid ratio: 0.500000
+Blink filter: disabled
+------------------------------
+slv : Iterations settings:
+slv : Max number of outer iter = 1
+slv : Max number of Mass&Energy iter = 1
+slv : Max Courant factor = 10
+slv : Conservation laws tolerance residuals:
+slv : 	MASS	0.005
+slv : 	MOMENTUM	0.005
+slv : 	ENERGY	0.005
+slv : 	SPECIES	0.005
+slv : 	TURBULENCE	0.005
+slv : ---------------------------------------
+slv : Scheme blocks settings:
+slv : INPR	: stop_crit=residAbs_AND_residRel 
+slv : BACKGROUND	: stop_crit=residAbs_AND_residRel 
+slv : DVGR	: stop_crit=residAbs_AND_residRel 
+slv : MOMENTUM	: stop_crit=residAbs_AND_residRel 
+slv : CHT	: stop_crit=residAbs_AND_residRel 
+slv : Y_TD	: stop_crit=residAbs_AND_residRel 
+slv : Y_TURB	: stop_crit=residAbs_AND_residRel 
+slv : LMA	: stop_crit=residAbs_AND_residRel 
+slv : UVGI	: stop_crit=residAbs_AND_residRel 
+slv : NOx	: stop_crit=residAbs_AND_residRel 
+slv : VOL_FRAC_IM_PHASE	: stop_crit=residAbs_AND_residRel 
+slv : ---------------------------------------
+Accuracy scale coeff =1
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  6.019260e+07|  1.552570e+04|  8.063334e-03|  2.405985e-04|  2.751315e-02|     2|  18|0|n|30|  OK  |
+slv : View 0(0) T_solid: 
+slv : nsd=0 
+slv : Net asm 0 T (new): min(      2) = 400.92719938734      , max(      1) = 404.99060680832      
+slv : Net asm 1 T (new): min(      1) = 405.00371440371      , max(      2) = 409.07174555685      
+Memory Working Set Current = 32.89 Mb, Memory Working Set Peak = 32.89 Mb
+Process Threads Number: 11
+
+================== Tstep=1 ===================
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  2.405985e-04|  2.751315e-02|  1.262643e-06|  1.673762e-07|  7.187716e-04|     4|  36|0|n|30|  OK  |
+slv : View 0(0) T_solid: 
+slv : nsd=0 
+slv : Net asm 0 T (new): min(      2) = 400.92723657224      , max(      1) = 404.99080695427      
+slv : Net asm 1 T (new): min(      1) = 405.0091848272       , max(      2) = 409.07276190085      
+Memory Working Set Current = 32.93 Mb, Memory Working Set Peak = 33.04 Mb
+Process Threads Number: 11
+
+================== Tstep=2 ===================
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  1.673762e-07|  7.187716e-04|  1.046102e-08|  1.041078e-08|  1.792627e-04|     2|  18|0|n|30|  OK  |
+slv : View 0(0) T_solid: 
+slv : nsd=0 
+slv : Net asm 0 T (new): min(      2) = 400.927225533        , max(      1) = 404.9907475361       
+slv : Net asm 1 T (new): min(      1) = 405.00925043055      , max(      2) = 409.07277408923      
+Memory Working Set Current = 32.93 Mb, Memory Working Set Peak = 33.08 Mb
+Process Threads Number: 11
+
+================== Tstep=3 ===================
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  1.041078e-08|  1.792627e-04|  6.506735e-10|  6.476119e-10|  4.471011e-05|     2|  18|0|n|30|  OK  |
+slv : View 0(0) T_solid: 
+slv : nsd=0 
+slv : Net asm 0 T (new): min(      2) = 400.92722277821      , max(      1) = 404.99073270856      
+slv : Net asm 1 T (new): min(      1) = 405.00926678457      , max(      2) = 409.07277712762      
+Memory Working Set Current = 32.93 Mb, Memory Working Set Peak = 33.08 Mb
+Process Threads Number: 11
+
+================== Tstep=4 ===================
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  6.476119e-10|  4.471011e-05|  4.047574e-11|  4.028529e-11|  1.115120e-05|     2|  18|0|n|30|  OK  |
+slv : View 0(0) T_solid: 
+slv : nsd=0 
+slv : Net asm 0 T (new): min(      2) = 400.92722209111      , max(      1) = 404.99072901027      
+slv : Net asm 1 T (new): min(      1) = 405.00927086331      , max(      2) = 409.07277788541      
+Memory Working Set Current = 32.93 Mb, Memory Working Set Peak = 33.08 Mb
+Process Threads Number: 11
+Iteration : time = 0.156005 , count = 5 , time/count = 0.031201
+Calculate_inc() : time = 0.140405 , count = 5 , time/count = 0.028081
+TreatFlowEvolution() : time = 0 , count = 5 , time/count = 0
+SolverPreview : time = 0 , count = 6 , time/count = 0
+TreatGoals : time = 0 , count = 5 , time/count = 0
+
+================== Tstep=5 ===================
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  4.028529e-11|  1.115120e-05|  2.517830e-12|  2.505982e-12|  2.781235e-06|     2|  18|0|n|30|  OK  |
+slv : View 0(0) T_solid: 
+slv : nsd=0 
+slv : Net asm 0 T (new): min(      2) = 400.92722191972      , max(      1) = 404.99072808777      
+slv : Net asm 1 T (new): min(      1) = 405.00927188049      , max(      2) = 409.07277807439      
+Memory Working Set Current = 32.94 Mb, Memory Working Set Peak = 33.08 Mb
+Process Threads Number: 11
+
+================== Tstep=6 ===================
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+|Name|view| Initial res  | Initial resL1| Target res   | Final res    | Final res L1 |Visits|Iter|R|F|CL|Status|
++----+----+--------------+--------------+--------------+--------------+--------------+------+----+-+-+--+------+
+| CHT|   0|  2.505982e-12|  2.781235e-06|  1.566239e-13|  1.558915e-13|  6.936807e-07|     2|  18|0|n|30|  OK  |
+slv : View 0(0) T_solid: 
+slv : nsd=0 
+slv : Net asm 0 T (new): min(      2) = 400.92722187695      , max(      1) = 404.99072785758      
+slv : Net asm 1 T (new): min(      1) = 405.00927213409      , max(      2) = 409.0727781215       
+Memory Working Set Current = 32.95 Mb, Memory Working Set Peak = 33.09 Mb
+Process Threads Number: 11
+/************Goal values******************/
+GG Min Temperature (Solid) 1				401.296632 K
+GG Max Temperature (Solid) 1				408.703368 K
+/************End of Goal values******************/
+/************	Min/Max Parameters	************/
+Temperature (Solid):		min = 401.296632 K		max = 408.703368 K
+/************	End of Min/Max Parameters	************/
+Solver finished at	22.2.2017	7:50:27
+ENDING PROGRAM...
+Estimated fld size=0.07 Mb
+Writing fld file "14-HEAT_TRANSFER_IN_SOLID\00804-Net_asm_2_objects\ft_run\1\1.fld"...
+FILE SAVED: 1.fld. Total save fld took 0.00 sec.
+real fld size=0.01 Mb
+FILE RENAMED: r_000000.cfld -> 1.cfld
+OK
+Depository creating ...
+stream_line (0.000 s)
+FS triangles count 4 
+wall_triangles (0.001 s)
+nb_bricks (0.001 s)
+Face_aver_on (0.000 s)
+size of cv_intrp_s = 0.05 Mb
+size of cv_intrp_fw = 0.00 Mb
+size of cv_intrp_sw = 0.05 Mb
+CCVInterp_DepEntry::Calculate duration = 0.001 s
+cv_interp (0.002 s)
+favorite_params (0.009 s)
+Face_aver_off (0.000 s)
+Depository creating ...OK (0.014 s)
+Solver finished at	22.2.2017	7:50:27
+Total CPU time 1 s
+Free memory:
+slv : +--------------------------+------------+-------+------------+------------+
+slv : |      Collector name      | Total Time | Count |  Avg Time  |  Max Time  |
+slv : +--------------------------+------------+-------+------------+------------+
+slv : | CHT_MDS_import_export    |       0.000|     14|       0.000|       0.000|
+slv : | CSolver_core_update_BC_1 |       0.000|      7|       0.000|       0.000|
+slv : | Calculate_inc            |       0.128|      7|       0.018|       0.115|
+slv : | LiSy_make_portrait       |       0.000|      2|       0.000|       0.000|
+slv : | Results_processing       |       0.015|      7|       0.002|       0.010|
+slv : | build_sl_ordering_CHT    |       0.000|      7|       0.000|       0.000|
+slv : | perform_stage_total      |       0.001|      4|       0.000|       0.001|
+slv : | precalc_at_start_MDS     |       0.001|      4|       0.000|       0.001|
+slv : | solve_CHT_MDS            |       0.124|      7|       0.018|       0.114|
+slv : | solve_CHT_alg_MDS        |       0.122|      7|       0.017|       0.114|
+slv : | solve_PSQJ_MDS_total     |       0.000|      7|       0.000|       0.000|
+slv : | update_BC_MDS            |       0.000|      8|       0.000|       0.000|
+slv : +--------------------------+------------+-------+------------+------------+
+alg : 
+alg :  size = 13
+alg :  build_coarse_select_omega     0.000  7
+alg :  build_fine_select_omega       0.000  7
+alg :  build_select_pivot_nonzeros   0.000  7
+alg :  build_select_vectors          0.000  7
+alg :  calc_residual_LU              0.000  16
+alg :  call_MG_solver                0.008  7
+alg :  clean_coarse_levels           0.000  7
+alg :  clean_fine_level              0.000  7
+alg :  init_RB_coarse_nonzeros       0.000  7
+alg :  init_RB_fine_nonzeros         0.000  7
+alg :  init_coarse_levels            0.001  7
+alg :  init_fine_level               0.114  7
+alg :  mg_cycle                      0.007  7
+alg :  numerical_PardisoLU           0.000  7
+alg :  perform_prolongation          0.000  9
+alg :  perform_restriction           0.000  9
+alg :  run_smoothing                 0.006  16
+alg :  smoother_fine                 0.005  144
+alg :  solve_MG                      0.122  7
+alg :  solve_PardisoLU               0.000  9
+alg :  symbolic_PardisoLU            0.000  1
+alg :  update_mg_status              0.000  25
+Free Geometry DB takes 0.000 s
+OK
