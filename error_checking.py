@@ -75,6 +75,33 @@ def nums_from_str(s):
     nums = [float(i) for i in nums] 
     return nums
 
+def bricks_total_value_check(test_directory, data):
+    ft_run = []
+    ft_ref = []
+    for l in range(len(list_split(data['ft_run'], 2))):
+        ft_run_stdout_file_directory = f"{test_directory}/ft_run/{list_split(data['ft_run'], 2)[l][0]}/{list_split(data['ft_run'], 2)[l][1]}"
+        ft_ref_stdout_file_directory = f"{test_directory}/ft_reference/{list_split(data['ft_reference'], 2)[l][0]}/{list_split(data['ft_reference'], 2)[l][1]}"
+        ft_run_buf = []
+        ft_ref_buf = []
+        with open(ft_run_stdout_file_directory, 'r') as std:
+            for line in std:
+                if 'MESH::Bricks:' in line:
+                    index = ft_run_stdout_file_directory.index('ft_run')
+                    ft_run_buf.append({f"{ft_run_stdout_file_directory[index:]}": nums_from_str(line)[0]})
+        with open(ft_ref_stdout_file_directory, 'r') as std:
+            for line in std:
+                if 'MESH::Bricks:' in line:
+                    index = ft_ref_stdout_file_directory.index('ft_reference')
+                    ft_ref_buf.append({f"{ft_ref_stdout_file_directory[index:]}": nums_from_str(line)[0]})
+        
+        ft_run.append(ft_run_buf[-1])
+        ft_ref.append(ft_ref_buf[-1])
+        
+    return ft_run, ft_ref
+
+
+
+
 
 #_____Основная часть кода_____
 
@@ -180,3 +207,24 @@ for i in range(len(tests_directories_list)):
                     f.write(f"{tests_directories_list[i][j][5:]}/{ft_run_key}: different 'Memory Working Set Peak' (ft_run={ft_run_value}, ft_reference={ft_reference_value}, rel.diff={rel_diff}, criterion={criterion})\n")
 
 #_____b_____
+
+        criterion = 0.1
+        
+        ft_ref_bricks = []
+        ft_run_bricks = []
+        ft_run_bricks, ft_ref_bricks = bricks_total_value_check(tests_directories_list[i][j], data)
+        with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'a') as f:
+            for bricks_run, bricks_ref in zip(ft_run_bricks, ft_ref_bricks):
+                
+                ft_reference_value = list(bricks_ref.values())[0]
+                ft_run_value = list(bricks_run.values())[0]
+                
+                ft_reference_key = list(bricks_ref.keys())[0]
+                ft_run_key = list(bricks_run.keys())[0]                
+                
+                rel_diff = round(ft_run_value/ft_reference_value - 1, 2)
+                if abs(rel_diff) > criterion:
+                    f.write(f"{tests_directories_list[i][j][5:]}/{ft_run_key}: different 'Total' of bricks (ft_run={ft_run_value}, ft_reference={ft_reference_value}, rel.diff={rel_diff}, criterion={criterion})\n")
+                    print(tests_directories_list[i][j][5:], rel_diff)
+                    
+#_____Вывод результата в консоль_____

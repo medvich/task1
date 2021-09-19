@@ -3,3 +3,5 @@
 
 15-JOULE_HEATING_IN_SOLID/00020-_-1_cond_ss_cond_-3/ft_run/1/1.stdout: different 'Memory Working Set Peak' (ft_run=10.76, ft_reference=28.18, rel.diff=-0.62, criterion=0.5)
 15-JOULE_HEATING_IN_SOLID/00020-_-1_cond_ss_cond_-3/ft_run/3/3.stdout: different 'Memory Working Set Peak' (ft_run=128.18, ft_reference=28.18, rel.diff=3.55, criterion=0.5)
+15-JOULE_HEATING_IN_SOLID/00020-_-1_cond_ss_cond_-3/ft_run/1/1.stdout: different 'Total' of bricks (ft_run=15.0, ft_reference=21.0, rel.diff=-0.29, criterion=0.1)
+15-JOULE_HEATING_IN_SOLID/00020-_-1_cond_ss_cond_-3/ft_run/3/3.stdout: different 'Total' of bricks (ft_run=25.0, ft_reference=21.0, rel.diff=0.19, criterion=0.1)
