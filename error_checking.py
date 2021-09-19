@@ -109,10 +109,20 @@ root_folder = "logs"
 res_folders = ('ft_reference','ft_run')
 tests_directories_list = get_tests_directories_list(root_folder)
 
+
+# Если нао проверить какой-то отдельный тест
+# =============================================================================
+# tests_directories_list = [[tests_directories_list[1][2]]]
+# =============================================================================
+
+
+
 #_____Путь к папке текущего проекта_____
 
 for i in range(len(tests_directories_list)):
     for j in range(len(tests_directories_list[i])):
+        
+#        ok_flag = True
 
 #_____Создаем файл report.txt в папке каждого проекта_____
         
@@ -130,9 +140,13 @@ for i in range(len(tests_directories_list)):
                 fail_text = f"directory missing: {folder[0]}"
 #                print(f"FAIL:{tests_directories_list[i][j]}/\n{fail_text}")
                 with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'a') as f:
-                    f.write(f"{fail_text}\n")
-#        print(f"OK:{tests_directories_list[i][j]}/\n")
+                    f.write(f"{fail_text}\n")   
         if False in buf:
+#            ok_flag = False
+            print(f"FAIL:{tests_directories_list[i][j][5:]}")
+            with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
+                for line in r:
+                    print(line) 
             continue
             
 #_____Вторая проверка_____
@@ -166,6 +180,11 @@ for i in range(len(tests_directories_list)):
                         f.write('\n')
                 buf.append(False)
         if False in buf:
+#            ok_flag = False
+            print(f"FAIL:{tests_directories_list[i][j][5:]}")
+            with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
+                for line in r:
+                    print(line)            
             continue
             
 #_____Третья проверка_____
@@ -173,17 +192,20 @@ for i in range(len(tests_directories_list)):
         with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'a') as f:
             for l in range(len(list_split(data['ft_run'], 2))):
                 stdout_file_directory = f"{tests_directories_list[i][j]}/ft_run/{list_split(data['ft_run'], 2)[l][0]}/{list_split(data['ft_run'], 2)[l][1]}"
+                test_file_index = stdout_file_directory.index('ft_run') + len('ft_run') + 1
                 with open(stdout_file_directory, 'r') as std:
                     flag = 0
                     line_num = 1
                     for line in std:
                         if 'error' in line.lower():
-                            f.write(f"{stdout_file_directory[5:]}({line_num}): {line}\n")
+                            f.write(f"{stdout_file_directory[test_file_index:]}({line_num}): {line}\n")
+#                            ok_flag = False
                         if 'solver finished at' not in line.lower() and line.find('Solver') != 0:
                             flag += 1
                         line_num += 1                 
                     if flag == line_num - 3:
-                        f.write(f"{stdout_file_directory[5:]}: missing 'Solver finished at'\n")                       
+                        f.write(f"{stdout_file_directory[test_file_index:]}: missing 'Solver finished at'\n")
+#                        ok_flag = False
 
 #_____Четвертая проверка_____
 #_____a_____
@@ -204,7 +226,8 @@ for i in range(len(tests_directories_list)):
                 
                 rel_diff = round(ft_run_value/ft_reference_value - 1, 2)
                 if abs(rel_diff) > criterion:
-                    f.write(f"{tests_directories_list[i][j][5:]}/{ft_run_key}: different 'Memory Working Set Peak' (ft_run={ft_run_value}, ft_reference={ft_reference_value}, rel.diff={rel_diff}, criterion={criterion})\n")
+                    f.write(f"{ft_run_key[7:]}: different 'Memory Working Set Peak' (ft_run={ft_run_value}, ft_reference={ft_reference_value}, rel.diff={rel_diff}, criterion={criterion})\n")
+#                    ok_flag = False
 
 #_____b_____
 
@@ -213,6 +236,7 @@ for i in range(len(tests_directories_list)):
         ft_ref_bricks = []
         ft_run_bricks = []
         ft_run_bricks, ft_ref_bricks = bricks_total_value_check(tests_directories_list[i][j], data)
+
         with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'a') as f:
             for bricks_run, bricks_ref in zip(ft_run_bricks, ft_ref_bricks):
                 
@@ -224,7 +248,19 @@ for i in range(len(tests_directories_list)):
                 
                 rel_diff = round(ft_run_value/ft_reference_value - 1, 2)
                 if abs(rel_diff) > criterion:
-                    f.write(f"{tests_directories_list[i][j][5:]}/{ft_run_key}: different 'Total' of bricks (ft_run={ft_run_value}, ft_reference={ft_reference_value}, rel.diff={rel_diff}, criterion={criterion})\n")
-                    print(tests_directories_list[i][j][5:], rel_diff)
+                    f.write(f"{ft_run_key[7:]}: different 'Total' of bricks (ft_run={ft_run_value}, ft_reference={ft_reference_value}, rel.diff={rel_diff}, criterion={criterion})\n")
+#                    ok_flag = False
                     
 #_____Вывод результата в консоль_____
+                    
+        with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
+            first = r.read(1)
+            if not first:
+                print(f"OK:{tests_directories_list[i][j][5:]}")
+                continue
+        
+        print(f"FAIL:{tests_directories_list[i][j][5:]}")
+        with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
+            for line in r:
+                print(line)
+            

@@ -1,1 +1,1 @@
-13-ROTATED_FLOWS/00065-RRF-u_R_0_P_rotated_infinity_ref_boundary_lev_2/ft_run/1/1.stdout: different 'Total' of bricks (ft_run=1772.0, ft_reference=1472.0, rel.diff=0.2, criterion=0.1)
+1/1.stdout: different 'Total' of bricks (ft_run=1772.0, ft_reference=1472.0, rel.diff=0.2, criterion=0.1)

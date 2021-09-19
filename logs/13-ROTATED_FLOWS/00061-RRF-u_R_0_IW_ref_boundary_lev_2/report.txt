@@ -1,1 +1,1 @@
-13-ROTATED_FLOWS/00061-RRF-u_R_0_IW_ref_boundary_lev_2/ft_run/1/1.stdout: different 'Memory Working Set Peak' (ft_run=821.0, ft_reference=77.29, rel.diff=9.62, criterion=0.5)
+1/1.stdout: different 'Memory Working Set Peak' (ft_run=821.0, ft_reference=77.29, rel.diff=9.62, criterion=0.5)

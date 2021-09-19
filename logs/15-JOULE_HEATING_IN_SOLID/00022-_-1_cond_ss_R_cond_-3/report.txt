@@ -1,2 +1,2 @@
-15-JOULE_HEATING_IN_SOLID/00022-_-1_cond_ss_R_cond_-3/ft_run/1/1.stdout(547): GG Joule Heat 1				ERROR: goal invalid
+1/1.stdout(547): GG Joule Heat 1				ERROR: goal invalid
 
