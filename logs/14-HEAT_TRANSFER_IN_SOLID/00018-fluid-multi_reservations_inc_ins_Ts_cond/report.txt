@@ -1,1 +1,0 @@
-1/1.stdout: different 'Total' of bricks (ft_run=25200.0, ft_reference=300.0, rel.diff=83.0, criterion=0.1)

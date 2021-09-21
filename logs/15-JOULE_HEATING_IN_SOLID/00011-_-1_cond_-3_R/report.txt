@@ -1,2 +1,0 @@
-1/1.stdout(475): Voltage_Error:		min = 0 V		max = 0.04 V
-

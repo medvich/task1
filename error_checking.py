@@ -85,12 +85,12 @@ def bricks_total_value_check(test_directory, data):
         ft_ref_buf = []
         with open(ft_run_stdout_file_directory, 'r') as std:
             for line in std:
-                if 'MESH::Bricks:' in line:
+                if 'MESH::Bricks: Total' in line:
                     index = ft_run_stdout_file_directory.index('ft_run')
                     ft_run_buf.append({f"{ft_run_stdout_file_directory[index:]}": nums_from_str(line)[0]})
         with open(ft_ref_stdout_file_directory, 'r') as std:
             for line in std:
-                if 'MESH::Bricks:' in line:
+                if 'MESH::Bricks: Total' in line:
                     index = ft_ref_stdout_file_directory.index('ft_reference')
                     ft_ref_buf.append({f"{ft_ref_stdout_file_directory[index:]}": nums_from_str(line)[0]})
         
@@ -111,7 +111,7 @@ tests_directories_list = get_tests_directories_list(root_folder)
 
 # Если надо проверить какой-то отдельный тест
 # =============================================================================
-# tests_directories_list = [[tests_directories_list[1][9]]]
+# tests_directories_list = [[tests_directories_list[1][11]]]
 # =============================================================================
 
 
@@ -195,14 +195,18 @@ for i in range(len(tests_directories_list)):
                 with open(stdout_file_directory, 'r') as std:
                     flag = 0
                     line_num = 1
+                    ff = True
                     for line in std:
-                        if 'error' in line.lower():
-                            f.write(f"{stdout_file_directory[test_file_index:]}({line_num}): {line}\n")
+                        str_split = line.split()
+                        for elem in str_split:
+                            if 'error' in elem.lower() and '_' not in elem.lower():
+                                f.write(f"{stdout_file_directory[test_file_index:]}({line_num}): {line}\n")
 #                            ok_flag = False
-                        if 'solver finished at' not in line.lower() and line.find('Solver') != 0:
+                        if 'solver finished at' in line.lower() and line.find('Solver') == 0:
                             flag += 1
+                            ff = False
                         line_num += 1                 
-                    if flag == line_num - 3:
+                    if ff == True:
                         f.write(f"{stdout_file_directory[test_file_index:]}: missing 'Solver finished at'\n")
 #                        ok_flag = False
 

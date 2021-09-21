@@ -39,13 +39,13 @@ for i in range(len(tests_directories_list)):
             with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
                 first = r.read(1)
                 if not first:
-                    print(f"OK: {tests_directories_list[i][j][5:]}")
-                    output.write(f"OK: {tests_directories_list[i][j][5:]}\n")
+                    print(f"OK: {tests_directories_list[i][j][5:]}/")
+                    output.write(f"OK: {tests_directories_list[i][j][5:]}/\n")
                     continue
         
         with open(f"{temp_file}", 'a') as output:
-            print(f"FAIL: {tests_directories_list[i][j][5:]}")
-            output.write(f"FAIL: {tests_directories_list[i][j][5:]}\n") 
+            print(f"FAIL: {tests_directories_list[i][j][5:]}/")
+            output.write(f"FAIL: {tests_directories_list[i][j][5:]}/\n") 
             with open(f"{tests_directories_list[i][j]}/{FILENAME}", 'r') as r:
                 for line in r:
                     print(line)
