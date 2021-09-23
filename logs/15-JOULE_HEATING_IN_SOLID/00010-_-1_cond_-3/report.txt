@@ -1,4 +1,2 @@
 1/1.stdout(187): Loading mesh settings (global/local/SAR)... ERRor
-
 1/1.stdout(404): slv : errOr Max number of outer iter = 1
-

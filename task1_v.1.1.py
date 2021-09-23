@@ -61,7 +61,17 @@ def fail_script(root_folder, test_directory, report_filename, temp_file):
         with open(f"{test_directory}/{report_filename}", 'r') as r:
             for line in r:
                 print(line)
-                output.write(f"{line}\n")    
+                output.write(f"{line}\n")
+                
+def file_sorter(test_directory, report_filename, key_index):
+    with open(f"{test_directory}/{report_filename}", 'r') as f:
+        lines = f.readlines()
+        lines = [line for line in lines if line != '\n']
+        key = lambda line: line[key_index]
+        lines.sort(key=key)
+        with open(f"{test_directory}/{report_filename}", 'w') as f:
+            f.writelines(lines)
+    
 
 def first_check(root_folder, test_directory, res_folders, report_filename, temp_file):
     res = True
@@ -247,7 +257,9 @@ def main():
         if flag == True:
             ok_script(root_folder, test_directory, FILENAME, temp_file)
             print(f"OK: {test_directory[len(root_folder)+1:]}/")
-        else: fail_script(root_folder, test_directory, FILENAME, temp_file)
+        else:
+            file_sorter(test_directory, FILENAME, 0)            
+            fail_script(root_folder, test_directory, FILENAME, temp_file)
     
     with open(f"{temp_file}") as a:
         with open(f"{out_file}", 'a') as out: 
@@ -255,7 +267,6 @@ def main():
                 out.write(line)
         
     os.remove(f"{temp_file}")
-
     
 if __name__ == "__main__":
     main()

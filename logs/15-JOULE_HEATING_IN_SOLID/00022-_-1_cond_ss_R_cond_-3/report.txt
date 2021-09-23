@@ -1,2 +1,1 @@
 1/1.stdout(547): GG Joule Heat 1				ERROR: goal invalid
-
