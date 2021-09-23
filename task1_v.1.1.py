@@ -213,7 +213,7 @@ def main():
     
     tests_directories_list = get_tests_directories_list(root_folder) # (num of types) X (num of tests of such type)
     
-    formed_list = make_list_from_2dlist(tests_directories_list)
+    formed_list = make_list_from_2dlist(tests_directories_list) # list of tests that would be checked
     
     for test_directory in formed_list:
         
